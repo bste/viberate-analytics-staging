@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Deezer_logo Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50.4898007%" y1="67.8575401%" x2="49.5495621%" y2="31.9301971%" id="linearGradient-1">
+            <stop stop-color="#358C7B" offset="0%"></stop>
+            <stop stop-color="#33A65E" offset="52.56%"></stop>
+        </linearGradient>
+        <linearGradient x1="-1.47012434%" y1="65.7516243%" x2="101.515465%" y2="34.2638585%" id="linearGradient-2">
+            <stop stop-color="#222B90" offset="0%"></stop>
+            <stop stop-color="#367B99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.0182880653%" y1="50.0387829%" x2="99.9346517%" y2="50.0387829%" id="linearGradient-3">
+            <stop stop-color="#FF9900" offset="0%"></stop>
+            <stop stop-color="#FF8000" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0.111388298%" y1="50.0387829%" x2="100.027752%" y2="50.0387829%" id="linearGradient-4">
+            <stop stop-color="#FF8000" offset="0%"></stop>
+            <stop stop-color="#CC1953" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.0286117016%" y1="50.0387829%" x2="99.8877519%" y2="50.0387829%" id="linearGradient-5">
+            <stop stop-color="#CC1953" offset="0%"></stop>
+            <stop stop-color="#241284" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-0.0537885315%" y1="50.0387829%" x2="99.8625751%" y2="50.0387829%" id="linearGradient-6">
+            <stop stop-color="#222B90" offset="0%"></stop>
+            <stop stop-color="#3559A6" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-3.97231911%" y1="59.4659599%" x2="103.831459%" y2="40.5495229%" id="linearGradient-7">
+            <stop stop-color="#CC1953" offset="0%"></stop>
+            <stop stop-color="#241284" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-3.44503646%" y1="38.3198697%" x2="103.584177%" y2="61.6958693%" id="linearGradient-8">
+            <stop stop-color="#FFCC00" offset="0.2669841%"></stop>
+            <stop stop-color="#CE1938" offset="99.99%"></stop>
+        </linearGradient>
+        <linearGradient x1="8.50948676%" y1="26.9894476%" x2="91.6296535%" y2="73.0145419%" id="linearGradient-9">
+            <stop stop-color="#FFD100" offset="0.2669841%"></stop>
+            <stop stop-color="#FD5A22" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="1366-Pro" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-1366/pro-view/artists" transform="translate(-595.000000, -2352.000000)">
+            <g id="Group-11-Copy-2" transform="translate(581.000000, 2336.000000)">
+                <g id="Deezer_logo-Copy" transform="translate(14.000000, 16.000000)">
+                    <rect id="rect8185" fill="#40AB5D" x="18.7537688" y="0.090848" width="5.17386935" height="3.06564885"></rect>
+                    <rect id="rect8192" fill="url(#linearGradient-1)" x="18.7537688" y="4.34122968" width="5.17386935" height="3.06564885"></rect>
+                    <rect id="rect8199" fill="url(#linearGradient-2)" x="18.7537688" y="8.59161136" width="5.17386935" height="3.06564885"></rect>
+                    <rect id="rect8206" fill="url(#linearGradient-3)" x="0" y="12.841993" width="5.17386935" height="3.06564885"></rect>
+                    <rect id="rect8213" fill="url(#linearGradient-4)" x="6.24723618" y="12.841993" width="5.17386935" height="3.06564885"></rect>
+                    <rect id="rect8220" fill="url(#linearGradient-5)" x="12.5065327" y="12.841993" width="5.17386935" height="3.06564885"></rect>
+                    <rect id="rect8227" fill="url(#linearGradient-6)" x="18.7537688" y="12.841993" width="5.17386935" height="3.06564885"></rect>
+                    <rect id="rect8234" fill="url(#linearGradient-7)" x="12.5065327" y="8.59161136" width="5.17386935" height="3.06564885"></rect>
+                    <rect id="rect8241" fill="url(#linearGradient-8)" x="6.24723618" y="8.59161136" width="5.17386935" height="3.06564885"></rect>
+                    <rect id="rect8248" fill="url(#linearGradient-9)" x="6.24723618" y="4.34122968" width="5.17386935" height="3.06564885"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

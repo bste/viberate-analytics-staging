@@ -1,0 +1,77 @@
+body {
+	.transition(background-color, 500ms, linear);
+	.font-size(@base-font-size);
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: @base-font;
+	font-weight: 400;
+	line-height: @base-line-height;
+	color: @text-color;
+	letter-spacing: @base-letter-spacing;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	overflow-x: hidden;
+	background-color: @white;
+	overscroll-behavior: contain;
+	overscroll-behavior-y: none;
+	min-height: -webkit-fill-available;
+	-webkit-overflow-scrolling: touch;
+
+	&.bg-dark {
+
+		.section-payment-landing,
+		.section-get-important-data,
+		.section-landing-features {
+			background-color: #202427;
+		}
+
+		.section-demo-video {
+			background-color: #202427;
+
+			.landing-section-subtitle {
+				color: @white;
+			}
+		}
+	}
+
+	&.grid-bg {
+		position: relative;
+		background-color: @black;
+
+		&.footer-visible {
+
+			&:before {
+
+				@media @bp_768_max {
+					background: @black;
+				}
+			}
+		}
+
+		&:before {
+			.prevent-click;
+			content: "";
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			z-index: -1;
+			background-position: center top;
+			background-image: url('../images/svg/grid-mobile.svg');
+			background-repeat: repeat;
+			background-attachment: scroll;
+
+			@media @bp_768 {
+				background-image: url('../images/svg/grid-1440.svg');
+				background-attachment: fixed;
+			}
+
+			@media @bp_2560 {
+				background-image: url('../images/svg/grid-2560.svg');
+			}
+		}
+	}
+}

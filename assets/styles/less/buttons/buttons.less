@@ -1,0 +1,284 @@
+button {
+	cursor: pointer;
+}
+
+.btn {
+	.user-select(none);
+	.box-sizing();
+	position: relative;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: @suiss-int;
+
+	&.prevent-click {
+		.prevent-click;
+	}
+
+	&:focus,
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.btn-blog-copy-link {
+	.transition(background-color, 300ms, linear);
+	.font-size(12);
+	.rounded-corners(8px);
+	.box-sizing;
+	position: relative;
+	color: @blue;
+	padding: 0 32px;
+	height: 40px;
+	background-color: transparent;
+	font-weight: 500;
+
+	&.border {
+		.rounded-corners(8px);
+		border: 1px solid @blue;
+	}
+
+	.msg {
+		.transition(all, 300ms, linear);
+		.rounded-corners(8px);
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: @white-1;
+		z-index: 1;
+
+		em {
+			font-style: normal;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+//SYSTEM BUTTONS
+
+.button {
+	.user-select(none);
+	.box-sizing();
+	.rounded-corners(8px);
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	text-align: center;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	cursor: pointer;
+	font-family: @suiss-int;
+	letter-spacing: 0.5px;
+	padding: 0 24px;
+	text-transform: capitalize;
+	text-align: center;
+	font-weight: 500;
+	line-height: 1;
+
+	&:focus,
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+
+	&.primary {
+		letter-spacing: 0.5px;
+		background-color: @blue;
+		color: @white;
+
+		&.red {
+			background-color: @red;
+
+			&:active,
+			&:hover {
+				background-color: @red-roll;
+			}
+		}
+
+		&.white {
+			background-color: @white;
+			color: @blue;
+
+			&:active,
+			&:hover {
+				background-color: @white;
+				color: @blue-roll;
+			}
+		}
+
+		&:active,
+		&:hover {
+			background-color: @blue-roll;
+		}
+
+		&:disabled,
+		&.disabled {
+			background-color: #D5DDE0;
+		}
+	}
+
+	&.secondary {
+		letter-spacing: 0.5px;
+		border: 1px solid @blue;
+		background-color: transparent; //@white;
+		color: @blue;
+
+		&.transparent {
+			background-color: transparent;
+
+			&:active,
+			&:hover {
+				background-color: transparent;
+			}
+		}
+
+		&.black {
+			border-color: @black;
+			color: @black;
+
+			&:active,
+			&:hover {
+				border-color: @black-roll;
+				color: @black-roll;
+			}
+		}
+
+		&.white {
+			border-color: @white;
+			color: @white;
+
+			&:active,
+			&:hover {
+				border-color: @white;
+				color: @white;
+			}
+		}
+
+		&:active,
+		&:hover {
+			color: @blue-roll;
+			border-color: @blue-roll;
+			background-color: transparent; //@white;
+		}
+
+		&:disabled,
+		&.disabled {
+			border-color: #D5DDE0;
+			color: #D5DDE0;;
+		}
+	}
+
+	&.tertiary {
+		background-color: transparent;
+		color: @blue;
+
+		&.s {
+
+			@media @bp_768_max {
+				.font-size(12);
+			}
+		}
+
+		&.black {
+			color: @black;
+
+			&:active,
+			&:hover {
+				color: @black-roll;
+			}
+		}
+
+		&:active,
+		&:hover {
+			color: @blue-roll;
+		}
+
+		&:disabled,
+		&.disabled {
+			color: #D5DDE0;;
+		}
+	}
+
+	&.sx {
+		.font-size(16);
+		height: 48px;
+
+		@media @bp_768 {
+			.font-size(10);
+			height: 32px;
+		}
+
+		&.loading {
+			
+			&:before {
+
+				background-size: 10px;
+			}
+		}
+	}
+
+	&.s {
+		.font-size(16);
+		height: 48px;
+
+		@media @bp_768 {
+			.font-size(12);
+			height: 40px;
+		}
+	}
+
+	&.m {
+		.font-size(16);
+		height: 48px;
+
+		@media @bp_768 {
+			height: 48px;
+		}
+	}
+
+	&.rounded {
+		.rounded-corners(8px);
+		letter-spacing: 0.5px;
+
+		&.m {
+			padding-left: 32px;
+			padding-right: 32px;
+		}
+	}
+
+	.full-width {
+		width: 100%;
+	}
+
+	&.no-padding {
+		padding-left: 0;
+		padding-right: 0;
+		height: auto;
+	}
+
+	> span {
+		line-height: 1;
+	}
+}

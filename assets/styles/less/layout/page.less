@@ -1,0 +1,24 @@
+.page {
+	.box-sizing();
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	max-width: @max-page-width;
+	padding: 0 @page_spacer_mobile;
+
+	@media @bp_480 {
+		padding: 0 @page_spacer_mobile_landscape;
+	}
+
+	@media @bp_768 {
+		padding: 0 @page_spacer_tablet;
+	}
+
+	@media @bp_1024 {
+		padding: 0 @page_spacer_tablet_landscape;
+	}
+
+	@media @bp_1200 {
+		padding: 0 @page_spacer_desktop;
+	}
+}

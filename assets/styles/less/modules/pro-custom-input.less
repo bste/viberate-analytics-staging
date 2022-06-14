@@ -1,0 +1,54 @@
+input[type="checkbox"],
+input[type="radio"] {
+
+	&.custom-toggle-pro {
+		position: absolute;
+		z-index: -1;
+		left: -100px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		height: 1px;
+		width: 1px;
+		margin: -1px;
+		padding: 0;
+		border: 0;
+	}
+
+	&.custom-toggle-pro + label {
+		.rounded-corners(14px);
+		.box-sizing();
+		.font-size(10);
+		font-weight: 500;
+		position: relative;
+		text-transform: uppercase;
+		background-color: #757b7e;
+		height: 28px;
+		width: 56px;
+		display: inline-block;
+		letter-spacing: 1.5px;
+		padding: 0;
+		line-height: 28px;
+		cursor: pointer;
+
+		&:before {
+			.rounded-corners(50%);
+			.transition(left, 150ms, ease-out);
+			content: "";
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			left: 2px;
+			top: 50%;
+			margin-top: -12px;
+			background-color: @white;
+		}
+	}
+
+	&.custom-toggle-pro:checked + label {
+		background-color: @blue;
+
+		&:before {
+			left: ~"calc(100% - 26px)";
+		}
+	}
+}

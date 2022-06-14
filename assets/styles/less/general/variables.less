@@ -1,0 +1,206 @@
+/*------------------------------------------------------------------
+# [Variables]
+------------------------------------------------------------------*/
+
+/*************** 1. COLORS ***************/
+
+/*****---------- 1.1 Base Colors ----------*****/
+
+@black: #000000;
+@black-1: #707580; //#989898;
+@black-roll: #494C52; //#666;
+
+@white: #FFFFFF;
+@white-1: #F3F5F6; //#F6F6F5;
+@white-2: #EFEFEF;
+
+@grey: #D2D2D1;
+@grey-1: #707580; //#989898;
+@grey-2: #707070;
+@grey-3: #424547;
+
+@indigo-1: #F8F9FD;
+@indigo-2: #EEF0FB;
+
+@inactive: #D5DDE0;
+
+@red: #FF1E43;
+@red-roll: #FE5671;
+@red-rank: #E02020;
+@red-low: #F97F8F; //#FBE8E8;
+@red-low-txt: #E44561;
+@red-low-bg: #FEECEE;
+@green: #66CD94; //#00C58D;
+@green-rank: #4E9800;
+@green-low: #68E2AC; //#EDF4E5;
+@green-low-txt: #009B7D;
+@green-low-bg: #E7FBEF;
+@blue: #4E63CE; //#4251FF;
+@blue-roll: #6889E2;
+@blue-light: #00E7FF;
+@yellow: #FFE45D; //#FFC001;
+@blue-grey: #E8ECED;
+@blue-grey-dark: #A0AEB4;
+@grey-low: #F0F1F2;
+@warning: #FFA66C;
+@warning-txt: #E55A00;
+
+@deactivated: @grey;
+
+@primary-btn-color: @blue;
+@secondary-btn-color: @blue;
+
+@scrollbar-track-piece: @blue-grey;
+@scrollbar-thumb: @grey-1;
+
+/*****---------- 1.2 Genre Colors ----------*****/
+
+@country: #cd79ba;
+@pop: #66c2e7;
+@hip-hop: #66d2d6;
+@rnb: #66c9ab ;
+@latin: #f4729b;
+@electronic: #66d8ed;
+@rock: #7baad5;
+@metal: #798cc2;
+@punk: #a281bd;
+@jazz: #a6d78f;
+@reggae: #fdd471;
+@blues: #66cd94;
+@classical: #c9e188;
+@religious: #e0e97f;
+@european: #f5907a;
+@asian: #fabc78;
+@middle-eastern: #f0f070;
+@african: #ffe566;
+
+
+/*****---------- 1.3 Channel Colors ----------*****/
+
+@viberate: #FF1F43;
+@viberate-low: #FF627B;
+@viberate-lower: #FF8FA1;
+@instagram: #C13684;
+@instagram-low: #D372A8;
+@instagram-lower: #E09AC1;
+@facebook: #1877F2;
+@facebook-low: #5D9FF5;
+@facebook-lower: #8BBBF8;
+@twitter: #00ACEE;
+@twitter-low: #4CC4F3;
+@twitter-lower: #7FD5F6;
+@youtube: #FF0000;
+@youtube-low: #FF4C4C;
+@youtube-lower: #FF7F7F;
+@spotify: #1DB954;
+@spotify-low: #60CE87; //#61E38F;
+@spotify-lower: #8EEBAF;
+@deezer: #00796B;
+@deezer-low: #4CA197;
+@deezer-lower: #7FBCB5;
+@soundcloud: #FF6400;
+@soundcloud-low: #FF924C;
+@soundcloud-lower: #FFB17F;
+@shazam: #2255FF;
+@shazam-low: #6488FF;
+@shazam-lower: #90AAFF;
+@tiktok: #3CDAE5;
+@tiktok-low: #76E5EC;
+@tiktok-lower: #9DECF2;
+@bandsintown: #00B4B3;
+@bandsintown-low: #4CCAC9;
+@bandsintown-lower: #7FD9D9;
+@beatport: #01E697; //#99CC00;
+@beatport-low: #4DEDB6; //#B7DB4C;
+@beatport-lower: #80F2CB; //#C1D77F;
+@airplay: #F68051;
+@airplay-low: #F8A685;
+@airplay-lower: #FABFA8;
+@social-media: #6A4ECE;
+@social-media-low: #9683DC;
+@social-media-lower: #B4A6E6;
+
+
+//landings
+
+@laptop-offset: -130px;
+
+
+/*************** 2. FONTS ***************/
+
+/*****---------- 2.1 Font Variables ----------*****/
+
+@suiss-int: 'suisseInt', sans-serif;
+@suiss-int-mono: 'suisseIntMono', sans-serif;
+//@roboto-condensed: 'Roboto Condensed', sans-serif;
+@icon-font: "icomoon";
+
+@base-font: @suiss-int;
+@base-font-size: 14;
+@base-line-height: 1.5em;
+@base-letter-spacing: 0.5px;
+
+@text-color: @black;
+
+@base-color: rgb(35,31,32);
+@base-color-light: rgb(90,90,90);
+@comp-color: spin(@base-color, 180);
+@border-color: lighten(@base-color, 60%);
+
+
+/*************** 4. LAYOUT ***************/
+
+/*****---------- 4.1 Page Variables ----------*****/
+
+@max-page-width: 1440px;
+@max-page-mq-width: 1440px;
+
+@page_spacer_mobile: 24px;
+@page_spacer_mobile_landscape: 24px;
+//@page_spacer_tablet: 50px;
+@page_spacer_tablet: 40px;
+//@page_spacer_tablet_landscape: 70px;
+@page_spacer_tablet_landscape: 40px;
+@page_spacer_desktop: 90px;
+
+@landing-page-width: 1128px;
+@landing-max-page-width: 1128px + (@page_spacer_desktop*2);
+
+/*****---------- 4.2 Section Variables ----------*****/
+
+@section_spacer_mobile: 40px;			//was 80
+@section_spacer_mobile_landscape: 40px; //was 80
+@section_spacer_tablet: 120px;
+@section_spacer_tablet_landscape: 120px;
+@section_spacer_desktop: 120px;
+
+@section_spacer_fullscreen_mobile: 40px;
+@section_spacer_fullscreen_tablet: 60px;
+@section_spacer_fullscreen_tablet_landscape: 90px;
+@section_spacer_fullscreen_desktop: 90px;
+
+
+/*************** 5. ANIMATION ***************/
+
+/*****---------- 5.1 Animation variables ----------*****/
+
+@ease-in-quad: cubic-bezier(.55, .085, .68, .53);
+@ease-in-cubic: cubic-bezier(.550, .055, .675, .19);
+@ease-in-quart: cubic-bezier(.895, .03, .685, .22);
+@ease-in-quint: cubic-bezier(.755, .05, .855, .06);
+@ease-in-expo: cubic-bezier(.95, .05, .795, .035);
+@ease-in-circ: cubic-bezier(.6, .04, .98, .335);
+
+@ease-out-quad: cubic-bezier(.25, .46, .45, .94);
+@ease-out-cubic: cubic-bezier(.215, .61, .355, 1);
+@ease-out-quart: cubic-bezier(.165, .84, .44, 1);
+@ease-out-quint: cubic-bezier(.23, 1, .32, 1);
+@ease-out-expo: cubic-bezier(.19, 1, .22, 1);
+@ease-out-circ: cubic-bezier(.075, .82, .165, 1);
+
+@ease-in-out-quad: cubic-bezier(.455, .03, .515, .955);
+@ease-in-out-cubic: cubic-bezier(.645, .045, .355, 1);
+@ease-in-out-quart: cubic-bezier(.77, 0, .175, 1);
+@ease-in-out-quint: cubic-bezier(.86, 0, .07, 1);
+@ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+@ease-in-out-circ: cubic-bezier(.785, .135, .15, .86);

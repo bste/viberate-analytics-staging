@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="431px" height="448px" viewBox="0 0 431 448" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Vectors/Bar Chart 01</title>
+    <defs>
+        <linearGradient x1="85.8646414%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#B947AA" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#C23CA8" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="New-Version-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.721672421">
+        <g id="Group" transform="translate(1.000000, 0.000000)" fill="url(#linearGradient-1)">
+            <g id="Group" transform="translate(-0.201803, 0.000000)">
+                <polygon id="Mask" transform="translate(85.880721, 231.092506) rotate(-270.000000) translate(-85.880721, -231.092506) " points="-75.2188103 218.823831 246.980253 218.823831 246.980253 243.36118 -75.2188103 243.36118"></polygon>
+                <polygon id="Mask" transform="translate(49.074698, 261.172131) rotate(-270.000000) translate(-49.074698, -261.172131) " points="-112.024834 248.903457 210.174229 248.903457 210.174229 273.440806 -112.024834 273.440806"></polygon>
+                <polygon id="Mask" transform="translate(122.686745, 204.483607) rotate(-270.000000) translate(-122.686745, -204.483607) " points="-38.4127869 192.214932 283.786276 192.214932 283.786276 216.752281 -38.4127869 216.752281"></polygon>
+                <polygon id="Mask" transform="translate(159.492768, 161.099532) rotate(-270.000000) translate(-159.492768, -161.099532) " points="-1.60676355 148.830857 320.5923 148.830857 320.5923 173.368206 -1.60676355 173.368206"></polygon>
+                <polygon id="Mask" transform="translate(196.298791, 231.670960) rotate(-270.000000) translate(-196.298791, -231.670960) " points="35.1992598 219.402286 357.398323 219.402286 357.398323 243.939635 35.1992598 243.939635"></polygon>
+                <polygon id="Mask" transform="translate(233.104815, 267.535129) rotate(-270.000000) translate(-233.104815, -267.535129) " points="72.0052832 255.266454 394.204346 255.266454 394.204346 279.803803 72.0052832 279.803803"></polygon>
+                <polygon id="Mask" transform="translate(269.910838, 310.919204) rotate(-270.000000) translate(-269.910838, -310.919204) " points="108.811307 298.650529 431.01037 298.650529 431.01037 323.187878 108.811307 323.187878"></polygon>
+                <polygon id="Mask" transform="translate(306.716862, 267.535129) rotate(-270.000000) translate(-306.716862, -267.535129) " points="145.61733 255.266454 467.816393 255.266454 467.816393 279.803803 145.61733 279.803803"></polygon>
+                <polygon id="Mask" transform="translate(343.522885, 185.973068) rotate(-270.000000) translate(-343.522885, -185.973068) " points="182.423353 173.704393 504.622417 173.704393 504.622417 198.241742 182.423353 198.241742"></polygon>
+                <polygon id="Mask-Copy-2" transform="translate(12.268674, 291.251756) rotate(-270.000000) translate(-12.268674, -291.251756) " points="-148.830857 278.983082 173.368206 278.983082 173.368206 303.520431 -148.830857 303.520431"></polygon>
+                <polygon id="Mask-Copy" transform="translate(380.328908, 275.633489) rotate(-270.000000) translate(-380.328908, -275.633489) " points="219.229377 263.364815 541.42844 263.364815 541.42844 287.902164 219.229377 287.902164"></polygon>
+                <polygon id="Mask-Copy-3" transform="translate(417.134932, 332.900468) rotate(-270.000000) translate(-417.134932, -332.900468) " points="256.0354 320.631794 578.234463 320.631794 578.234463 345.169143 256.0354 345.169143"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

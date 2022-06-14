@@ -1,0 +1,170 @@
+/*------------------------------------------------------------------
+# [Global]
+------------------------------------------------------------------*/
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ol {
+	margin: 0;
+	padding: 0 15px;
+
+	li {
+		list-style: decimal;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+button {
+	outline: none;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+input, textarea, select {
+	-webkit-appearance: none;
+	-webkit-border-radius:0; 
+	border-radius:0;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.relative {
+	position: relative;
+}
+
+.blur {
+	.blur(4px);
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.absolute {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.media-container {
+	position: relative;
+	padding-bottom: 56.25%; /*16:9*/
+	height: 0;
+	overflow: hidden;
+	width: 100%;
+
+	iframe,
+	object,
+	embed,
+	video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.media-controller {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 2;
+	}
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+&.no-wrap {
+	
+}
+
+.full-width {
+	width: 100%;
+}
+
+.no-overflow {
+	overflow: hidden;
+}
+
+.display-none {
+	display: none;
+}
+
+.display-block {
+	display: block;
+}
+
+.display-flex {
+	display: flex;
+}
+
+.hide-mobile {
+	display: none;
+
+	@media @bp_768 {
+		display: block;
+	}
+}
+
+.hide-mobile-inline {
+	display: none;
+
+	@media @bp_768 {
+		display: inline-block;
+	}
+}
+
+.prevent-click {
+	.prevent-click();
+}
+
+.underline-text {
+	.text-decoration-ink;
+}
