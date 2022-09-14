@@ -535,6 +535,14 @@
 								<div class="" id="lottie-2" style="max-width: 800px; max-height: 500px; display: flex;"></div>
 							</li>
 
+							<li class="swiper-slide" style="display: flex; justify-content: center; align-items: center;">
+								<div class="" id="lottie-3" style="max-width: 800px; max-height: 500px; display: flex;"></div>
+							</li>
+
+							<li class="swiper-slide" style="display: flex; justify-content: center; align-items: center;">
+								<div class="" id="lottie-4" style="max-width: 800px; max-height: 500px; display: flex;"></div>
+							</li>							
+
 						</ul>
 
 						<div class="swiper-pagination"></div>
@@ -745,10 +753,12 @@
 
 		let lottieContainer1 = document.getElementById("lottie-1");
 		let lottieContainer2 = document.getElementById("lottie-2");
+		let lottieContainer3 = document.getElementById("lottie-3");
+		let lottieContainer4 = document.getElementById("lottie-4");
 
 		let lottie1 = lottie.loadAnimation({
 			container: lottieContainer1,
-			path: 'https://lottie.host/5ffd6b6d-8bc0-4141-9925-f75db02c6f57/63l2zPzOgq.json',
+			path: 'https://lottie.host/5ffd6b6d-8bc0-4141-9925-f75db02c6f57/63l2zPzOgq.json?v=1',
 			renderer: 'svg',
 			loop: true,
 			speed: 0,
@@ -758,31 +768,69 @@
 
 		let lottie2 = lottie.loadAnimation({
 			container: lottieContainer2,
-			path: 'https://lottie.host/eb47673d-e7f4-44de-8dc9-63a452e2ab22/B08eTsdaBS.json',
+			path: 'https://lottie.host/eb47673d-e7f4-44de-8dc9-63a452e2ab22/B08eTsdaBS.json?v=2',
 			renderer: 'svg',
 			loop: true,
 			speed: 0,
 			name: 'l2',
 		});
 
+		let lottie3 = lottie.loadAnimation({
+			container: lottieContainer3,
+			path: 'https://lottie.host/5ffd6b6d-8bc0-4141-9925-f75db02c6f57/63l2zPzOgq.json?v=3',
+			renderer: 'svg',
+			loop: true,
+			speed: 0,
+			name: 'l3',
+		});
+
+		let lottie4 = lottie.loadAnimation({
+			container: lottieContainer4,
+			path: 'https://lottie.host/eb47673d-e7f4-44de-8dc9-63a452e2ab22/B08eTsdaBS.json?v=4',
+			renderer: 'svg',
+			loop: true,
+			speed: 0,
+			name: 'l4',
+		});
+
 		lottie1.addEventListener("DOMLoaded", () => {
 			console.log("1 ready!");
-			lottie1.setSpeed(3);
-			lottie2.setSpeed(0);
 		});
 
 		lottie1.addEventListener("loopComplete", () => {
 			console.log("1 completed!");
-			lottie1.setSpeed(0);
-			lottie2.setSpeed(1);
+			lottie1.setSpeed(1);
+			lottie2.setSpeed(0);
+			lottie3.setSpeed(0);
+			lottie4.setSpeed(0);
 			swiperHome.slideNext();
 		});
 
 		lottie2.addEventListener("loopComplete", () => {
 			console.log("2 completed!");
-			lottie1.setSpeed(1);
+			lottie1.setSpeed(0);
+			lottie2.setSpeed(1);
+			lottie3.setSpeed(0);
+			lottie4.setSpeed(0);
+			swiperHome.slideNext();
+		});
+
+		lottie3.addEventListener("loopComplete", () => {
+			console.log("3 completed!");
+			lottie1.setSpeed(0);
 			lottie2.setSpeed(0);
-			swiperHome.slidePrev();
+			lottie3.setSpeed(1);
+			lottie4.setSpeed(0);
+			swiperHome.slideNext();
+		});
+
+		lottie4.addEventListener("loopComplete", () => {
+			console.log("4 completed!");
+			swiperHome.slideNext();
+			lottie1.setSpeed(0);
+			lottie2.setSpeed(0);
+			lottie3.setSpeed(0);
+			lottie4.setSpeed(1);
 		});
 
 		/*document.getElementById("btn1").onclick = function() {
