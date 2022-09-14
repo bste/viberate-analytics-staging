@@ -774,13 +774,13 @@
 		lottie1.addEventListener("loopComplete", () => {
 			console.log("1 completed!");
 			lottie1.setSpeed(0);
-			lottie2.setSpeed(3);
+			lottie2.setSpeed(1);
 			swiperHome.slideNext();
 		});
 
 		lottie2.addEventListener("loopComplete", () => {
 			console.log("2 completed!");
-			lottie1.setSpeed(3);
+			lottie1.setSpeed(1);
 			lottie2.setSpeed(0);
 			swiperHome.slidePrev();
 		});
