@@ -795,12 +795,16 @@
 
 		lottie1.addEventListener("DOMLoaded", () => {
 			console.log("1 ready!");
+			lottie1.setSpeed(1);
+			lottie2.setSpeed(0);
+			lottie3.setSpeed(0);
+			lottie4.setSpeed(0);
 		});
 
 		lottie1.addEventListener("loopComplete", () => {
 			console.log("1 completed!");
-			lottie1.setSpeed(1);
-			lottie2.setSpeed(0);
+			lottie1.setSpeed(0);
+			lottie2.setSpeed(1);
 			lottie3.setSpeed(0);
 			lottie4.setSpeed(0);
 			swiperHome.slideNext();
@@ -809,8 +813,8 @@
 		lottie2.addEventListener("loopComplete", () => {
 			console.log("2 completed!");
 			lottie1.setSpeed(0);
-			lottie2.setSpeed(1);
-			lottie3.setSpeed(0);
+			lottie2.setSpeed(0);
+			lottie3.setSpeed(1);
 			lottie4.setSpeed(0);
 			swiperHome.slideNext();
 		});
@@ -819,18 +823,18 @@
 			console.log("3 completed!");
 			lottie1.setSpeed(0);
 			lottie2.setSpeed(0);
-			lottie3.setSpeed(1);
-			lottie4.setSpeed(0);
+			lottie3.setSpeed(0);
+			lottie4.setSpeed(1);
 			swiperHome.slideNext();
 		});
 
 		lottie4.addEventListener("loopComplete", () => {
 			console.log("4 completed!");
-			swiperHome.slideNext();
-			lottie1.setSpeed(0);
+			lottie1.setSpeed(1);
 			lottie2.setSpeed(0);
 			lottie3.setSpeed(0);
-			lottie4.setSpeed(1);
+			lottie4.setSpeed(0);
+			swiperHome.slideNext();
 		});
 
 		/*document.getElementById("btn1").onclick = function() {
