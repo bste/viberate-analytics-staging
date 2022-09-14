@@ -1,0 +1,64 @@
+.card-weather {
+	.box-sizing();
+	height: 250px;
+	color: @black;
+	background-color: @white;
+	padding: 30px;
+
+	@media @bp_1440 {
+		height: 290px;
+	}
+
+	h3 {
+		.font-size(32);
+		line-height: 32px;
+		font-weight: 500;
+		position: absolute;
+		left: 30px;
+		bottom: 30px;
+		right: 30px;
+
+		@media @bp_1024 {
+			.font-size(42);
+			line-height: 42px;
+		}
+
+		@media @bp_1200 {
+			.font-size(32);
+			line-height: 32px;
+		}
+
+		@media @bp_1440 {
+			.font-size(42);
+			line-height: 42px;
+		}
+	}
+
+	.icon {
+		width: 70px;
+		position: absolute;
+		left: 30px;
+		top: 30px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.facts {
+		.font-size(14);
+		line-height: 20px;
+		font-family: @suiss-int-mono;
+		float: right;
+	}
+
+	.row {
+		display: table;
+
+		span {
+			display: table-cell;
+			padding: 2px 0 2px 10px;
+			text-align: left;
+		}
+	}
+}

@@ -11,8 +11,10 @@
 @black-roll: #494C52; //#666;
 
 @white: #FFFFFF;
-@white-1: #F3F5F6; //#F6F6F5;
+@white-1: #F4F6F6; //F6F6F5;
 @white-2: #EFEFEF;
+
+@empty-card: #F5F5F5;
 
 @grey: #D2D2D1;
 @grey-1: #707580; //#989898;
@@ -46,12 +48,16 @@
 @warning-txt: #E55A00;
 
 @deactivated: @grey;
+@lazy-placeholder: #646a76;
+
+@zendesk: #93A3B2;
 
 @primary-btn-color: @blue;
 @secondary-btn-color: @blue;
 
 @scrollbar-track-piece: @blue-grey;
 @scrollbar-thumb: @grey-1;
+
 
 /*****---------- 1.2 Genre Colors ----------*****/
 
@@ -120,10 +126,15 @@
 @social-media-low: #9683DC;
 @social-media-lower: #B4A6E6;
 
+@female: #FF99CE;
+@male: #80E4E8;
+
+@lower-value: #A4A5A8;
+@higher-value: #494C52;
 
 //landings
 
-@laptop-offset: -130px;
+@laptop-offset: -150px;
 
 
 /*************** 2. FONTS ***************/
@@ -132,7 +143,7 @@
 
 @suiss-int: 'suisseInt', sans-serif;
 @suiss-int-mono: 'suisseIntMono', sans-serif;
-//@roboto-condensed: 'Roboto Condensed', sans-serif;
+@roboto-condensed: 'Roboto Condensed', sans-serif;
 @icon-font: "icomoon";
 
 @base-font: @suiss-int;
@@ -148,6 +159,26 @@
 @border-color: lighten(@base-color, 60%);
 
 
+/*************** 3. FORMS ***************/
+
+/*****---------- 3.1 Form Variables ----------*****/
+
+//@input-background: #F5F5F5;
+//@input-text-color: @black;
+//@input-border: #CCC;
+//@input-border-width: 0;
+//@input-border-style: solid;
+//@input-focus: #FFB932;
+//@input-error-border: @error;
+//@input-valid-border: @success;
+//@input-error: @dark;
+//@input-valid: @dark;
+//@label: @dark;
+//@select-hover: #F5F5F5;
+//@placeholder-color: #ccc;
+//@disabled: #ccc;
+
+
 /*************** 4. LAYOUT ***************/
 
 /*****---------- 4.1 Page Variables ----------*****/
@@ -155,8 +186,8 @@
 @max-page-width: 1440px;
 @max-page-mq-width: 1440px;
 
-@page_spacer_mobile: 24px;
-@page_spacer_mobile_landscape: 24px;
+@page_spacer_mobile: 16px;
+@page_spacer_mobile_landscape: 16px;
 //@page_spacer_tablet: 50px;
 @page_spacer_tablet: 40px;
 //@page_spacer_tablet_landscape: 70px;
@@ -178,6 +209,19 @@
 @section_spacer_fullscreen_tablet: 60px;
 @section_spacer_fullscreen_tablet_landscape: 90px;
 @section_spacer_fullscreen_desktop: 90px;
+
+/*****---------- 4.3 Notifications ----------*****/
+
+@notification-color: @blue;
+@notification-color-opacity: 1;
+@notification-color-text: @white;
+
+/*****---------- 4.4 Header ----------*****/
+
+@header-height: 64px;
+@header-mobile-height: 64px; //was 40px
+@header-tablet-height: 64px; //was 70px
+@header-desktop-height: 64px; //was 90px
 
 
 /*************** 5. ANIMATION ***************/

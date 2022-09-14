@@ -1,0 +1,45 @@
+.card-review {
+	.box-sizing();
+	display: flex;
+	flex-direction: column;
+	background-color: @white;
+	//padding: 60px 20px 50px 20px;
+	padding: 30px 20px 50px 20px;
+	min-height: 240px;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: 20px 20px;
+	background-size: 16px;
+
+	footer {
+		.font-size(12);
+		height: 20px;
+		color: @grey-1;
+		position: absolute;
+		left: 20px;
+		right: 20px;
+		bottom: 20px;		
+	}
+
+	.user {
+		.text-overflow;
+		display: block;
+		padding-right: 50px;
+	}
+
+	.btn-report {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		padding: 0;
+		height: auto;
+	}
+
+	&.positive {
+		//background-image: url(../images/svg/thumbs-up.svg);
+	}
+
+	&.negative {
+		//background-image: url(../images/svg/thumbs-down.svg);
+	}
+}

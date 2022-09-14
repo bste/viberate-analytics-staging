@@ -1,0 +1,130 @@
+.section-lineup-event {
+
+	footer {
+		text-align: right;
+		padding-top: 20px;
+	}
+
+	.section-main {
+
+		@media @bp_1024 {
+			.clearfix;
+			margin: 0 0 0 -15px;
+			display: flex;
+		}
+	}
+
+	.lineup-filter {
+		.clearfix;
+		padding-bottom: 30px;
+		text-align: left;
+
+		@media @bp_1024 {
+			.box-sizing;
+			width: 33.33%;
+			float: left;
+			padding: 0 15px;
+			padding-bottom: 0;
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			padding-right: 60px;
+		}
+
+		@media @bp_1200 {
+			flex: 1;
+			width: 25%;
+			padding-right: 90px;
+		}
+
+		.btn {
+			text-align: left;
+		}
+	}
+
+	.btn-filter-lineup {
+		margin-right: 15px;
+		
+		@media @bp_1024 {
+			margin-right: 0;
+			float: left;
+			clear: both;
+			margin-top: 10px;
+		}
+
+		@media @bp_1440 {
+			margin-top: 25px;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.swiper-main {
+		.box-sizing;
+
+		@media @bp_768 {
+			margin: 0 -@page_spacer_tablet;
+			padding: 0 @page_spacer_tablet;
+		}
+
+		@media @bp_1024 {
+			width: 66.66%;
+			float: right;
+			margin: 0;
+			padding: 0 15px;
+			margin: 0 -@page_spacer_tablet_landscape;
+			padding: 0 @page_spacer_tablet_landscape;
+		}
+
+		@media @bp_1200 {
+			width: 75%;
+			flex: 3;
+			margin: 0 -@page_spacer_desktop;
+			padding: 0 @page_spacer_desktop;
+		}
+	}
+
+	.swiper-container {
+		margin: 0 -@page_spacer_mobile;
+		padding: 0 @page_spacer_mobile;
+
+		@media @bp_480 {
+			margin: 0 -@page_spacer_mobile_landscape;
+			padding: 0 @page_spacer_mobile_landscape;
+		}
+
+		@media @bp_768 {
+			margin: 0 -@page_spacer_tablet;
+			padding: 0 @page_spacer_tablet;
+		}
+
+		@media @bp_1024 {
+			margin: 0 -@page_spacer_tablet_landscape;
+			padding: 0 @page_spacer_tablet_landscape;
+		}
+
+		@media @bp_1200 {
+			margin: 0 -@page_spacer_desktop;
+			padding: 0 @page_spacer_desktop;
+		}
+	}
+
+	.swiper-slide {
+		width: 290px;
+	}
+
+	.card-entity.horizontal {
+		
+		@media @bp_768 {
+			width: 100%;
+		}
+	}
+}

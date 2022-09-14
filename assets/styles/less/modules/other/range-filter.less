@@ -1,0 +1,108 @@
+.range-filter {
+	.font-size(12);
+	line-height: 20px;
+	line-height: 1;
+	max-width: 300px;
+	margin-top: 40px;
+	color: @white;
+	letter-spacing: 0.5px;
+
+	&.horizontal {
+		display: flex;
+		align-items: flex-start;
+
+		label {
+			.font-size(12);
+			margin-right: 8px;
+			line-height: 1;
+			margin-top: -2px;
+		}
+
+		.rangeslider-horizontal {
+			min-width: 150px;
+		}
+	}
+
+	&.black {
+		color: @black;
+
+		.range-slider-value {
+			color: @black;
+		}
+
+		.btn-range-slider {
+			color: @black;
+		}
+
+		.rangeslider {
+
+			.rangeslider__handle {
+				background: @black;
+			}
+		}
+
+		.rangeslider-horizontal {
+			border: 1px solid @black;
+
+			.rangeslider__handle {
+				background-color: @black;
+			}
+		}
+	}
+
+	&.v2 {
+
+		.buttons {
+			display: flex;
+			justify-content: space-between;
+
+			&:before,
+			&:after {
+				content: none;
+			}
+		}
+	}
+
+	&.disabled {
+		.opacity(0.2);
+		.prevent-click();
+	}
+
+	label {
+		display: block;
+		line-height: 20px;
+		margin-bottom: 12px;
+	}
+
+	.range-slider-value {
+		.font-size(8);
+		color: @white; //@grey-1;
+		float: left;
+		letter-spacing: 0.5px;
+		line-height: 1;
+
+		&.active {
+			.font-size(10);
+			font-weight: 500;
+			//color: @black;
+
+			.btn-range-slider {
+				.font-size(10);
+			}
+		}
+	}
+	
+	.btn-range-slider {
+		.font-size(8);
+		font-family: @suiss-int;
+		text-transform: uppercase;
+		color: @white;
+		float: right;
+	}
+
+	.buttons {
+		.clearfix;
+		padding-bottom: 12px;
+		margin-top: 8px;
+	}
+}

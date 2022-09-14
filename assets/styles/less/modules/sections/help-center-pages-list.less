@@ -1,0 +1,173 @@
+.section-help-center-pages-list {
+
+	@media @bp_768 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	&.v2 {
+
+		.links {
+
+			& + h3 {
+				padding-top: 27px;
+			}
+
+			.item {
+
+				@media @bp_768 {
+					width: 50%;
+					padding-top: 13px;
+					padding-bottom: 13px;
+				}
+			}
+		}
+
+		h2 {
+
+			@media @bp_768 {
+				padding-bottom: 27px;
+			}
+		}
+
+		h3 {
+
+			@media @bp_768 {
+				padding-top: 13px;
+				padding-bottom: 13px;
+			}
+		}
+	}
+
+	&.loading {
+		min-height: 200px;
+
+		@media @bp_768 {
+			min-height: 300px;
+		}
+	}
+
+	&.white {
+
+		& + .section-help-center-banner {
+			background-color: transparent;
+		}
+	}
+
+	&.transparent {
+
+		& + .section-help-center-banner {
+			background-color: @white;
+		}
+	}
+
+	.section-main {
+		margin: 0 auto;
+		max-width: 1100px;
+	}
+
+	h2 {
+		.font-size(26);
+		line-height: 46px;
+		font-weight: 500;
+		padding-bottom: 30px;
+		color: inherit;
+
+		@media @bp_768 {
+			.font-size(32);
+			padding-bottom: 60px;
+		}
+	}
+
+	h3 {
+		.font-size(22);
+		line-height: 26px;
+		font-weight: 600;
+		padding-bottom: 30px;
+		color: inherit;
+
+		@media @bp_768 {
+			.font-size(24);
+			line-height: 32px;
+			padding-bottom: 45px;
+		}
+	}	
+
+	.links {
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			margin: 0 -12px -15px -12px;
+			flex-wrap: wrap;
+		}
+
+		.item {
+			padding-top: 20px;
+
+			@media @bp_768 {
+				.box-sizing;
+				width: 50%;
+				padding: 15px 12px;
+			}
+
+			&:first-child {
+				padding-top: 0;
+
+				@media @bp_768 {
+					padding: 15px 12px;
+				}
+			}
+		}
+	}
+
+	.link-to-page {
+		.font-size(16);
+		line-height: 26px;
+		position: relative;
+		color: @blue;
+
+		@media @bp_768 {
+			.font-size(18);
+			line-height: 28px;
+		}
+	}
+
+	.cols {
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	.col {
+
+		@media @bp_768 {
+			.box-sizing;
+			display: flex;
+			flex-direction: column;
+			flex: 0 1 50%;
+			padding-right: 10%;
+		}
+
+		&.col-2 {
+			padding-top: 40px;
+
+			@media @bp_768 {
+				padding-right: 12px;
+				padding-left: 10%;
+				padding-top: 0;
+			}
+		}
+
+		.item {
+
+			@media @bp_768 {
+				.box-sizing;
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.section-country-landing-heading {
+	padding: 0;
+
+	&.with-picture {
+		background-size: cover;
+
+		> .page {
+
+			@media @bp_1400 {
+				min-height: 620px;
+			}
+		}
+	}
+
+	> .page {
+		.clearfix;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		display: flex;
+		align-items: center;
+		min-height: 130px;
+	}
+
+	h1 {
+		.font-size(28);
+		line-height: 30px;
+		font-weight: 500;
+
+		&.show {
+			.animation(fade-in 1s linear forwards);
+		}
+
+		@media @bp_768 {
+			.font-size(44);
+			line-height: 44px;
+		}
+	}
+}

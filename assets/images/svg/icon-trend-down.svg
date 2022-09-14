@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/trend/down</title>
+    <g id="icon/trend/down" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Rectangle" fill="#E44561" x="0" y="0" width="12" height="12"></rect>
+            <path d="M0.94973704,0.00692799877 L7.75871438,6.815928 L7.76341004,3.43591654 L9.09277079,3.43591654 L9.09277079,9.09277079 L3.43591654,9.09277079 L3.43591654,7.76341004 L6.81571438,7.758928 L0.0067143757,0.949523417 L0.0067143757,0.00692799877 L0.94973704,0.00692799877 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,152 @@
+.custom-input {
+	position: relative;
+
+	input[type="text"],
+	input[type="number"],
+	input[type="email"],
+	input[type="password"],
+	input[type="tel"] {
+		background-color: transparent;
+		padding-top: 10px;
+
+		&.optional {
+			font-style: italic;
+
+			& + label {
+				font-style: italic;
+			}
+		}
+
+		&.currency {
+			padding-right: 40px;
+
+			&:disabled {
+				padding-right: 40px;
+				
+				& + label {
+					padding-right: 70px;
+				}
+			}
+
+			& + label {
+				padding-right: 40px;
+			}
+
+			&:disabled + label + .unit {
+				color: #e5e5e5;
+				right: 30px;
+			}
+		}
+
+		&:not(:placeholder-shown),
+		&:focus {
+
+			& + label {
+				.font-size(10);
+				top: 1px;
+				cursor: auto;
+			}
+		}
+
+		&::placeholder {
+			.opacity(0);
+		}
+
+		&:disabled {
+			background-image: url('../images/svg/lock-disabled.svg');
+			background-position: right center;
+			background-repeat: no-repeat;
+			background-size: 14px;
+			color: #e5e5e5;
+			border-color: #e5e5e5;
+
+			& label + .unit {
+				right: 30px;
+			}
+		}
+
+		&:disabled + label {
+			color: #e5e5e5;
+		}
+
+		&:read-only {
+			padding-right: 60px;
+
+			&:not(.mbsc-comp) {
+				//background-image: url('../images/svg/lock-disabled.svg');
+				//background-position: right center;
+				//background-repeat: no-repeat;
+				//background-size: 14px;
+				color: @grey-1;
+				border-color: @grey-1;
+			}
+		}
+	}
+
+	label {
+		.transition(all, 200ms, ease-out);
+		.font-size(14);
+		line-height: 18px;
+		position: absolute;
+		text-transform: none;
+		letter-spacing: 0.5px;
+		top: 19px;
+		cursor: text;
+		z-index: -1;
+		color: @grey-1;
+		left: 0;
+		right: 0;
+		white-space: nowrap; 
+		overflow: hidden;
+		text-overflow: ellipsis;
+
+		&.small {
+			.font-size(10);
+			top: 1px;
+			cursor: auto;
+		}
+	}
+
+	.unit {
+		.font-size(14);
+		position: absolute;
+		right: 0;
+		top: 17px;
+		font-weight: 500;
+	}
+
+	.status-msg {
+		.font-size(10);
+		letter-spacing: 1px;
+		position: absolute;
+		right: 0;
+		top: 16px;
+		text-transform: uppercase;
+		font-family: @suiss-int-mono;
+	}
+
+	.results {
+		.box-sizing();
+		padding-top: 10px;
+		color: @grey-1;
+		display: none;
+		background-color: @white-1;
+		position: absolute;
+		overflow: hidden;
+		overflow-y: auto;
+		max-height: 115px;
+		top: 50px;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		scroll-behavior: smooth;
+
+		&.show {
+			display: block;
+		}
+	}
+}
+
+.custom-input + .error-msg {
+	position: absolute;
+}

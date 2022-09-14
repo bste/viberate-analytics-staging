@@ -1,0 +1,165 @@
+.section-genre-landing-heading {
+	padding: 0;
+
+	&.rock {
+
+		&:before {
+			background-color: @rock;
+		}
+	}
+
+	&.country {
+
+		&:before {
+			background-color: @country;
+		}
+	}
+
+	&.pop {
+
+		&:before {
+			background-color: @pop;
+		}
+	}
+
+	&.hip-hop {
+
+		&:before {
+			background-color: @hip-hop;
+		}
+	}
+
+	&.rnb {
+
+		&:before {
+			background-color: @rnb;
+		}
+	}
+
+	&.latin {
+
+		&:before {
+			background-color: @latin;
+		}
+	}
+
+	&.electronic {
+
+		&:before {
+			background-color: @electronic;
+		}
+	}
+
+	&.rock {
+
+		&:before {
+			background-color: @rock;
+		}
+	}
+
+	&.metal {
+		background-color: @metal;
+	}
+
+	&.punk {
+
+		&:before {
+			background-color: @punk;
+		}
+	}
+
+	&.jazz {
+
+		&:before {
+			background-color: @jazz;
+		}
+	}
+
+	&.reggae {
+
+		&:before {
+			background-color: @reggae;
+		}
+	}
+
+	&.blues {
+
+		&:before {
+			background-color: @blues;
+		}
+	}
+
+	&.classical {
+
+		&:before {
+			background-color: @classical;
+		}
+	}
+
+	&.religious {
+
+		&:before {
+			background-color: @religious;
+		}
+	}
+
+	&.european {
+
+		&:before {
+			background-color: @european;
+		}
+	}
+
+	&.asian {
+
+		&:before {
+			background-color: @asian;
+		}
+	}
+
+	&.middle-eastern {
+
+		&:before {
+			background-color: @middle-eastern;
+		}
+	}
+
+	&.african {
+
+		&:before {
+			background-color: @african;
+		}
+	}
+
+	&:before {
+		.animation(genre-slide-in .45s ease-out 1s forwards);
+		.translate(-101%,0);
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 0;
+		left: 0;
+	}
+
+	> .page {
+		.clearfix;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		display: flex;
+		align-items: center;
+		min-height: 130px;
+	}
+
+	h1 {
+		.font-size(28);
+		line-height: 30px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(46);
+			line-height: 46px;
+		}
+	}
+}

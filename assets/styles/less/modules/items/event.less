@@ -1,0 +1,262 @@
+.event-list-item {
+	.transition(opacity, 100ms, linear);
+	.box-sizing();
+	.clearfix;
+	width: 100%;
+	display: table;
+	padding: 15px 0;
+	border-bottom: 2px solid #323232;
+	color: @black;
+	position: relative;
+
+	&.trending {
+
+		.relative {
+
+			&:before {
+				content: "";
+				background-image: url('../images/svg/hot.svg');
+			}
+		}
+
+		.entity-badge {
+			left: -25px;
+			top: 21px;
+		}
+	}
+
+	&.featured {
+		background-color: @red;
+		color: @white;
+
+		&.trending {
+
+			.relative {
+
+				&:before {
+					content: "";
+					background-image: url('../images/svg/hot-black.svg');
+				}
+			}
+		}
+
+		.location,
+		.subgenre,
+		.genre {
+			color: @black;
+		}
+
+		.verified {
+			color: @black;
+
+			&:after {
+				background-image: url('../images/svg/checkmark.svg');
+			}
+		}
+	}
+
+	&:hover {
+
+		.event-cover {
+			.opacity(1);
+			width: auto;
+			height: auto;
+		}
+	}
+
+	.col {
+		.box-sizing();
+		padding: 0 10px;
+		display: table-cell;
+		vertical-align: middle;
+		position: relative;
+
+		@media @bp_768 {
+			padding: 0 20px;
+		}
+	}
+
+	.col-1 {
+		width: 100px;
+
+		@media @bp_768 {
+			width: 180px;
+		}
+		
+		@media @bp_1200 {
+			width: 180px;
+		}
+	}
+
+	.col-2 {
+	}
+
+	.col-3 {
+		display: none;
+
+		@media @bp_768 {
+			display: table-cell;
+			width: 300px;
+		}
+
+		@media @bp_1200 {
+			width: 300px;
+		}
+	}
+
+	.col-4 {
+		display: none;
+
+		@media @bp_768 {
+			display: table-cell;
+			width: 200px;
+		}
+
+		@media @bp_1200 {
+			text-align: right;
+			width: 200px;
+		}
+	}
+
+	.event-cover {
+		.transition(opacity, 300ms, linear);
+		.opacity(0);
+		height: 0px;
+		width: 0px;
+		position: absolute;
+		top: 100%;
+		left: 20px;
+		margin-top: 17px;
+		max-width: 450px;
+		z-index: 1;
+	}
+
+	time {
+		.font-size(18);
+		line-height: 22px;
+		font-weight: 500;
+		font-family: @suiss-int-mono;
+		text-transform: uppercase;
+		letter-spacing: -1px;
+
+		@media @bp_768 {
+			.font-size(24);
+			line-height: 31px;
+		}
+
+		span {
+			.font-size(10);
+			line-height: 14px;
+			display: block;
+			letter-spacing: 1px;
+
+			@media @bp_768 {
+				.font-size(14);
+				line-height: 18px;
+			}
+		}
+	}
+
+	h3,
+	.place {
+		.font-size(14);
+		.clamp-lines(1);
+		overflow: hidden;
+		line-height: 18px;
+		font-weight: 500;
+		height: 18px;
+		text-transform: uppercase;
+	}
+
+	.relative {
+
+		&:before {
+			content: none;
+			display: inline-block;
+			height: 16px;
+			width: 12px;
+			background-position: left bottom;
+			background-size: 12px;
+			background-repeat: no-repeat;
+			padding-right: 10px;
+			position: absolute;
+			left: -18px;
+			top: -1px;
+		}
+	}
+
+	.place {
+
+		&:hover {
+			.text-decoration-ink;
+		}
+	}
+
+	.lineup,
+	.location,
+	.subgenre,
+	.genre {
+		.font-size(12);
+		.clamp-lines(1);
+		overflow: hidden;
+		line-height: 18px;
+		height: 18px;
+		font-weight: 400;
+	}
+
+	.location,
+	.subgenre,
+	.genre {
+		color: @grey-1;
+	}
+
+	.genre {
+		text-transform: uppercase;
+	}
+
+	.entry {
+		.font-size(12);
+		line-height: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0 auto;
+		letter-spacing: 2.5px;
+		display: inline-block;
+		font-family: @suiss-int-mono;
+
+		&:hover {
+			.text-decoration-ink;
+		}
+	}
+
+	.verified {
+		.font-size(10);
+		line-height: 18px;
+		color: #7f7f7f;
+		display: block;
+		font-weight: 400;
+
+		&:after {
+			content: "";
+			display: inline-block;
+			width: 10px;
+			height: 8px;
+			background-image: url('../images/svg/checkmark-grey.svg');
+			background-size: 8px;
+			background-position: center;
+			background-repeat: no-repeat;
+			padding-left: 5px;
+		}
+	}
+
+	.entity-badge {
+		position: absolute;
+		left: -25px;
+		top: 3px;
+		background-color: @grey-1;
+	}
+
+	a {
+		color: inherit;
+	}
+}

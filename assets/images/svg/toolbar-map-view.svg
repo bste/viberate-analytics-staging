@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Map-view-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="collapsable-side-bar/displays/list-view" transform="translate(-488.000000, -23.000000)" fill="#989898">
+            <g id="Map-view-icon" transform="translate(488.000000, 23.000000)">
+                <path d="M0,25.4609 L25.461,25.4609 L25.461,-0.0001 L0,-0.0001 L0,25.4609 Z M2,23.4599 L23.462,23.4599 L23.462,1.9999 L2,1.9999 L2,23.4599 Z" id="Fill-1"></path>
+                <circle id="Oval" cx="13" cy="13" r="3"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

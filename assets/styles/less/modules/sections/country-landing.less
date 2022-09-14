@@ -1,0 +1,48 @@
+.section-country-landing {
+	padding: 0;
+
+	&.with-picture {
+		background-size: cover;
+
+		> .page {
+
+			@media @bp_1400 {
+				min-height: 620px;
+			}
+		}
+	}
+
+	> .page {
+		.clearfix;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		display: flex;
+		align-items: center;
+		min-height: 140px;
+
+		@media @bp_768 {
+			min-height: 260px;
+		}
+
+		@media @bp_1024 {
+			min-height: 430px;
+		}
+	}
+
+	h1 {
+		.font-size(28);
+		line-height: 30px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(44);
+			line-height: 44px;
+			letter-spacing: 0.5px;
+		}
+
+		@media @bp_1024 {
+			.font-size(120);
+			line-height: 120px;
+		}
+	}
+}

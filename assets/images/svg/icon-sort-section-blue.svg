@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="12px" viewBox="0 0 10 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/reorder</title>
+    <g id="3-final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="FINAL-custom-view" transform="translate(-1378.000000, -228.000000)">
+            <g id="Career-Health" transform="translate(295.000000, 200.000000)">
+                <g id="title-row" transform="translate(24.000000, 0.000000)">
+                    <g id="Group" transform="translate(1056.000000, 26.000000)">
+                        <polygon id="Bounds" points="0 0 16 0 16 16 0 16"></polygon>
+                        <path d="M13,9.5 L13,8.5 L3,8.5 L3,9.5 L13,9.5 Z M5.5,11 L8,14 L10.5,11 L5.5,11 Z M5.5,5 L8,2 L10.5,5 L5.5,5 Z M13,7.5 L13,6.5 L3,6.5 L3,7.5 L13,7.5 Z" id="Combined-Shape" fill="#4E63CE"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

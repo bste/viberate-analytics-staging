@@ -1,0 +1,148 @@
+.zendesk-widget {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	display: none;
+
+	@media @bp_768 {
+		right: 60px;
+		display: inline-block;
+	}
+
+	&.open {
+
+		.zendesk-widget-content {
+			width: 280px;
+
+			@media @bp_480 {
+				width: 340px;
+			}
+		}
+
+		.btn-zendesk-trigger {
+			.rounded-corners(0px);
+			.rounded-corners-top(8px);
+			padding: 0;
+			background-image: none;
+
+			&:after {
+				content: "";
+				position: absolute;
+				right: 20px;
+				top: 50%;
+				margin-top: -1px;
+				background-color: @black;
+				width: 10px;
+				height: 2px;
+			}
+
+			span {
+
+				&:first-child {
+					display: none;
+				}
+
+				&:last-child {
+					display: block;
+				}
+			}
+		}
+
+		article {
+			.transition(max-height, 1000ms, ease-out);
+			max-height: 1200px;
+		}
+	}
+
+	.zendesk-widget-content {
+		.transition(all, 300ms, ease-out);
+		width: 110px;
+		text-align: center;
+	}
+
+	.btn-zendesk-trigger {
+		.transition(all, 300ms, ease-out);
+		.rounded-corners(23px);
+		.font-size(15);
+		position: relative;
+		font-weight: 500;
+		height: 46px;
+		padding: 0 24px 0 52px;
+		background-image: url('../images/svg/chat.svg');
+		background-position: left 20px center;
+		background-size: 20px;
+		background-repeat: no-repeat;
+		color: @black;
+		background-color: @zendesk;
+		width: 100%;
+		text-align: center;
+
+		span {
+			display: none;
+
+			&:first-child {
+				display: block;
+			}
+		}
+	}
+
+	.btn-zendesk-register {
+		.rounded-corners(4px);
+		.font-size(14);
+		font-weight: 500;
+		color: @black;
+		background-color: @zendesk;
+		padding: 10px 40px;
+		text-decoration: none;
+	}
+
+	article {
+		.rounded-corners-bottom(8px);
+		.transition(max-height, 300ms, ease-out);
+		max-height: 0;
+		overflow: hidden;
+		height: auto;
+		background-color: @white;
+		color: #2F3941;
+		
+		.content {
+			.box-sizing();
+			width: 280px;
+			padding: 20px;
+
+			@media @bp_480 {
+				padding: 40px;
+				width: 340px;
+			}
+		}
+
+		p {
+			padding: 5px 0;
+		}
+
+		a {
+			text-decoration: underline;
+			color: #2F3941;
+		}
+	}
+}
+
+.zEWidget-launcher.zEWidget-launcher--active {
+	right: 20px !important;
+	bottom: 20px !important;
+	margin: 0 !important;
+
+	@media @bp_768 {
+		right: 60px !important;
+		bottom: 20px !important;
+	}
+}
+
+.zendesk-widget-embed,
+.zEWidget-launcher {
+	display: none;
+
+	@media @bp_768 {
+		display: block;
+	}
+}

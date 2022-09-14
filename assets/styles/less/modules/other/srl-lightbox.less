@@ -1,0 +1,60 @@
+#SRLLightbox {
+
+	.SRLThumbnailsContainer {
+		margin-bottom: 24px;
+	}
+
+	.SRLNextButton,
+	.SRLPrevButton {
+		width: 24px;
+		height: 24px;
+
+		&:before {
+			.box-shadow(0 2px 8px 0 rgba(0,0,0,0.08));
+			.rounded-corners(50%);
+			content: "";
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			background-color: @white;
+			background-repeat: no-repeat;
+			background-size: 8px;
+		}
+
+
+		> .SRLNextButton,
+		> .SRLPrevButton {
+			display: none;
+		}
+	}
+
+	.SRLNextButton {
+
+		&:before {
+			background-position: right 7px center;
+			background-image: url('../images/svg/chevron-right-blue.svg');
+		}
+
+		&:hover {
+
+			&:before {
+				background-image: url('../images/svg/chevron-right-blue-roll.svg');
+			}
+		}
+	}
+
+	.SRLPrevButton {
+
+		&:before {
+			background-position: left 7px center;
+			background-image: url('../images/svg/chevron-left-blue.svg');
+		}
+
+		&:hover {
+
+			&:before {
+				background-image: url('../images/svg/chevron-left-blue-roll.svg');
+			}
+		}
+	}
+}

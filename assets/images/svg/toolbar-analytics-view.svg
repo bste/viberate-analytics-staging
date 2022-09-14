@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 25 26" style="enable-background:new 0 0 25 26;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st2{mask:url(#mask-2_6_);fill-rule:evenodd;clip-rule:evenodd;stroke:#989898;stroke-linecap:square;}
+	.st3{filter:url(#Adobe_OpacityMaskFilter_1_);}
+	.st4{mask:url(#mask-2_5_);fill-rule:evenodd;clip-rule:evenodd;stroke:#989898;stroke-linecap:square;}
+	.st5{filter:url(#Adobe_OpacityMaskFilter_2_);}
+	.st6{mask:url(#mask-2_4_);fill-rule:evenodd;clip-rule:evenodd;stroke:#989898;stroke-linecap:square;}
+	.st7{fill:#989898;}
+</style>
+<title>7BCE05E1-E519-4359-A1C9-6E64008EF175</title>
+<desc>Created with sketchtool.</desc>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="8.89" y="4.19" width="6.59" height="18.34">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="8.89" y="4.19" width="6.59" height="18.34" id="mask-2_6_">
+	<g class="st0">
+		<polygon id="path-1_6_" class="st1" points="-0.31,24.15 24.31,24.15 24.31,4.69 -0.31,4.69 		"/>
+	</g>
+</mask>
+<path id="Fill-3" class="st2" d="M9.92,21.49h4.52V5.22H9.92V21.49z M14.71,22.02H9.65c-0.15,0-0.27-0.12-0.27-0.27V4.95
+	c0-0.15,0.12-0.27,0.27-0.27h5.05c0.15,0,0.27,0.12,0.27,0.27v16.8C14.97,21.9,14.85,22.02,14.71,22.02L14.71,22.02z"/>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_1_" filterUnits="userSpaceOnUse" x="16.53" y="10.79" width="6.59" height="11.74">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="16.53" y="10.79" width="6.59" height="11.74" id="mask-2_5_">
+	<g class="st3">
+		<polygon id="path-1_5_" class="st1" points="-0.31,24.15 24.31,24.15 24.31,4.69 -0.31,4.69 		"/>
+	</g>
+</mask>
+<path id="Fill-5" class="st4" d="M17.56,21.54h4.52v-9.76h-4.52V21.54z M22.35,22.02h-5.05c-0.15,0-0.27-0.11-0.27-0.24V11.53
+	c0-0.13,0.12-0.24,0.27-0.24h5.05c0.15,0,0.27,0.11,0.27,0.24v10.25C22.61,21.91,22.49,22.02,22.35,22.02L22.35,22.02z"/>
+<defs>
+	<filter id="Adobe_OpacityMaskFilter_2_" filterUnits="userSpaceOnUse" x="1.71" y="15.39" width="6.59" height="7.13">
+		<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+	</filter>
+</defs>
+<mask maskUnits="userSpaceOnUse" x="1.71" y="15.39" width="6.59" height="7.13" id="mask-2_4_">
+	<g class="st5">
+		<polygon id="path-1_4_" class="st1" points="-0.31,24.15 24.31,24.15 24.31,4.69 -0.31,4.69 		"/>
+	</g>
+</mask>
+<path id="Fill-6" class="st6" d="M2.74,21.49h4.52v-5.07H2.74V21.49z M7.53,22.02H2.47c-0.15,0-0.27-0.12-0.27-0.27v-5.6
+	c0-0.15,0.12-0.27,0.27-0.27h5.05c0.15,0,0.27,0.12,0.27,0.27v5.6C7.79,21.9,7.67,22.02,7.53,22.02L7.53,22.02z"/>
+<rect y="24.5" class="st7" width="25" height="1.5"/>
+</svg>

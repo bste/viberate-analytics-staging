@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="65px" height="64px" viewBox="0 0 65 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>account-and-subscription-icon</title>
+    <g id="Resources---FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="account-and-subscription-icon">
+            <rect id="Rectangle-Copy-5" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="64" height="64"></rect>
+            <g id="Help-center_Account" transform="translate(2.000000, 4.000000)">
+                <rect id="Rectangle" fill="#B2CAFA" fill-rule="nonzero" x="22.0960825" y="11.574379" width="39.9254014" height="40"></rect>
+                <g id="Group" stroke="#000000" stroke-width="2.67738863">
+                    <path d="M34.5114743,12.4536846 C34.5114743,19.3316648 28.9461682,24.9073693 22.0810153,24.9073693 C15.2158624,24.9073693 9.65055633,19.3316648 9.65055633,12.4536846 C9.65055633,5.57570454 15.2158624,0 22.0810153,0 C28.9461682,0 34.5114743,5.57570454 34.5114743,12.4536846 Z" id="Path"></path>
+                    <path d="M0,55 C0,42.7738693 9.89275311,32.8626321 22.0960825,32.8626321 C34.2994119,32.8626321 44.192165,42.7738693 44.192165,55" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

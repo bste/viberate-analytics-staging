@@ -1,9 +1,20 @@
 .container {
+	.transition(padding-bottom, 300ms, ease-out);
 	.box-sizing();
 	position: relative;
-	overflow: hidden;
+	//overflow: hidden;
+
+	@media @bp_1100 {
+		//overflow: visible;
+	}
 
 	&.white {
 		background-color: @white;
 	}
+}
+
+#__next {
+	.box-sizing();
+	height: 100%;
+	position: relative;
 }

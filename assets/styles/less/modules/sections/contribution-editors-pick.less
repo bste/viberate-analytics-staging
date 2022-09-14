@@ -1,0 +1,163 @@
+.section-contribution-editors-pick {
+	text-align: center;
+
+	&.black {
+		color: @white;
+
+		.card-article {
+
+			article {
+
+				.btn-tag {
+					border: 2px solid @white;
+				}
+			}
+		}
+
+		/*.swiper-pagination {
+
+			.swiper-pagination-bullet {
+				border-color: @white;
+			}
+
+			.swiper-pagination-bullet-active {
+				background-color: @white;
+			}
+		}*/
+	}
+
+	.threesome {
+		max-width: 400px;
+		margin: 0 auto;
+
+		@media @bp_768 {
+			max-width: none;
+			display: flex;
+			flex-direction: row;
+			margin: 0 -12px;
+		}
+
+		.item {
+			.box-sizing;
+
+			@media @bp_768 {
+				width: 33.33%;
+				padding: 0 12px;
+				display: flex;
+			}
+
+			& + .item {
+				padding-top: 16px;
+
+				@media @bp_768 {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+
+	.zero-state {
+		.font-size(16);
+		color: @grey-1;
+		text-align: center;
+
+		p {
+			margin: 0 auto;
+		}
+	}
+
+	h2 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 500;
+		padding-bottom: 40px;
+		color: inherit;
+
+		@media @bp_768 {
+			.font-size(42);
+			line-height: 49px;
+			padding-bottom: 60px;
+		}
+	}
+
+	.btn-solid {
+		margin-top: 40px;
+		min-width: 260px;
+		margin-bottom: 10px;
+
+		@media @bp_768 {
+			margin-top: 60px;
+			margin-bottom: 0;
+		}
+
+		&.border {
+			color: inherit;
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+		&.border.white {
+
+			&:hover {
+				color: @black;
+				background-color: @white;
+			}
+		}
+	}
+
+	.btn-tag {
+		.font-size(9);
+		border: 2px solid @black;
+		text-transform: uppercase;
+		padding: 2px 6px;
+
+		&:hover {
+			color: @black;
+			background-color: @white;
+		}
+	}
+
+	/*.swiper-main {
+		padding-bottom: 0;
+
+		.swiper-wrapper {
+			padding-bottom: 80px;
+
+			@media @bp_768 {
+				padding-bottom: 0;
+			}
+		}
+
+		.swiper-container {
+
+			@media @bp_768 {
+				padding-bottom: 0;
+			}
+		}
+
+		.swiper-slide {
+			text-align: center;
+			height: auto;
+		}
+
+		.swiper-pagination {
+			
+			@media @bp_768 {
+				display: none;
+			}
+
+			.swiper-pagination-bullet {
+				border-color: @black;
+			}
+
+			.swiper-pagination-bullet-active {
+				background-color: @black;
+			}
+		}
+
+		.card-article {
+			padding: 0 12px;
+		}
+	}*/
+
+}

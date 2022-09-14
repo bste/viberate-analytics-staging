@@ -1,0 +1,276 @@
+.pdf-export-header {
+
+	.page {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+		margin: 0 16px;
+	}
+
+	.logo {
+		.font-size(15);
+		line-height: 24px;
+		display: flex;
+		align-items: center;
+		color: @black;
+		font-weight: 500;
+		width: auto;
+		height: 34px;
+
+		img {
+			width: 34px;
+			height: 34px;
+			margin-right: 16px;
+		}
+	}
+
+	.meta-info {
+		.font-size(12);
+		line-height: 24px;
+		display: flex;
+		color: @grey-1;
+
+		.url {
+
+		}
+
+		.generated {
+
+			&:before {
+				content: "•";
+				margin: 0 8px;
+			}
+		}
+	}
+
+	.pdf-pager {
+		.rounded-corners(8px);
+		border: 1px solid #D8E0E2;
+		height: 46px;
+		display: flex;
+		flex: 1;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 24px;
+	}
+
+	.pager {
+		.font-size(12);
+		line-height: 16px;
+		color: @grey-1;
+		display: flex;
+		align-items: center;
+		margin-left: 24px;
+
+		img {
+			width: 28px;
+			height: 28px;
+			margin: 0 16px;
+		}
+	}
+
+	.entity {
+		display: flex;
+		align-items: center;
+
+		&.artist {
+			
+			.entity-image {
+				.rounded-corners(50%);
+			}
+		}
+
+		.entity-image {
+			width: 34px;
+			height: 34px;
+			min-width: 34px;
+			overflow: hidden;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			margin-right: 16px;
+		}
+
+		.entity-title {
+			.clamp-lines(1);
+			.font-size(28);
+			line-height: 34px;
+			font-weight: 600;
+			color: @black;
+			max-width: 720px;
+			margin-right: 20px
+		}
+
+		.entity-tags {
+			display: flex;
+			align-items: center;
+			white-space: nowrap;
+		}
+	}
+
+	.claimed-icon {
+		margin-right: 8px;
+	}
+
+	.mini-badge {
+		.rounded-corners(8px);
+		.font-size(8);
+
+		& + .mini-badge {
+			margin-left: 4px;
+		}
+	}
+}
+
+.pdf-entity-card {
+	display: flex;
+	margin: 0 40px;
+
+	&.artist {
+
+		.entity-image {
+			.rounded-corners(50%);
+			overflow: hidden;
+		}
+	}
+
+	.entity-image {
+		width: 210px;
+		height: 210px;
+		min-width: 210px;
+		overflow: hidden;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin-right: 40px;
+	}
+
+	.entity-info {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		justify-content: space-between;
+		padding: 8px 0;
+	}
+
+	.entity-title {
+		display: flex;
+		align-items: center;
+	}
+
+	.title {
+		.clamp-lines(1);
+		.font-size(28);
+		line-height: 34px;
+		font-weight: 600;
+		color: @black;
+		margin-right: 12px;
+		max-width: 700px;
+	}
+
+	.tags {
+		display: flex;
+		align-items: center;
+		white-space: nowrap;
+	}
+
+	.claimed-icon {
+		margin-right: 8px;
+	}
+
+	.mini-badge {
+		.rounded-corners(8px);
+		.font-size(8);
+
+		& + .mini-badge {
+			margin-left: 4px;
+		}
+	}
+
+	.entity-ranks {
+
+		.ranks-title {
+			.font-size(12);
+			line-height: 20px;
+			font-weight: 500;
+			color: @grey-1;
+			display: flex;
+			align-items: center;
+
+			img {
+				margin-right: 8px;
+				width: 16px;
+				height: 16px;
+			}
+		}
+	}
+
+	.overview {
+		display: flex;
+
+		.overview-item {
+			.rounded-corners(8px);
+			overflow: hidden;
+			width: 120px;
+			height: 108px;
+			border: 1px solid #D8E0E2;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+
+			& + .overview-item {
+				margin-left: 16px;
+			}
+
+			h3 {
+				.font-size(10);
+				color: @grey-1;
+				line-height: 16px;
+				font-weight: 500;
+				display: inline-flex;
+				align-items: center;
+
+				.flag {
+					.box-sizing;
+					margin-right: 4px;
+					width: 15px;
+					border: 1px solid #e8eced;
+				}
+			}
+
+			.value {
+				.font-size(20);
+				line-height: 26px;
+				font-weight: 600;
+				margin: 8px 0;
+			}
+
+			.value-change {
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+.pdf-export {
+	display: flex;
+	flex-direction: column;
+
+	.pro-content-module-header-standalone {
+
+		.title-txt {
+
+			&.has-info {
+				background: none !important;
+			}
+		}
+	}
+
+	.pro-content-module-article-wrapper {
+		.rounded-corners(8px);
+		.box-shadow(0 2px 8px 0 rgba(0,0,0,0.24));
+		overflow: hidden;
+	}
+}

@@ -1,0 +1,31 @@
+.list-horizontal {
+	.clearfix;
+	margin: 0 -15px;
+
+	&.list-placeholders {
+
+		> li {
+			width: auto;
+
+			> h3 {
+				padding-bottom: 20px;
+			}
+		}
+
+		.card-entity {
+			width: 185px;
+
+			&.horizontal {
+				width: 290px;
+			}
+		}
+	}
+
+	> li {
+		.box-sizing();
+		padding: 0 15px;
+		width: 100%;
+		display: inline-block;
+		float: left;
+	}
+}

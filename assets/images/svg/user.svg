@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>user</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artist-ikone" transform="translate(-872.000000, -167.000000)" fill="#000000">
+            <g id="user" transform="translate(872.000000, 167.000000)">
+                <path d="M6,8 C3.790861,8 2,6.209139 2,4 C2,1.790861 3.790861,0 6,0 C8.209139,0 10,1.790861 10,4 C10,6.209139 8.209139,8 6,8 Z M5.97333333,9.18518519 C9.26842012,9.18518519 11.9466667,12.1127286 11.9466667,15.7274074 L-8.77520279e-13,15.7274074 C-8.77520279e-13,12.1127286 2.6729744,9.18518519 5.97333333,9.18518519 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

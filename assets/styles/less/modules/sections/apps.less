@@ -1,0 +1,323 @@
+.section-apps {
+	padding: 0;
+
+	@media @bp_768 {
+		display: flex;
+	}
+
+	&.fullscreen {
+
+		@media @bp_768 {
+			padding: 0;
+		}
+
+		.col-2 {
+
+			@media @bp_768 {
+				padding-top: 60px;
+				padding-bottom: 60px;
+			}
+		}
+	}
+
+	&.many-minds {
+		padding: 30px 0;
+		text-align: center;
+
+		@media @bp_768 {
+			padding: 60px 0;
+		}
+
+		@media @bp_1024 {
+			padding: 90px 0;
+		}
+
+		.page {
+			margin: 0;
+			width: 100%;
+			display: flex;
+			margin: 0 auto;
+		}
+
+		.section-main {
+
+			@media @bp_768 {
+				flex-direction: column;
+			}
+
+			@media @bp_1024 {
+				flex-direction: row;
+			}
+		}
+
+		.col {
+
+			@media @bp_768 {
+				width: 100%;
+			}
+
+			@media @bp_1024 {
+				width: 50%;
+			}
+
+			&.col-1,
+			&.col-2 {
+				text-align: center;
+
+				@media @bp_1024 {
+					text-align: left;
+				}
+
+				article {
+					max-width: 600px;
+					margin: 0 auto;
+
+					@media @bp_1024 {
+						max-width: 720px;
+					}
+				}
+			}
+
+			&.col-1 {
+
+				@media @bp_768 {
+					padding-bottom: 30px;
+				}
+
+				@media @bp_1024 {
+					padding-bottom: 0;
+				}
+
+				article {
+
+					@media @bp_1024 {
+						padding-left: 0;
+					}
+				}
+			}
+		}
+
+		h2 {
+			.font-size(28);
+			line-height: 32px;
+			font-weight: 500;
+			padding-bottom: 20px;
+
+			@media @bp_375 {
+				.font-size(32);
+				line-height: 38px;
+			}
+
+			@media @bp_768 {
+				.font-size(42);
+				line-height: 49px;
+			}
+
+			br {
+				display: none;
+
+				@media @bp_1024 {
+					display: block;
+				}
+			}
+		}
+
+		p {
+			.font-size(13);
+
+			@media @bp_1440 {
+				.font-size(14);
+			}
+		}
+	}
+
+	.section-main {
+
+		@media @bp_768 {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+	.col {
+		padding: 20px @page_spacer_mobile;
+
+		@media @bp_768 {
+			padding: 0;
+			display: flex;
+			width: 50%;
+			align-items: center;
+			position: relative;
+		}
+
+		article {
+			width: 100%;
+			
+			@media @bp_768 {
+				.box-sizing();
+				max-width: 720px;
+				padding: 0 40px;
+			}
+
+			@media @bp_1024 {
+				padding: 0 90px;
+			}
+		}
+	}
+
+	.col-1 {
+		background-image: url(../images/gif/noise-animated-bright.gif);
+		background-repeat: repeat;
+		background-size: 400px;
+		background-position: center center;
+
+		@media @bp_768 {
+			justify-content: flex-end;
+		}
+
+		article {
+			text-align: left;
+			padding: 20px 0 0 0;
+
+			@media @bp_768 {
+				padding: 30px 30px 0 30px;
+			}
+		}
+	}
+
+	.col-2 {
+		padding-top: 0;
+		
+		@media @bp_768 {
+			//padding-top: 100px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		article {
+			width: 100%;
+
+			@media @bp_768 {
+				padding-bottom: 0px;
+			}
+		}
+
+		ul {
+			padding-top: 20px;
+		}
+
+		li {
+			padding-left: 24px;
+			position: relative;
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 9px;
+				width: 3px;
+				height: 3px;
+				background-color: @black;
+			}
+		}
+	}
+
+	h2 {
+		.font-size(28);
+		line-height: 30px;
+		font-weight: 500;
+		padding-bottom: 20px;
+
+		@media @bp_768 {
+			.font-size(50);
+			line-height: 56px;
+			padding-bottom: 30px;
+		}
+
+		@media @bp_1024 {
+			.font-size(60);
+			line-height: 66px;
+			padding-bottom: 30px;
+		}
+
+		@media @bp_1200 {
+			.font-size(80);
+			line-height: 86px;
+		}
+	}
+
+	h3 {
+		.font-size(20);
+		line-height: 26px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(24);
+			line-height: 30px;
+		}
+	}
+
+	.swiper-main,
+	.swiper-wrapper,
+	.swiper-container {
+
+		@media @bp_768 {
+			width: 250px;
+		}
+
+		@media @bp_1024 {
+			width: 300px;
+		}
+	}
+
+	.swiper-main {
+		position: relative;
+		margin: 0 auto;
+
+		.swiper-container {
+			padding: 0;
+		}
+	}
+
+	.swiper-slide {
+		.box-sizing();
+		text-align: center;
+		padding-bottom: 40px;
+
+		@media @bp_768 {
+			text-align: left;
+		}
+
+		h3 {
+			.font-size(20);
+			line-height: 26px;
+			font-weight: 500;
+
+			@media @bp_768 {
+				.font-size(24);
+				line-height: 30px;
+			}
+		}
+
+		a {
+			color: @black;
+		}
+	}
+
+	.swiper-container-horizontal {
+
+		> .swiper-pagination-bullets {
+			bottom: 0;
+		}
+	}
+
+	.swiper-pagination-bullet {
+		border-color: @black;
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: @black;
+	}
+}

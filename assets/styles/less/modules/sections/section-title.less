@@ -1,0 +1,25 @@
+.section-title {
+	.font-size(18);
+	line-height: 24px;
+	font-weight: 500;
+	color: @black;
+	letter-spacing: 0.5px;
+	padding-bottom: 15px;
+	margin-bottom: 46px;
+
+	@media @bp_768 {
+		.font-size(24);
+		line-height: 31px;
+		padding-top: 0;
+	}
+
+	&:before {
+		content: "";
+		height: 2px;
+		background-color: @black;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}

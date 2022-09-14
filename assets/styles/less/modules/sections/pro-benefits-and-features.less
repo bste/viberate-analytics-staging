@@ -1,0 +1,136 @@
+.section-pro-benefits-and-features {
+	text-align: center;
+
+	&.benefits {
+		background-color: @black;
+
+		@media @bp_768 {
+			//padding-bottom: 0;
+			background-color: transparent;
+		}
+
+		h2 {
+			color: @white;
+		}
+
+		&:before {
+
+			@media @bp_768 {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 500px;
+				background-color: @black;
+			}
+		}
+	}
+
+	.article {
+		margin: 0 auto;
+	}
+
+	.threesome {
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			margin: 0 -12px;
+		}
+
+		.item {
+			.box-sizing;
+
+			@media @bp_768 {
+				width: 33.33%;
+				padding: 0 12px;
+				display: flex;
+			}
+
+			& + .item {
+				padding-top: 16px;
+
+				@media @bp_768 {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+
+	h2 {
+		.font-size(32);
+		line-height: 38px;
+		font-weight: 500;
+		padding-bottom: 40px;
+
+		@media @bp_768 {
+			.font-size(42);
+			line-height: 49px;
+			padding-bottom: 60px;
+		}
+	}
+
+	.card-benefit-and-feature {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+
+		&.benefit {
+			background-color: @white;
+			padding: 32px;
+
+			@media @bp_768 {
+				padding: 20px;
+			}
+
+			@media @bp_1024 {
+				padding: 32px 32px 20px 32px;
+			}
+		}
+
+		&.feature {
+
+		}
+
+		figure {
+			max-width: 400px;
+			margin: 0 auto;
+			cursor: default;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		article {
+			.font-size(14);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 0 10px;
+
+			h3 {
+				.font-size(20);
+				line-height: 28px;
+				font-weight: 500;
+				padding: 20px 0 5px 0;
+				cursor: default;
+
+				@media @bp_768 {
+					min-height: 52px;
+					padding: 30px 0 10px 0;
+				}
+
+				&:after {
+					content: none;
+				}
+
+				@media @bp_768 {
+					padding: 40px 0 20px 0;
+				}
+			}
+		}
+	}
+}

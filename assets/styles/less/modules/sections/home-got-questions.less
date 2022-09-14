@@ -1,0 +1,169 @@
+.section-home-got-questions {
+
+	.page {
+
+		@media @bp_1200 {
+			padding-left: 4.16%;
+			padding-right: 4.16%;
+		}
+	}
+
+	.section-main {
+
+		@media @bp_768 {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+		}
+
+		@media @bp_1024 {
+			flex: 1;
+			width: auto;
+			flex-direction: row;
+		}
+	}
+
+	.col {
+		padding: 20px 0;
+
+		@media @bp_768 {
+			padding: 0;
+			display: flex;
+			align-items: center;
+			position: relative;
+		}
+	}
+
+	.col-1 {
+		padding-top: 0;
+		text-align: center;
+		
+		@media @bp_768 {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			width: 100%;
+		}
+
+		@media @bp_1024 {
+			width: 33.33%;
+		}
+
+
+		article {
+			width: 100%;
+
+			@media @bp_768 {
+				padding-bottom: 0;
+				text-align: center;
+			}
+
+			@media @bp_1024 {
+				width: 75%;
+				text-align: left;
+			}
+		}
+
+		h2 {
+			.font-size(28);
+			line-height: 32px;
+			font-weight: 500;
+			padding-bottom: 20px;
+
+			@media @bp_768 {
+				.font-size(42);
+				line-height: 49px;
+			}
+		}
+
+		p {
+			.font-size(20);
+			line-height: 28px;
+
+			@media @bp_768 {
+				max-width: 50%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			@media @bp_1024 {
+				max-width: none;
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+
+	.col-2 {
+
+		@media @bp_768 {
+			padding-top: 20px;
+		}
+
+		@media @bp_768 {
+			justify-content: flex-end;
+			width: 100%;
+		}
+
+		@media @bp_1024 {
+			width: 66.66%;
+		}
+	}
+
+	h2 {
+		.font-size(28);
+		line-height: 32px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(42);
+			line-height: 49px;
+		}
+	}
+
+	.threesome {
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			margin: 0 -12px;
+		}
+
+		.item {
+			.box-sizing;
+			text-align: center;
+
+			@media @bp_768 {
+				width: 33.33%;
+				padding: 0 12px;
+				display: flex;
+				text-align: left;
+			}
+
+			& + .item {
+				padding-top: 60px;
+
+				@media @bp_768 {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+
+	.card-question {
+		background-color: @white;
+		padding: 10%;
+		flex-direction: column;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+
+		.btn-solid {
+			width: 100%;
+		}
+
+		figure {
+			margin-bottom: 30px;
+		}
+	}
+}

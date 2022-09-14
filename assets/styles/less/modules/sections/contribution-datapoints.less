@@ -1,0 +1,162 @@
+.section-contribution-datapoints {
+	text-align: center;
+
+	@media @bp_768 {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+
+	&.black {
+
+		.datapoint {
+			border-color: @white;
+		}
+	}
+
+	.article {
+		margin: 0 auto;
+	}
+
+	.datapoints {
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		flex-wrap: wrap;
+		max-width: 300px;
+
+		@media @bp_880 {
+			margin: 0 -12px;
+			max-width: none;
+			justify-content: center;
+			flex-wrap: nowrap;
+		}
+		
+		.item {
+			.box-sizing;
+			width: 50%;
+			display: flex;
+			padding: 0 12px;
+			margin: 20px 0;
+
+			@media @bp_880 {
+				width: auto;
+			}
+
+			&:nth-child(1),
+			&:nth-child(3) {
+				border-right: 2px solid @black;
+				justify-content: flex-start;
+
+				@media @bp_880 {
+					border: 0;
+				}
+
+				.datapoint {
+					padding-right: 20%;
+
+					@media @bp_880 {
+						padding: 20px;
+					}
+
+					@media @bp_1024 {
+						padding: 20px 40px;
+					}
+				}
+			}
+
+			&:nth-child(2),
+			&:nth-child(4) {
+
+				.datapoint {
+					padding-left: 20%;
+
+					@media @bp_880 {
+						padding: 20px;
+					}
+
+					@media @bp_1024 {
+						padding: 20px 40px;
+					}
+				}
+			}
+
+			&:last-child {
+
+				@media @bp_880 {
+					width: auto;
+				}
+
+				.datapoint {
+					border: 0;
+				}
+			}
+		}
+	}
+
+	h2 {
+		.font-size(28);
+		line-height: 32px;
+		font-weight: 500;
+		padding-bottom: 40px;
+
+		@media @bp_375 {
+			.font-size(32);
+			line-height: 38px;
+		}
+
+		@media @bp_880 {
+			.font-size(42);
+			line-height: 49px;
+			padding-bottom: 60px;
+		}
+	}
+
+	.datapoint {
+		.font-size(14);
+		line-height: 18px;
+		text-align: left;
+		max-width: 200px;
+
+		@media @bp_600 {
+			.font-size(20);
+			line-height: 26px;
+		}
+
+		@media @bp_880 {
+			.font-size(20);
+			line-height: 26px;
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+			line-height: 22px;
+			margin: 0 auto;
+			align-items: flex-start;
+			border-right: 2px solid @black;
+			padding: 10px 20px;
+			max-width: none;
+			text-align: left;
+		}
+
+		strong {
+			.font-size(20);
+			line-height: 28px;
+			font-weight: 500;
+			display: block;
+
+			@media @bp_600 {
+				.font-size(30);
+				line-height: 36px;
+			}
+
+			@media @bp_880 {
+				.font-size(30);
+				line-height: 36px;
+			}
+
+			@media @bp_1024 {
+				.font-size(42);
+				line-height: 49px;
+			}
+		}
+	}
+}

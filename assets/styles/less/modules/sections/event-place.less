@@ -1,0 +1,38 @@
+.section-event-place {
+
+	header {
+		padding-bottom: 40px;
+
+		@media @bp_1024 {
+			.box-sizing();
+			float: left;
+			width: 33.33%;
+			padding-bottom: 0;
+			padding-right: 15px;
+		}
+
+		@media @bp_1200 {
+			width: 24.5%;
+		}
+	}
+
+	header + .section-main {
+
+		@media @bp_1024 {
+			.box-sizing();
+			float: right;
+			width: 66.66%;
+			padding-left: 15px;
+		}
+
+		@media @bp_1200 {
+			width: 75.5%;
+		}
+	}
+
+	.section-gallery {
+		clear: both;
+		padding-bottom: 0;
+	}
+
+}

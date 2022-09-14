@@ -1,0 +1,193 @@
+.section-festival-app-testimonials {
+	text-align: center;
+
+	> .page {
+		max-width: none;
+	}
+
+	.section-main {
+		padding-bottom: 10px;
+
+		@media @bp_768 {
+			paddding-bottom: 0;
+		}
+	}
+
+	h2 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 500;
+		padding-bottom: 40px;
+
+		@media @bp_768 {
+			.font-size(42);
+			line-height: 49px;
+			padding-bottom: 60px;
+		}
+	}
+
+	.swiper-main {
+		display: block;
+
+		.swiper-container {
+
+			@media @bp_1024 {
+				margin: 0 -@page_spacer_tablet_landscape;
+			}
+
+			@media @bp_1200 {
+				margin: 0 -@page_spacer_desktop;
+			}
+		}
+
+		.swiper-wrapper {
+			padding-bottom: 80px;
+
+			@media @bp_768 {
+				padding-bottom: 0;
+			}
+		}
+
+		.swiper-slide {
+			width: 80%;
+			height: auto;
+			max-width: 660px;
+		}
+
+		.swiper-pagination {
+
+			@media @bp_768 {
+				display: none;
+			}
+
+			.swiper-pagination-bullet {
+				border-color: @black;
+
+				&.swiper-pagination-bullet-active {
+					background-color: @black;
+				}
+			}
+		}
+	}
+
+	.card-testimonial {
+		.box-sizing;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		background-color: @white;
+		padding: 20px;
+
+		@media @bp_480 {
+			text-align: left;
+			flex-direction: row;
+		}
+
+		@media @bp_768 {
+			padding: 32px;
+		}
+
+		figure {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 100px;
+			height: 100px;
+			flex: 1 0 auto;
+			margin: 0 auto;
+
+			@media @bp_768 {
+				width: 228px;
+				height: 228px;
+			}
+
+		}
+
+		article {
+			.font-size(14);
+			line-height: 18px;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			flex: 1 1 auto;
+
+			@media @bp_480 {
+				padding-left: 20px;
+				padding-bottom: 20px;
+
+			}
+
+			@media @bp_768 {
+				padding-bottom: 0;
+			}
+
+			@media @bp_1024 {
+				.font-size(16);
+				line-height: 24px;
+			}
+
+			@media @bp_1200 {
+				.font-size(18);
+				line-height: 26px;
+			}
+
+			a {
+				color: @black;
+			}
+
+			.link {
+				.font-size(12);
+				padding-top: 10px;
+				display: block;
+
+				@media @bp_768 {
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					right: 0;
+				}
+			}
+
+			h3 {
+				.font-size(20);
+				line-height: 26px;
+				font-weight: 500;
+				padding: 15px 0 0 0;
+
+				@media @bp_480 {
+					padding-top: 0;
+				}
+
+				@media @bp_768 {
+					
+				}
+			}
+
+			.info {
+				.font-size(12);
+				line-height: 16px;
+				padding: 0;
+				margin: 0;
+
+				strong {
+					font-weight: 500;
+					display: block;
+				}
+			}
+
+			.logotype {
+				width: 60px;
+				height: 60px;
+				margin: 20px auto 0 auto;
+
+				@media @bp_480 {
+					position: absolute;
+					right: 0px;
+					bottom: 0px;
+					margin: 0;
+				}
+			}
+		}
+	}
+}

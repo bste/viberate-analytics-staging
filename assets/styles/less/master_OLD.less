@@ -1,0 +1,407 @@
+/*------------------------------------------------------------------
+# [One To Rull Them All]
+------------------------------------------------------------------*/
+
+/*************** 1. RESET ***************/
+//div:not(.veditor) {
+
+@import url("reset/normalize.less");
+@import url("reset/cross-browser-styling.less");
+
+
+/*************** 2. GENERAL ***************/
+
+@import url("general/mixins.less");
+@import url("general/brakepoints.less");
+@import url("general/variables.less");
+@import url("general/global.less");
+
+
+/*************** 3. TYPOGRAPHY ***************/
+
+@import url("typography/typography.less");
+
+
+/*************** 4. LAYOUT ***************/
+
+@import url("layout/html.less");
+@import url("layout/body.less");
+@import url("layout/container.less");
+@import url("layout/page.less");
+@import url("layout/layout.less");
+@import url("layout/header.less");
+@import url("layout/header-new.less");
+@import url("layout/header-new-v2.less");
+@import url("layout/hamburger.less");  //remove
+@import url("layout/main.less");
+@import url("layout/footer.less");
+@import url("layout/footer-new.less");
+@import url("layout/row.less");
+@import url("layout/my-viberate.less");  //remove
+@import url("layout/modal.less");
+@import url("layout/z-index.less");
+
+
+/*************** 5. MODULES ***************/
+
+/*****---------- 5.1 Sections ----------*****/
+
+@import url("modules/sections.less");
+@import url("modules/sections/section-title.less");
+@import url("modules/sections/section-filter.less");
+@import url("modules/sections/artist-detail.less");
+@import url("modules/sections/entity-detail.less");
+@import url("modules/sections/entity-detail-minimized.less");
+@import url("modules/sections/hot-this-week.less");
+@import url("modules/sections/events.less");
+@import url("modules/sections/top-videos.less");
+@import url("modules/sections/top-tracks.less");
+@import url("modules/sections/music-network.less");
+@import url("modules/sections/music-network-v2.less");
+@import url("modules/sections/trending-on-twitter.less");
+@import url("modules/sections/hand-picked.less");
+@import url("modules/sections/trending-on-instagram.less");
+@import url("modules/sections/promotion.less");
+@import url("modules/sections/contribute-now.less");
+@import url("modules/sections/highlights.less");
+@import url("modules/sections/media.less");
+@import url("modules/sections/gallery.less");
+@import url("modules/sections/lineup.less");
+@import url("modules/sections/amenities-and-accommodation.less");
+@import url("modules/sections/amenities.less");
+@import url("modules/sections/accommodation.less");
+@import url("modules/sections/rate-festival.less");
+@import url("modules/sections/reviews.less");
+@import url("modules/sections/post-review.less");
+@import url("modules/sections/event-place.less");
+@import url("modules/sections/you-will-see.less");
+@import url("modules/sections/my-favorites.less");
+@import url("modules/sections/profile-settings.less");
+@import url("modules/sections/billing-settings.less");
+@import url("modules/sections/build-your-taste.less");
+@import url("modules/sections/claimed-profiles.less");
+@import url("modules/sections/contribution.less");
+@import url("modules/sections/city-landing.less");
+@import url("modules/sections/country-landing-heading.less");
+@import url("modules/sections/genre-landing-heading.less");
+@import url("modules/sections/city-price-info.less");
+@import url("modules/sections/landmarks.less");
+@import url("modules/sections/hottest-places.less");
+@import url("modules/sections/popular-subgenres-and-events.less");
+@import url("modules/sections/top-artists-from.less");
+@import url("modules/sections/editors-pick.less");
+@import url("modules/sections/hero.less");
+@import url("modules/sections/hero-product.less");
+@import url("modules/sections/join-the-community.less");
+@import url("modules/sections/join-our-community.less");
+@import url("modules/sections/join-our-music-community.less");
+@import url("modules/sections/upcoming-festivals-around-you.less");
+@import url("modules/sections/cities-of-music.less");
+@import url("modules/sections/who-claimed-profile.less");
+@import url("modules/sections/editors-pick-article.less");
+@import url("modules/sections/entity-landing-heading.less");
+@import url("modules/sections/didnt-find.less");
+@import url("modules/sections/top-events-festivals-around-you.less");
+@import url("modules/sections/plain-text.less");
+@import url("modules/sections/benefits-for-all.less");
+@import url("modules/sections/product-text.less");
+@import url("modules/sections/lets-talk.less");
+@import url("modules/sections/cities-that-never-sleep.less");
+@import url("modules/sections/case-studies.less");
+@import url("modules/sections/product-feature.less");
+@import url("modules/sections/the-possibilities.less");
+@import url("modules/sections/backstage-crew.less");
+@import url("modules/sections/people.less");
+@import url("modules/sections/how-it-works.less");
+@import url("modules/sections/error.less");
+@import url("modules/sections/preloader.less");
+@import url("modules/sections/recent-claims.less");
+@import url("modules/sections/hottest.less");
+@import url("modules/sections/spotlight.less");
+@import url("modules/sections/who-follows-who.less");
+@import url("modules/sections/venues-with-events.less");
+@import url("modules/sections/entity-view.less");
+@import url("modules/sections/entity-view-heading.less");
+@import url("modules/sections/list-view.less");
+@import url("modules/sections/grid-view.less");
+@import url("modules/sections/map-view.less");
+@import url("modules/sections/map-view-v2.less");
+@import url("modules/sections/map-view-v3.less");
+@import url("modules/sections/apps.less");
+@import url("modules/sections/top-genres.less");
+@import url("modules/sections/testimonials.less");
+@import url("modules/sections/edits-feed.less");
+@import url("modules/sections/top-contributors.less");
+@import url("modules/sections/contributors-chart.less");
+@import url("modules/sections/trifecta.less");
+@import url("modules/sections/contribution-guide.less");
+@import url("modules/sections/how-contribution-works.less");
+@import url("modules/sections/onboarding.less");
+@import url("modules/sections/payment-process.less");
+@import url("modules/sections/booking.less");
+@import url("modules/sections/contribution-job-hero.less");
+@import url("modules/sections/contribution-job-info.less");
+@import url("modules/sections/job-apply.less");
+@import url("modules/sections/search-results.less");
+@import url("modules/sections/signup-login.less");
+@import url("modules/sections/signup-login-v2.less");
+@import url("modules/sections/claim-entity.less");
+@import url("modules/sections/countries-landing.less");
+@import url("modules/sections/genres-landing.less");
+@import url("modules/sections/tripple-cards.less");
+
+@import url("modules/sections/charts-landing.less");
+
+@import url("modules/sections/home-parallax.less");
+@import url("modules/sections/home-zoom.less");
+
+@import url("modules/sections/feature-hero.less");
+@import url("modules/sections/feature-editors-pick.less");
+@import url("modules/sections/feature-banner.less");
+@import url("modules/sections/feature-contact.less");
+@import url("modules/sections/feature-top-features.less");
+@import url("modules/sections/feature-data-in-action.less");
+@import url("modules/sections/feature-try-live-demo.less");
+@import url("modules/sections/feature-work-for-you.less");
+@import url("modules/sections/feature-reviews.less");
+@import url("modules/sections/feature-faq.less");
+@import url("modules/sections/feature-start-growing.less");
+
+//@import url("modules/sections/pro.less");
+@import url("modules/sections/pro-v2.less");
+@import url("modules/sections/sidebar-modules.less");
+@import url("modules/sections/pro-section.less");
+@import url("modules/sections/editor.less");
+@import url("modules/sections/settings.less");
+@import url("modules/sections/home.less");
+@import url("modules/sections/compare-entities.less");
+@import url("modules/sections/pro-hero.less"); //remove
+@import url("modules/sections/pro-hero-v2.less");
+@import url("modules/sections/pro-limited-access.less");
+@import url("modules/sections/pro-top-features.less");
+@import url("modules/sections/tripple-quotes.less");
+@import url("modules/sections/try-live-demo.less");
+@import url("modules/sections/what-users-say.less");
+@import url("modules/sections/pro-fits-perfectly.less");
+@import url("modules/sections/pro-pricing-plan.less");
+@import url("modules/sections/pro-pricing-plan-v2.less");
+@import url("modules/sections/pro-pricing-comparison.less");
+@import url("modules/sections/pro-product-walkthrough.less");
+@import url("modules/sections/pro-data-in-action.less");
+@import url("modules/sections/pro-how-to-get-started.less");
+@import url("modules/sections/pro-benefits-and-features.less");
+@import url("modules/sections/pro-work-for-you.less");
+@import url("modules/sections/pro-try-us-out.less");
+
+@import url("modules/sections/learn-tutorials.less");
+@import url("modules/sections/learn-upcoming-webinars.less");
+@import url("modules/sections/learn-banner.less");
+@import url("modules/sections/learn-editors-pick.less");
+@import url("modules/sections/learn-courses.less");
+@import url("modules/sections/learn-contribution-guide-and-highlights.less");
+@import url("modules/sections/learn-videos.less");
+@import url("modules/sections/learn-toolbar.less");
+@import url("modules/sections/learn-video-details.less");
+
+@import url("modules/sections/help-center-search.less");
+@import url("modules/sections/help-center-featured-topics.less");
+@import url("modules/sections/help-center-pages-list.less");
+@import url("modules/sections/help-center-banner.less");
+@import url("modules/sections/help-center-categories.less");
+@import url("modules/sections/help-center-toolbar.less");
+@import url("modules/sections/help-center-detail.less");
+
+@import url("modules/sections/api-hero.less");
+@import url("modules/sections/api-datapoints.less");
+@import url("modules/sections/api-features.less");
+@import url("modules/sections/api-cases.less");
+@import url("modules/sections/api-tech-info.less");
+@import url("modules/sections/api-contact-us.less");
+@import url("modules/sections/api-get-sample.less");
+
+@import url("modules/sections/festival-app-hero.less");
+@import url("modules/sections/festival-app-features.less");
+@import url("modules/sections/festival-app-boost-experience.less");
+@import url("modules/sections/festival-app-user-feedback-stats.less");
+@import url("modules/sections/festival-app-benefits.less");
+@import url("modules/sections/festival-app-what-is-included.less");
+@import url("modules/sections/festival-app-testimonials.less");
+
+@import url("modules/sections/contribution-hero.less");
+@import url("modules/sections/contribution-benefits.less");
+@import url("modules/sections/contribution-datapoints.less");
+@import url("modules/sections/contribution-contributors.less");
+@import url("modules/sections/contribution-editors-pick.less");
+@import url("modules/sections/contribution-start.less");
+@import url("modules/sections/contribution-who-is-on-top.less");
+@import url("modules/sections/start-contributing.less");
+
+@import url("modules/sections/charts.less");
+@import url("modules/sections/charts-v2.less");
+
+@import url("modules/sections/editorial-header.less");
+@import url("modules/sections/editorial-header-author.less");
+@import url("modules/sections/editorial-header-share.less");
+@import url("modules/sections/editorial-navigation.less");
+@import url("modules/sections/editorial-articles.less");
+@import url("modules/sections/editorial-guides.less");
+@import url("modules/sections/editorial-share-form.less");
+
+@import url("modules/sections/home-hero.less");
+@import url("modules/sections/home-search.less");
+@import url("modules/sections/home-how-it-works.less");
+@import url("modules/sections/home-about-contribution.less");
+@import url("modules/sections/home-members-highlights.less");
+@import url("modules/sections/home-got-questions.less");
+
+@import url("modules/sections/offices.less");
+@import url("modules/sections/dashboard.less");
+@import url("modules/landings.less");
+
+
+/*****---------- 5.2 Cards ----------*****/
+
+@import url("modules/cards.less");
+@import url("modules/cards/entity.less");
+@import url("modules/cards/entity-big.less");
+@import url("modules/cards/video.less");
+@import url("modules/cards/video-media.less");
+@import url("modules/cards/twitter.less");
+@import url("modules/cards/instagram.less");
+@import url("modules/cards/instagram-embed.less");
+@import url("modules/cards/spotify.less");
+@import url("modules/cards/picture.less");
+@import url("modules/cards/highlight.less");
+@import url("modules/cards/landmark.less");
+@import url("modules/cards/country.less");
+@import url("modules/cards/weather.less");
+@import url("modules/cards/review.less");
+@import url("modules/cards/testimony.less");
+@import url("modules/cards/achievement.less");
+@import url("modules/cards/city.less");
+@import url("modules/cards/genre.less");
+@import url("modules/cards/case-study.less");
+@import url("modules/cards/who-followed-who.less");
+@import url("modules/cards/contributor.less");
+@import url("modules/cards/channel.less");
+@import url("modules/cards/article.less");
+@import url("modules/cards/daily-tip.less");
+@import url("modules/cards/tutorial.less");
+@import url("modules/cards/webinar.less");
+@import url("modules/cards/course.less");
+@import url("modules/cards/learn-video.less");
+
+/*****---------- 5.3 Lists ----------*****/
+
+@import url("modules/lists.less");
+@import url("modules/lists/horizontal.less");
+@import url("modules/lists/vertical.less");
+
+/**------------- 5.3.1 Items -------------**/
+
+@import url("modules/items/event.less");
+@import url("modules/items/track.less");
+@import url("modules/items/claimed-profile.less");
+@import url("modules/items/entity-list-item.less");
+@import url("modules/items/entity-list-item-v2.less");
+@import url("modules/items/entity-list-chart-item.less");
+@import url("modules/items/entity-list-chart-item-v2.less");
+@import url("modules/items/feed-list-item.less");
+@import url("modules/items/contributor-chart-item.less");
+@import url("modules/items/contact-item.less");
+
+/*****---------- 5.4 Other ----------*****/
+
+@import url("modules/other/switch-to-desktop.less");
+@import url("modules/other/media-player-toolbar.less");
+@import url("modules/other/media-player.less");
+@import url("modules/other/video-player.less");
+@import url("modules/other/entity-badge.less");
+@import url("modules/other/tooltip.less");
+@import url("modules/other/social-icons.less");
+@import url("modules/other/graph-line.less");
+@import url("modules/other/stats-sheet.less");
+@import url("modules/other/badge.less");
+@import url("modules/other/profile-claimed.less");
+@import url("modules/other/swiper-main.less");
+@import url("modules/other/range-filter.less");
+@import url("modules/other/lineup-filter.less");
+@import url("modules/other/accommodation-embed.less");
+@import url("modules/other/tag.less");
+@import url("modules/other/trending.less");
+@import url("modules/other/beer-index.less");
+@import url("modules/other/entity-additional-info.less");
+@import url("modules/other/facts.less");
+@import url("modules/other/add-form.less");
+@import url("modules/other/edit-form.less");
+@import url("modules/other/onboarding-form.less");
+@import url("modules/other/search-form.less");
+@import url("modules/other/registration-form.less");
+@import url("modules/other/gmaps-embed.less");
+@import url("modules/other/modal-close.less");
+@import url("modules/other/loading.less");
+@import url("modules/other/loader-elements.less");
+@import url("modules/other/change-city.less");
+@import url("modules/other/cookies-consent.less");
+@import url("modules/other/srl-lightbox.less");
+//@import url("modules/other/mobile-disclaimer.less");
+@import url("modules/other/toolbar.less");
+@import url("modules/other/time-reset.less");
+@import url("modules/other/contribution-badge.less");
+@import url("modules/other/benefit.less");
+@import url("modules/other/viberate-badges.less");
+@import url("modules/other/notification.less");
+@import url("modules/other/site-offline.less");
+@import url("modules/other/registration-wall.less");
+@import url("modules/other/social-share-card.less");
+@import url("modules/other/zendesk-widget.less");
+@import url("modules/other/pagination.less");
+@import url("modules/other/flags.less");
+@import url("modules/other/accordion.less");
+
+
+
+/*************** 6. BUTTONS ***************/
+
+@import url("buttons/buttons.less");
+
+
+/*************** 7. FORMS ***************/
+
+@import url("forms/error.less");
+@import url("forms/form-row.less");
+@import url("forms/textarea.less");
+@import url("forms/select.less");
+@import url("forms/custom-select.less");
+@import url("forms/input.less");
+@import url("forms/custom-input.less");
+@import url("forms/pro-custom-input.less");
+@import url("forms/custom-checkbox-radio.less");
+@import url("forms/autofill.less");
+
+
+/*************** 7. ANIMATIONS ***************/
+
+@import url("animations/animations.less");
+
+
+/*************** 8. PLUGINS ***************/
+
+//@import url("plugins/swiper.less"); //OLD SWIPER
+@import url("plugins/swiper-7.less"); //NEW SWIPER
+@import url("plugins/swiper-custom.less"); //NEW SWIPER
+@import url("plugins/animate.less");
+@import url("plugins/range-slider.less");
+@import url("plugins/mobiscroll.less");
+
+
+/*************** 9. DEBUG ***************/
+
+//@import url("debug/debug.less");
+
+
+/*************** 10. OTHER ***************/
+
+@import url("other/table-of-content.less");
+
+//}

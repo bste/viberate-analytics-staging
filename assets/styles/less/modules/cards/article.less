@@ -1,0 +1,109 @@
+.card-article {
+	.box-sizing();
+	position: relative;
+	background-repeat: no-repeat;
+	text-align: left;
+	width: 100%;
+
+	figure {
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		//height: 170px;
+		position: relative;
+
+		/*a {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}*/
+	}
+
+	article {
+		.font-size(12);
+		position: relative;
+		line-height: 16px;
+		padding: 10px 0 12px 0;
+
+		a {
+			color: inherit;
+		}
+	}
+
+	time {
+		.font-size(10);
+		line-height: 18px;
+		text-transform: uppercase;
+		color: #808080;
+		padding-bottom: 3px;
+		display: block;
+	}
+
+	h3 {
+		.font-size(20);
+		line-height: 26px;
+		font-weight: 500;
+	}
+
+	.video-wrapper {
+		position: relative;
+		cursor: pointer;
+
+		&.active {
+
+			&:after {
+				background-image: url('../images/svg/pause-yt-white.svg');
+			}
+		}
+
+		&:before {
+			.vertical-flip(rgba(0,0,0,0.6), rgba(0,0,0,0));
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 48px;
+			background-image: url('../images/svg/play-yt-white.svg');
+		}
+	}
+
+	.author {
+		.text-overflow;
+		.font-size(10);
+		display: block;
+		padding-left: 42px;
+		position: relative;
+		line-height: 33px;
+		height: 33px;
+		color: #808080;
+
+
+		img {
+			.rounded-corners(50%);
+			width: 33px;
+			height: 33px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		a {
+			color: #808080;
+		}
+	}
+}

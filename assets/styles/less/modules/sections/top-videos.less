@@ -1,0 +1,40 @@
+.section-top-videos {
+
+	footer {
+		padding-top: 20px;
+
+		@media @bp_768 {
+			padding-top: 0px;
+			display: inline-block;
+			position: absolute;
+			bottom: 10px;
+			z-index: 1;
+		}
+	}
+
+	.swiper-container {
+
+		@media @bp_768 {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.swiper-slide {
+		.box-sizing();
+		width: 250px;
+
+		@media @bp_480 {
+			width: 300px;
+		}
+	}
+
+	.card-video {
+		height: auto;
+
+		footer {
+			padding-top: 30px;
+			position: relative;
+		}
+	}
+}

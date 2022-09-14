@@ -1,0 +1,392 @@
+.section-home-animations {
+	.box-sizing;
+	box-shadow: inset 0 2px 14px 0 rgba(0,0,0,0.1);
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	background-color: @white;
+	min-height: calc(~'100vh - 64px - env(safe-area-inset-bottom)');
+
+	@media only screen and (min-height: 1920px) {
+		min-height: 800px;
+	}
+
+	@media @bp_1024 {
+		flex-direction: row;
+		overflow: hidden;
+	}
+
+	&.open {
+
+		@media @bp_768_max {
+
+			.home-animation {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+			}
+
+			.home-login {
+				margin-top: auto;
+			}
+
+			.floater-v2 {
+
+				h2 {
+					.font-size(24);
+					line-height: 28px;
+					font-weight: bold;
+					text-align: center;
+
+					@media @bp_768 {
+						text-align: left;
+					}
+				}
+
+				.top-benefits {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.home-animation {
+		.prevent-click;
+		position: relative;
+		z-index: 1;
+		width: 100%;
+		display: flex;
+		background-position: center top;
+		background-image: url('https://viberate-sfo.sfo3.cdn.digitaloceanspaces.com/landing-d/assets/images/svg/grid-mobile.svg');
+		//background-image: url('../images/svg/grid-mobile.svg');
+		background-repeat: repeat;
+		background-attachment: scroll;
+		overflow: hidden;
+		min-height: 228px;
+
+		@media @bp_360 {
+			min-height: 330px;
+		}
+
+		@media @bp_768 {
+			height: 272px;
+			min-height: 272px;
+			background-image: url('https://viberate-sfo.sfo3.cdn.digitaloceanspaces.com/landing-d/assets/images/svg/grid-1440.svg');
+			//background-image: url('../images/svg/grid-1440.svg');
+		}
+
+		@media @bp_1024 {
+			order: 2;
+			height: auto;
+			min-height: unset;
+			align-self: stretch;
+			z-index: 2;
+			overflow: visible;
+		}
+
+		@media @bp_1440 {
+			//justify-content: flex-end;
+		}
+
+		@media @bp_1920 {
+			background-image: url('https://viberate-sfo.sfo3.cdn.digitaloceanspaces.com/landing-d/assets/images/svg/grid-2560.svg');
+			//background-image: url('../images/svg/grid-2560.svg');
+		}
+
+		.bg {
+			position: absolute;
+			left: 0;
+			right: 50%;
+			top: 0;
+			bottom: 0;
+			background-position: right top;
+			background-size: cover;
+			//background-image: url('https://viberate-sfo.sfo3.cdn.digitaloceanspaces.com/landing-d/assets/images/svg/grid-mobile.svg');
+			background-image: url('../images/static/home-ani-gradient.png');
+			background-repeat: no-repeat;
+			z-index: 1;
+
+			@media @bp_768 {
+				z-index: 2;
+				right: calc(~'50% + 145px');
+				background-position: left top;
+			}
+
+			@media @bp_1024 {
+				right: calc(~'100% - 280px');
+				z-index: 0;
+			}
+
+			@media @bp_1440 {
+				right: calc(~'100% - 460px');
+			}
+		}
+
+		.singer {
+			position: absolute;
+			z-index: 4;
+			top: 20px;
+			right: calc(~'50% - 40px');
+			bottom: 0;
+			display: flex;
+			text-align: right;
+
+			@media @bp_768 {
+				right: calc(~'50% + 70px');
+			}
+
+			@media @bp_1024 {
+				top: auto;
+				bottom: -20px;
+				height: 550px;
+				right: calc(~'100% - 410px');
+			}
+
+			@media @bp_1440 {
+				height: 680px;
+				bottom: 0;
+				right: calc(~'100% - 540px');
+			}
+
+			img {
+				max-height: 100%;
+				object-fit: cover;
+				max-width: unset;
+			}
+		}
+
+		.icons-a,
+		.icons-b,
+		.screen-graph,
+		.screen-graph-bg,
+		.waveform {
+			position: absolute;
+		}
+
+		.icons-a {
+			z-index: 6;
+			top: 150px;
+			right: 7%;
+			left: 60%;
+
+			@media @bp_768 {
+				top: 130px;
+				right: calc(~'50% - 320px');
+				left: calc(~'50% + 175px');
+			}
+
+			@media @bp_1024 {
+				top: 175px;
+				left: 230px;
+				width: 250px;
+				right: auto;
+			}
+
+			@media @bp_1440 {
+				top: 320px;
+				left: 590px;
+				width: 280px;
+			}
+		}
+
+		.icons-b {
+			z-index: 5;
+			top: 25px;
+			right: 3%;
+			left: calc(~'50% - 15px');
+
+			@media @bp_768 {
+				top: 10px;
+				right: calc(~'50% - 210px');
+				left: calc(~'50% - 40px');
+			}
+
+			@media @bp_1024 {
+				top: 20px;
+				left: 150px;
+				width: 330px;
+				right: auto;
+			}
+
+			@media @bp_1440 {
+				top: 40px;
+				left: 500px;
+				width: 380px;
+			}
+		}
+
+		.screen-graph {
+			top: 40px;
+			right: 8%;
+			left: 64%;
+			z-index: 3;
+
+			@media @bp_768 {
+				top: 25px;
+				right: calc(~'50% - 235px');
+				left: calc(~'50% + 115px');
+			}
+
+			@media @bp_1024 {
+				top: 50px;
+				left: 265px;
+				width: 180px;
+				right: auto;
+			}
+
+			@media @bp_1440 {
+				top: 105px;
+				left: 640px;
+				width: 210px;
+			}
+		}
+
+		.screen-graph-bg {
+			top: 35px;
+			right: -20%;
+			left: 23%;
+			z-index: 3;
+
+			@media @bp_768 {
+				top: 12px;
+				left: calc(~'50% - 145px');
+				right: calc(~'50% - 400px');
+			}
+
+			@media @bp_1024 {
+				top: 40px;
+				left: 0px;
+				width: 780px;
+				right: auto;
+				overflow: hidden;
+				bottom: 0;
+
+				img {
+					position: absolute;
+					top: 0;
+					left: -110px;
+					width: 100%;
+				}
+			}
+
+			@media @bp_1440 {
+				top: 90px;
+				left: 225px;
+				width: 890px;
+
+				img {
+					position: static;
+					top: auto;
+					left: auto;
+				}
+			}
+		}
+
+		.waveform {
+			z-index: 2;
+			bottom: 15px;
+			right: 0;
+			left: 0;
+
+			@media @bp_768 {
+				bottom: 8px;
+				z-index: 1;
+			}
+
+			@media @bp_1024 {
+				left: 20px;
+				bottom: 50px;
+				width: 880px;
+				right: auto;
+				z-index: 2;
+			}
+
+			@media @bp_1440 {
+				left: 200px;
+			}
+		}
+	}
+
+	.home-login {
+		.enable-click;
+		cursor: default;
+		box-shadow: none;
+		display: flex;
+		position: relative;
+		z-index: 2;
+		width: 100%;
+		background-color: @white;
+
+		@media only screen and (max-width: 767px) and (min-height: 700px) and (max-height: 850px) {
+			min-height: calc(~'(100vh - 330px - 64px - env(safe-area-inset-bottom))');
+
+			.floater-v2 {
+
+				.btn-enter.viberate {
+					margin-bottom: 20px;
+				}
+			}
+		}
+
+		@media @bp_1024 {
+			order: 1;
+			z-index: 1;
+		}
+
+		@media @bp_1440 {
+			max-width: 520px;
+			margin-left: calc(~'(100% - 1472px)/2');
+		}
+
+		.floater-v2 {
+			margin: auto;
+			max-width: unset;
+			width: 100%;
+
+			@media @bp_360 {
+				padding-right: 0;
+				padding-left: 0;
+				max-width: 314px;
+			}
+
+			@media @bp_768 {
+				padding-top: 48px;
+				padding-bottom: 48px;
+				max-width: 370px;
+			}
+
+			&.sign-up,
+			&.log-in {
+				
+				@media @bp_768 {
+					margin-bottom: 0;
+				}
+			}
+
+			h2 {
+
+				@media @bp_768 {
+					.font-size(42);
+					line-height: 52px;
+					font-weight: bold;
+					text-align: left;
+					padding-bottom: 24px;
+				}
+			}
+
+			.top-benefits {
+
+				@media @bp_768 {
+					.font-size(13);
+					line-height: 25px;
+					padding-bottom: 24px;
+				}
+			}
+		}
+	}
+}

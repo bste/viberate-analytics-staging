@@ -1,0 +1,100 @@
+.section-join-our-music-community {
+	background-color: @red;
+	color: @white;
+
+	.page {
+		
+		@media @bp_768 {
+			height: 450px;
+			//background-image: url('../images/gif/world-animation.gif');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/world-animation.gif');
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		@media @bp_1024 {
+			height: 600px;
+		}
+
+		@media @bp_1200 {
+			height: 750px;
+		}
+	}
+
+	h2 {
+		.font-size(44);
+		line-height: 44px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			float: left;
+			max-width: 50%;
+		}
+
+		@media @bp_1024 {
+			.font-size(80);
+			line-height: 89px;
+		}
+	}
+
+	h2 + .btn {
+		margin-top: 20px;
+
+		@media @bp_768 {
+			margin-top: 0;
+			position: absolute;
+			bottom: 0;
+			left: @page_spacer_tablet;
+		}
+
+		@media @bp_1200 {
+			left: @page_spacer_desktop;
+		}
+	}
+
+	.red-square {
+		.box-sizing();
+		.font-size(24);
+		line-height: 29px;
+		font-weight: 500;
+		background-color: @red;
+		color: @white;
+		padding: 40px;
+		margin-top: 40px;
+
+		@media @bp_768 {
+			padding: 40px;
+			float: right;
+			width: 300px;
+		}
+
+		@media @bp_1024 {
+			padding: 76px;
+			width: 440px;
+		}
+
+		@media @bp_1200 {
+			width: 480px;
+		}
+
+		strong {
+			.font-size(42);
+			line-height: 49px;
+			font-weight: 500;
+			display: block;
+		}
+
+		li {
+			padding-bottom: 20px;
+
+			@media @bp_768 {
+				padding-bottom: 30px;
+			}
+
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/connect/being followed</title>
+    <g id="icon/connect/being-followed" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Bounds" points="0 0 24 0 24 24 0 24"></polygon>
+        <path d="M16.8591261,7.1365864 L16.8591261,8.5365864 L16.8581261,8.5365864 L16.8591261,15.1365864 L15.4591261,15.1365864 L15.4576214,9.5555864 L8.14057089,16.8731611 L7.15062139,15.8832116 L14.4966214,8.5365864 L8.85912607,8.5365864 L8.85912607,7.1365864 L16.8591261,7.1365864 Z" id="Combined-Shape" fill="#707580" transform="translate(12.004874, 12.004874) rotate(-315.000000) translate(-12.004874, -12.004874) "></path>
+    </g>
+</svg>

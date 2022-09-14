@@ -1,0 +1,165 @@
+.section-popular-subgenres-and-events {
+
+	footer {
+		text-align: right;
+		padding-top: 20px;
+	}
+
+	.col-1 {
+
+		@media @bp_1024 {
+			.box-sizing;
+			width: 33.33%;
+			float: left;
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+	}
+
+	.col-2 {
+
+		@media @bp_1024 {
+			padding-top: 0;
+			width: 615px;
+			float: right;
+		}
+
+		@media @bp_1440 {
+			width: 830px;
+		}
+	}
+
+	.section-main {
+		.clearfix;
+
+		@media @bp_1300 {
+			margin: 0;
+		}
+	}
+
+	.side-filter {
+		.clearfix;
+		padding-bottom: 30px;
+		text-align: left;
+
+		@media @bp_1024 {
+			padding-right: 75px;
+		}
+
+		.btn {
+			text-align: left;
+		}
+	}
+
+	.btn-side-filter {
+		margin-right: 35px;
+		color: #333;
+		
+		@media @bp_1024 {
+			margin-right: 0;
+			float: left;
+			clear: both;
+			margin-top: 10px;
+		}
+
+		@media @bp_1440 {
+			margin-top: 25px;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&.active {
+			color: @white;
+		}
+
+		.sup {
+			display: none;
+		}
+	}
+
+	.grid {
+		.clearfix;
+		margin: -15px;
+
+		@media @bp_768 {
+			float: right;
+			width: 430px;
+		}
+
+		.grid-item {
+			.box-sizing();
+			padding: 15px;
+			float: left;
+
+			@media @bp_768 {
+				width: 215px;	
+			}
+
+			@media @bp_1300 {
+				width: 25%;		
+			}
+
+			&:nth-child(2n+3) {
+				clear: both;
+
+				@media @bp_1024 {
+					clear: none;
+				}
+			}
+		}
+	}
+
+	.swiper-container {
+		margin: 0 -@page_spacer_mobile;
+		padding: 0 @page_spacer_mobile;
+
+		@media @bp_480 {
+			margin: 0 -@page_spacer_mobile_landscape;
+			padding: 0 @page_spacer_mobile_landscape;
+		}
+
+		@media @bp_768 {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.swiper-slide {
+		width: 180px;
+	}
+
+	.card {
+		.box-sizing();
+		padding: 10px;
+		background-color: @white;
+		width: 180px;
+		max-width: 180px;
+
+		.btn-save {
+			right: 10px;
+			top: 10px;
+		}
+
+		.bottom {
+			display: none;
+		}
+	}
+
+	.buttons {
+		clear: both;
+		padding-top: 30px;
+		
+		@media @bp_1024 {
+			text-align: right;
+		}
+	}
+}

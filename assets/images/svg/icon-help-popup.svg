@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/help/popup</title>
+    <g id="beatport-view_FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Beatport-View_1920_v4" transform="translate(-1628.000000, -617.000000)" fill="#4E63CE">
+            <g id="Beatport-Health" transform="translate(552.000000, 224.000000)">
+                <g id="how-to-txt" transform="translate(955.000000, 393.000000)">
+                    <g id="Combined-Shape" transform="translate(121.000000, 0.000000)">
+                        <path d="M8,0 C12.418278,0 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 0,12.418278 0,8 C0,3.581722 3.581722,0 8,0 Z M8.52,9.88 L7.04,9.88 L7.04,11.38 L8.52,11.38 L8.52,9.88 Z M8.2,4 C6.65,4 5.5,4.93 5.5,6.4 L6.86,6.4 C6.89,5.44 7.45,5.05 8.18,5.05 C8.71,5.05 9.24,5.38 9.24,5.9 C9.24,6.42 8.81,6.75 8.18,7.12 C7.49,7.52 7.11,7.98 7.11,8.96 L7.11,9.3 L8.46,9.3 L8.46,8.99 C8.46,8.26 8.75,8.05 9.4,7.67 C9.97,7.35 10.63,6.74 10.63,5.83 C10.63,4.58 9.42,4 8.2,4 Z"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

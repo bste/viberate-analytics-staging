@@ -1,0 +1,334 @@
+.section-promo {
+	color: @white;
+	background-color: @blue;
+	position: relative;
+	padding-bottom: 0;
+	overflow: hidden;
+
+	@media @bp_1024 {
+		padding-bottom: @section_spacer_tablet_landscape;
+	}
+
+	@media @bp_1200 {
+		padding-bottom: @section_spacer_desktop;
+	}
+
+	&.section-promo-tonight {
+
+		.section-main {
+			background-position: right center;
+			
+			//background-image: url('../images/static/promo-tonight-mobile.jpg');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-tonight-mobile-new.jpg');
+
+			@media @bp_768 {
+				//background-image: url('../images/static/promo-tonight-desktop.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-tonight-desktop-new.jpg');
+			}
+		}
+	}
+
+	&.section-promo-missed-something {
+		background-color: @black;
+		background-image: url(../images/gif/noise-animated-dark.gif);
+		background-repeat: repeat;
+		background-size: 400px;
+		background-position: center center;
+
+		&.missed-artist {
+
+			.section-main {
+				background-position: right top;
+				//background-image: url('../images/static/promo-missed-artist-mobile.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-missed-artist-mobile.jpg');
+
+				@media @bp_768 {
+					//background-image: url('../images/static/promo-missed-artist-desktop.jpg');
+					background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-missed-artist-desktop.jpg');
+				}
+			}
+		}
+
+		&.missed-place,
+		&.missed-venue {
+
+			.section-main {
+				background-position: center center;
+				//background-image: url('../images/static/promo-missed-place-mobile.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-missed-place-mobile.jpg');
+
+				@media @bp_768 {
+					//background-image: url('../images/static/promo-missed-place-desktop.jpg');
+					background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-missed-place-desktop.jpg');
+				}
+			}
+		}
+
+		&.missed-event {
+
+			.section-main {
+				background-position: left top;
+				//background-image: url('../images/static/promo-missed-event-mobile.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-missed-event-mobile.jpg');
+
+				@media @bp_768 {
+					//background-image: url('../images/static/promo-missed-event-desktop.jpg');
+					background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-missed-event-desktop.jpg');
+				}
+			}
+		}
+
+		&.missed-festival {
+
+			.section-main {
+				background-position: left top;
+				//background-image: url('../images/static/promo-missed-festival-mobile.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-missed-festival-mobile.jpg');
+
+				@media @bp_768 {
+					//background-image: url('../images/static/promo-missed-festival-desktop.jpg');
+					background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-missed-festival-desktop.jpg');
+				}
+			}
+		}
+
+		.title {
+			.font-size(28);
+			line-height: 30px;
+			padding-bottom: 10px;
+
+			@media @bp_768 {
+				.font-size(70);
+				line-height: 70px;
+				padding-bottom: 20px;
+			}
+
+			@media @bp_1024 {
+				.font-size(80);
+				line-height: 86px;
+				padding-bottom: 30px;
+			}
+		}
+
+		.subtitle {
+			.font-size(16);
+			line-height: 24px;
+			text-transform: none;
+
+			@media @bp_768 {
+				.font-size(20);
+				line-height: 30px;
+				max-width: 70%;
+			}
+		}
+	}
+
+	&.section-promo-for-you {
+		background-color: @black;
+		background-image: url(../images/gif/noise-animated-dark.gif);
+		background-repeat: repeat;
+		background-size: 400px;
+		background-position: center center;
+
+		.title {
+			.font-size(28);
+			line-height: 30px;
+			padding-bottom: 10px;
+
+			@media @bp_768 {
+				.font-size(70);
+				line-height: 70px;
+				padding-bottom: 20px;
+			}
+
+			@media @bp_1024 {
+				.font-size(80);
+				line-height: 86px;
+				padding-bottom: 30px;
+			}
+		}
+
+		.subtitle {
+			.font-size(16);
+			line-height: 24px;
+			text-transform: none;
+
+			@media @bp_768 {
+				.font-size(20);
+				line-height: 30px;
+				max-width: 70%;
+			}
+		}
+
+		.section-main {
+			background-position: center center;
+			//background-image: url('../images/static/promo-for-you-mobile.jpg');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-for-you-mobile.jpg');
+
+			@media @bp_768 {
+				//background-image: url('../images/static/promo-for-you-desktop.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-for-you-desktop.jpg');
+			}
+		}
+
+		.buttons {
+			display: none;
+
+			@media @bp_768 {
+				display: block;
+			}
+		}
+	}
+
+	&.section-promo-contribution {
+		background-color: @black;
+		background-image: url(../images/gif/noise-animated-dark.gif);
+		background-repeat: repeat;
+		background-size: 400px;
+		background-position: center center;
+
+		@media @bp_768 {
+			padding-top: 100px;
+			padding-bottom: 100px;
+		}
+
+		@media @bp_1024 {
+			padding-top: 200px;
+			padding-bottom: 200px;
+		}
+
+		header {
+
+			@media @bp_768 {
+				padding-bottom: 0;
+				//width: 33.33%;
+				width: 50%;
+				float: left;
+				padding-right: 30px;
+			}
+		}
+
+		.section-main {
+			background-position: center top;
+			
+			//background-image: url('../images/static/promo-contribution-mobile.jpg');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-contribution-mobile.jpg');
+
+			@media @bp_768 {
+				//background-image: url('../images/static/promo-contribution-tablet.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/promo-contribution-tablet.jpg');
+				height: auto;
+				margin: 0;
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				//left: calc(~'33.33% + 120px');
+				//left: -webkit-calc(~'33.33% + 120px');
+				left: 50%;
+			}
+		}
+
+		.title {
+			.font-size(28);
+			line-height: 30px;
+			padding-bottom: 10px;
+
+			@media @bp_768 {
+				.font-size(58);
+				line-height: 58px;
+				padding-bottom: 20px;
+			}
+
+			@media @bp_1024 {
+				.font-size(80);
+				line-height: 86px;
+				padding-bottom: 30px;
+			}
+		}
+
+		.buttons {
+			display: none;
+
+			@media @bp_768 {
+				display: block;
+			}
+		}
+	}
+
+	.page {
+		position: static;
+	}
+	
+	header {
+		.box-sizing();
+		padding-bottom: 40px;
+
+		@media @bp_768 {
+			padding-bottom: @section_spacer_tablet;
+		}
+
+		@media @bp_1024 {
+			padding-bottom: 0;
+			//width: 33.33%;
+			width: 50%;
+			float: left;
+			padding-right: 30px;
+		}
+	}
+
+	.section-main {
+		.box-sizing();
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 400px;
+		margin: 0 -@page_spacer_mobile;
+
+		@media @bp_480 {
+			margin: 0 -@page_spacer_mobile_landscape;
+		}
+
+		@media @bp_768 {
+			margin: 0 -@page_spacer_tablet;
+		}
+
+		@media @bp_1024 {
+			height: auto;
+			margin: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			//left: calc(~'33.33% + 120px');
+			//left: -webkit-calc(~'33.33% + 120px');
+			left: 50%;
+		}
+
+		@media @bp_1440 {
+			//left: calc(~'50 - 120px');
+			//left: -webkit-calc(~'50% - 120px');
+		}
+	}
+
+	.buttons {
+		padding-top: 20px;
+
+		@media @bp_768 {
+			padding-top: 80px;
+		}
+
+		img {
+			height: 35px;
+		}
+
+		a {
+			display: inline-block;
+			margin-right: 20px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}

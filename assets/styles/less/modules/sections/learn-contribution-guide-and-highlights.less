@@ -1,0 +1,104 @@
+.section-learn-contribution-guide-and-highlights {
+
+	@media @bp_768 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	&.transparent {
+
+		.link-to-page {
+			background-color: @white;
+		}
+	}
+
+	.section-main {
+		margin: 0 auto;
+		max-width: 1100px;
+	}
+
+	h2 {
+		.font-size(26);
+		line-height: 46px;
+		font-weight: 500;
+		padding-bottom: 30px;
+		color: inherit;
+
+		@media @bp_768 {
+			.font-size(32);
+			padding-bottom: 60px;
+		}
+	}
+
+	.links {
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			margin: 0 -12px;
+			flex-wrap: wrap;
+		}
+
+		.item {
+			padding: 3px 0;
+
+			@media @bp_768 {
+				.box-sizing;
+				width: 50%;
+				padding: 10px 12px;
+			}
+		}
+	}
+
+	.link-to-page {
+		.box-sizing;
+		.font-size(16);
+		line-height: 21px;
+		font-weight: 500;
+		position: relative;
+		padding: 14px 50px 14px 20px;
+		cursor: pointer;
+		background-color: @white-1;
+		color: @black;
+		display: flex;
+		min-height: 70px;
+		flex-direction: column;
+		justify-content: center;
+
+		&:after {
+			content: "";
+			position: absolute;
+			right: 12px;
+			width: 16px;
+			height: 24px;
+			top: 50%;
+			margin-top: -12px;
+			background-repeat: no-repeat;
+			background-position: right center;
+			background-image: url('../images/svg/arrow-right-blue.svg');
+			background-size: 16px;
+
+			@media @bp_768 {
+				width: 26px;
+				height: 40px;
+				right: 24px;
+				background-size: 26px;
+				margin-top: -20px;
+			}
+		}
+	}
+
+	.see-all {
+		padding-top: 30px;
+
+		@media @bp_768 {
+			padding-top: 30px;
+		}
+
+		.btn.btn-txt {
+			.font-size(12);
+			color: @blue;
+			font-weight: 500;
+		}
+	}
+}

@@ -1,5 +1,9 @@
 &.loading {
 
+	&.loading-new {
+		
+	}
+
 	&:before {
 		content: "";
 		position: absolute;
@@ -11,7 +15,8 @@
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 60px;
-		background-image: url('../images/svg/loader-ani-black.svg');
+		//background-image: url('../images/svg/loader-ani-black.svg');
+		background-image: url('../images/gif/loader-grey.gif');
 		background-color: @white-1;
 	}
 
@@ -38,10 +43,15 @@
 		z-index: 9999;
 	}
 
+	&.small {
+		background-size: 30px;
+	}
+
 	&.white {
 
 		&:before {
-			background-image: url('../images/svg/loader-ani-black.svg');
+			//background-image: url('../images/svg/loader-ani-black.svg');
+			background-image: url('../images/gif/loader.gif');
 			background-color: @white;
 		}
 	}
@@ -49,16 +59,20 @@
 	&.blue-grey {
 
 		&:before {
-			background-image: url('../images/svg/loader-ani-black.svg');
+			//background-image: url('../images/svg/loader-ani-black.svg');
+			background-image: url('../images/gif/loader-grey.gif');
 			background-color: @blue-grey;
+			background-blend-mode: darken;
 		}
 	}
 
 	&.blue-grey-dark {
 
 		&:before {
-			background-image: url('../images/svg/loader-ani.svg');
+			//background-image: url('../images/svg/loader-ani.svg');
+			background-image: url('../images/gif/loader-grey.gif');
 			background-color: @blue-grey-dark;
+			background-blend-mode: darken;
 		}
 	}
 
@@ -73,8 +87,10 @@
 	&.grey {
 
 		&:before {
-			background-image: url('../images/svg/loader-ani-black.svg');
+			//background-image: url('../images/svg/loader-ani-black.svg');
+			background-image: url('../images/gif/loader-grey.gif');
 			background-color: @white-1;
+			background-blend-mode: darken;
 		}
 	}
 
@@ -87,6 +103,38 @@
 	}
 
 	&.transparent-white {
+
+		&:before {
+			background-image: url('../images/svg/loader-ani.svg');
+			background-color: transparent;
+		}
+	}
+
+	&.noise-white {
+		
+		&:after {
+			content: "";
+			background-image: url(../images/gif/noise-animated-dark.gif);
+			background-repeat: repeat;
+			background-size: 400px;
+			background-position: center center;
+		}
+
+		&:before {
+			background-image: url('../images/svg/loader-ani.svg');
+			background-color: transparent;
+		}
+	}
+
+	&.noise-black {
+		
+		&:after {
+			content: "";
+			background-image: url(../images/gif/noise-animated-dark.gif);
+			background-repeat: repeat;
+			background-size: 400px;
+			background-position: center center;
+		}
 
 		&:before {
 			background-image: url('../images/svg/loader-ani.svg');

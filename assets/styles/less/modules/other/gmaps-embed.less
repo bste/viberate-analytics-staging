@@ -1,0 +1,133 @@
+.gmaps-embed {
+	position: relative;
+
+	&.fullscreen {
+		position: absolute;
+		right: @page_spacer_mobile;
+		top: @page_spacer_mobile;
+		bottom: @page_spacer_mobile;
+		left: @page_spacer_mobile;
+
+		@media @bp_768 {
+			right: @page_spacer_tablet;
+			top: @page_spacer_tablet;
+			bottom: @page_spacer_tablet;
+			left: @page_spacer_tablet;
+		}
+
+		@media @bp_1024 {
+			right: @page_spacer_tablet_landscape;
+			top: @page_spacer_tablet_landscape;
+			bottom: @page_spacer_tablet_landscape;
+			left: @page_spacer_tablet_landscape;
+		}
+
+		@media @bp_1200 {
+			right: @page_spacer_desktop;
+			top: @page_spacer_desktop;
+			bottom: @page_spacer_desktop;
+			left: @page_spacer_desktop;
+		}
+	}
+
+	.error-msg {
+		position: absolute;
+		bottom: -40px;
+		left: 0;
+		right: 0;
+
+		&.relative {
+			position: relative;
+			bottom: 0;
+		}
+	}
+
+	.gm-style .gm-style-iw-c {
+		.rounded-corners(0px);
+		.box-shadow(none);
+	}
+}
+
+.gmaps-search-input {
+	background-color: @white;
+}
+
+.gmaps-search {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+
+	input[type="text"] {
+		padding: 0 50px 0 12px;
+		background-image: url('../images/svg/search.svg');
+		background-repeat: no-repeat;
+		background-position: right 12px center;
+		background-color: @white;
+		background-size: 22px;
+	}
+
+	.results {
+		.box-sizing();
+		padding-top: 10px;
+		color: @grey-1;
+		display: none;
+		background-color: @white-1;
+		position: absolute;
+		overflow: hidden;
+		overflow-y: auto;
+		max-height: 205px;
+		top: 48px;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		scroll-behavior: smooth;
+
+		&.show {
+			display: block;
+		}
+	}
+
+	li {
+		padding: 10px 15px;
+
+		&:hover,
+		&.active {
+			color: black;
+			cursor: pointer;
+		}
+	}
+}
+
+.google-search-embed {
+	height: 50px;
+
+	> div {
+		background-color: transparent !important;
+	}
+
+	input[type="text"] {
+		.box-shadow(none) !important;
+		.rounded-corners(0) !important;
+		top: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
+		margin: 0 !important;
+		border: 0 !important;
+		border-bottom: 2px solid @black !important;
+		background-color: transparent !important;
+		width: 100% !important;
+		padding: 10px 0 0 0 !important;
+		height: 48px !important;
+	}
+}
+
+.error {
+
+	.google-search-embed {
+		
+		input[type="text"] {
+			border-color: @red !important;
+		}
+	}
+}

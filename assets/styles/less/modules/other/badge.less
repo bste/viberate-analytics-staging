@@ -1,0 +1,55 @@
+.badge {
+	.box-sizing();
+	.font-size(0);
+	width: 36px;
+	height: 36px;
+	background-image: url('../images/svg/trophy-white.svg');
+	background-position: center;
+	background-size: 13px;
+	background-repeat: no-repeat;
+	background-color: @red;
+	display: inline-block;
+	padding: 12px 10px;
+	line-height: 1;
+
+	&:not(.long) {
+
+		&:hover {
+			background-size: 16px;
+		}
+	}
+
+	&.long {
+		.font-size(12);
+		width: 100%;
+		color: @white;
+		font-weight: bold;
+		letter-spacing: 1px;
+		position: relative;
+		padding: 12px 10px 12px 45px;
+		background-position: left 8px center;
+		font-family: @suiss-int-mono;
+		background-size: 20px;
+
+		&:before {
+			content: "";
+			position: absolute;
+			left: 36px;
+			top: 0;
+			bottom: 0;
+			width: 1px;
+			background-color: @white;
+		}
+	}
+
+	&.small {
+		width: 16px;
+		height: 16px;
+		background-size: 10px;
+		padding: 0;
+
+		&:hover {
+			background-size: 10px;
+		}
+	}
+}

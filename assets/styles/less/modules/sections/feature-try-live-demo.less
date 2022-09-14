@@ -1,0 +1,48 @@
+.section-feature-try-live-demo {
+
+	.page {
+		position: relative;
+		z-index: 1;
+	}
+
+	.section-main {
+		text-align: center;
+	}
+
+	figure {
+		position: relative;
+		max-width: 1000px;
+		margin: 0 auto;
+		cursor: pointer;
+		display: inline-block;
+
+		&:hover {
+
+			.btn.blue {
+				background-color: @blue-roll;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			width: 100%;
+		}
+	}
+
+	figcaption {
+		position: absolute;
+		top: 50%;
+		margin-top: -24px;
+		left: 0;
+		right: 0;
+		text-align: center;
+	}
+
+	article {
+		padding-top: 10px;
+
+		@media @bp_768 {
+			padding-top: 52px;
+		}
+	}
+}

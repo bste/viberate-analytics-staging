@@ -1,0 +1,83 @@
+.section-festival-app-what-is-included {
+	text-align: center;
+	background-color: @black;
+
+	@media @bp_768 {
+		padding-bottom: 0;
+	}
+
+	.article {
+		.box-sizing;
+		margin: 0 auto;
+		max-width: 772px;
+		background-color: @white-2;
+		padding: 30px;
+
+		@media @bp_768 {
+			margin-top: 40px;
+			padding: 60px;
+		}
+
+		p {
+			clear: both;
+			text-align: center;
+		}
+	}
+
+	h2,
+	h3 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 500;
+		padding-bottom: 30px;
+		color: @white;
+
+		@media @bp_768 {
+			.font-size(42);
+			line-height: 49px;
+			padding-bottom: 60px;
+		}
+	}
+
+	h3 {
+		color: @black;
+	}
+
+	.includes {
+		.box-sizing;
+		text-align: left;
+
+		@media @bp_600 {
+			width: 45%;
+			float: left;
+		}
+
+		& + .includes {
+
+			@media @bp_600 {
+				float: right;
+			}
+		}
+
+		li {
+			position: relative;
+			background-position: left top 8px;
+			background-repeat: no-repeat;
+			background-size: 16px;
+			background-image: url('../images/svg/checkmark.svg');
+			padding: 5px 0 5px 30px;
+		}
+	}
+
+	.btn-solid {
+		width: 100%;
+		max-width: 260px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+		margin-top: 30px;
+
+		@media @bp_768 {
+			margin-top: 60px;
+		}
+	}
+}

@@ -1,0 +1,102 @@
+.section-editorial-guides {
+	@media @bp_768 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.section-main {
+
+		@media @bp_1200 {
+			padding: 0 12.5%;
+		}
+	}
+
+	h2 {
+		.font-size(26);
+		line-height: 46px;
+		font-weight: 500;
+		padding-bottom: 30px;
+		color: inherit;
+
+		@media @bp_768 {
+			.font-size(32);
+			padding-bottom: 60px;
+		}
+	}
+
+	.loading {
+		height: 83px;
+		position: relative;
+	}
+
+	.articles-list {
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			margin: 0 -12px;
+			flex-wrap: wrap;
+		}
+
+		.item {
+			.box-sizing;
+			padding: 12px 0;
+
+			@media @bp_768 {
+				padding: 12px;
+			}
+
+			&.full-width,
+			&.featured {
+				width: 100%;
+
+				.card-article {
+
+					@media @bp_768 {
+						display: flex;
+						flex-direction: row;
+
+						figure {
+							width: 66.66%;
+							//height: 346px;
+						}
+
+						article {
+							.font-size(14);
+							line-height: 18px;
+							width: 33.33%;
+							padding-left: 24px;
+							padding-top: 0;
+						}
+					}
+				}
+			}
+
+			&.featured {
+				
+				.card-article {
+					background-color: @black;
+					color: @white;
+					padding: 24px;
+
+					@media @bp_768 {
+						padding: 5%;
+					}
+				}
+			}
+
+			@media @bp_768 {
+				width: 33.33%;
+				display: flex;
+			}
+		}
+	}
+
+	.more {
+		padding-top: 30px;
+
+		.btn {
+			width: 260px;
+		}
+	}
+}

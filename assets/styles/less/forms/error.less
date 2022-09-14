@@ -19,12 +19,27 @@
 		color: @red;
 	}
 
+	&.success {
+		color: @green;
+	}
+
 	&.relative {
 		position: relative;
 		top: 0;
 		bottom: 0;
 		left: 0;
 		right: 0;
+	}
+}
+
+.error-msg-general {
+	.font-size(11);
+	line-height: 14px;
+	display: none;
+	color: @red;
+
+	&.show {
+		display: block;
 	}
 }
 

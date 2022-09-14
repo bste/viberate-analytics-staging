@@ -833,6 +833,14 @@
 	cursor: @cursor;
 }
 
+.prevent-click-enable-hoover(@cursor: default) {
+	cursor: @cursor;
+
+	&:active {
+		pointer-events: none;
+	}
+}
+
 .enable-click(@cursor: pointer) {
 	pointer-events: all;
 	cursor: @cursor;

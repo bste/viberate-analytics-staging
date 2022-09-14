@@ -1,0 +1,64 @@
+.mobile-disclaimer {
+	display: none;
+	color: @white;
+	vertical-align: middle;
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0;
+	box-sizing: border-box;
+	background-color: @black;
+	text-align: left;
+	overflow: hidden;
+	overflow-y: auto;
+
+	@media @bp_768 {
+		display: none;
+	}
+
+	article {
+		.font-size(10);
+		line-height: 14px;
+		font-family: @base-font;
+		font-weight: 400;
+		padding: 20px 0;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		text-align: center;
+	}
+
+	.content {
+		padding: @page_spacer_mobile;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	h2 {
+		.font-size(50);
+		line-height: 62px;
+		font-weight: 500;
+		padding: 0 0 20px 0;
+		margin: 0;
+		text-transform: uppercase;
+
+		@media @bp_360 {
+			.font-size(60);
+			line-height: 72px;
+		}
+	}
+
+	p {
+		.font-size(24);
+		line-height: 30px;
+		font-weight: 500;
+	}
+
+	.buttons {
+		padding: 15px 0;
+	}
+}

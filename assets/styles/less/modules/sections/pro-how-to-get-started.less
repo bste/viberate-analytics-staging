@@ -1,0 +1,181 @@
+.section-pro-how-to-get-started {
+	text-align: center;
+
+	& + .section-api-contact-us {
+
+		h2 {
+
+			@media @bp_768 {
+				.font-size(32);
+				line-height: 46px;
+			}
+		}
+	}
+
+	.page {
+		max-width: 1000px;
+
+		@media @bp_1024 {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.article {
+		padding: 30px 0 0 0;
+
+		@media @bp_768 {
+			padding: 30px 0 0 0;
+		}
+
+		.page {
+			width: 100%;
+		}
+	}
+
+	h2 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(32);
+			line-height: 46px;
+		}
+
+		& + p {
+			.font-size(20);
+			line-height: 28px;
+		}
+	}
+
+	.faq-list {
+		padding-top: 30px;
+
+		@media @bp_768 {
+			padding-top: 60px;
+		}
+	}
+
+	.faq {
+		text-align: left;
+		list-style: none;
+		margin-top: 6px;
+
+		&.initial {
+
+			.faq-content {
+				display: block;
+			}
+		}
+
+		&.open {
+
+			h3 {
+				.prevent-click();
+
+				&:after {
+					background-image: url('../images/svg/minus-blue.svg');
+				}
+			}
+		}
+
+		.faq-title {
+			.font-size(16);
+			line-height: 21px;
+			font-weight: 500;
+			position: relative;
+			padding: 10px 50px 10px 30px;
+			cursor: pointer;
+			background-color: @white;
+
+			@media @bp_768 {
+				padding: 34px 50px;
+			}
+
+			&:after {
+				.transition(opacity, 300ms, linear);
+				content: "";
+				position: absolute;
+				right: 12px;
+				width: 12px;
+				height: 24px;
+				top: 50%;
+				margin-top: -12px;
+				background-repeat: no-repeat;
+				background-position: right center;
+				background-image: url('../images/svg/plus-blue.svg');
+				background-size: 12px;
+
+				@media @bp_768 {
+					width: 24px;
+					height: 40px;
+					right: 24px;
+					background-position: right center;
+					background-size: 12px;
+					margin-top: -20px;
+				}
+			}
+		}
+
+		.faq-content {
+			.font-size(14);
+			line-height: 26px;
+			display: none;
+			padding-left: 30px;
+			padding-right: 30px;
+			color: #595959;
+
+			@media @bp_768 {
+				line-height: 30px;
+				padding-left: 50px;
+				padding-right: 50px;
+				max-width: 80%;
+			}
+
+			@media @bp_1024 {
+				max-width: 70%;
+			}
+
+			&:before,
+			&:after {
+				content: "";
+				display: block;
+				height: 20px;
+				width: 100%;
+			}
+
+			a {
+				color: inherit;
+				font-weight: 500;
+			}
+		}
+
+		.break {
+			color: @black;
+			word-break: break-all;
+			font-size: inherit;
+		}
+	}
+
+	.see-all {
+		padding-top: 10px;
+
+		@media @bp_768 {
+			padding-top: 30px;
+		}
+
+		a {
+			.font-size(14);
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 3px;
+
+			color: @blue;
+
+			&:hover {
+				color: @blue-roll;
+			}
+		}
+	}
+}

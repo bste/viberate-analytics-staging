@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/other/report</title>
+    <g id="icon/other/report" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Bounds" points="0 0 16 0 16 16 0 16"></polygon>
+        <polygon id="Icon" fill="#ffffff" points="9.6 4 9.33333333 2.66666667 3.33333333 2.66666667 3.33333333 14 4.66666667 14 4.66666667 9.33333333 8.4 9.33333333 8.66666667 10.6666667 13.3333333 10.6666667 13.3333333 4"></polygon>
+    </g>
+</svg>

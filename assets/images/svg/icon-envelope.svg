@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/envelope</title>
+    <g id="icon/envelope" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Bounds" points="0 0 16 0 16 16 0 16"></polygon>
+        <path d="M14.4,1.5 L1.6,1.5 C0.72,1.5 0.008,2.23125 0.008,3.125 L0,12.875 C0,13.76875 0.72,14.5 1.6,14.5 L14.4,14.5 C15.28,14.5 16,13.76875 16,12.875 L16,3.125 C16,2.23125 15.28,1.5 14.4,1.5 L14.4,1.5 Z M14.4,12.875 L1.6,12.875 L1.6,4.75 L8,8.8125 L14.4,4.75 L14.4,12.875 L14.4,12.875 Z M8,7.1875 L1.6,3.125 L14.4,3.125 L8,7.1875 L8,7.1875 Z" id="Icon" fill="#4E63CE"></path>
+    </g>
+</svg>

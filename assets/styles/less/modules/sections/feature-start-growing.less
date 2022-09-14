@@ -1,0 +1,47 @@
+.section-feature-start-growing {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/bg-start-growing-mobile.png');
+
+	@media @bp_768 {
+		background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/bg-start-growing-desktop.png');
+	}
+
+	@media @bp_1440 {
+		background-size: contain;
+	}
+
+	.page {
+		position: relative;
+		z-index: 1;
+	}
+
+	.section-main {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		min-height: 420px;
+
+		@media @bp_1200 {
+			min-height: 520px;
+		}
+
+		h2 {
+			.font-size(22);
+			font-weight: 500;
+			line-height: 30px;
+			text-align: center;
+
+			@media @bp_768 {
+				.font-size(32);
+				line-height: 42px;
+			}
+		}
+
+		.button {
+			margin-top: 24px;
+		}
+	}
+}

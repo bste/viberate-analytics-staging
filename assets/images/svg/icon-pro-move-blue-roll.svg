@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/other/move</title>
+    <g id="icon/other/move" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Bounds" points="0 0 16 0 16 16 0 16"></polygon>
+        <polygon id="Path" fill="#6889E2" points="12 7.33333333 12 5.33333333 14.6666667 8 12 10.6666667 12 8.66666667 8.66666667 8.66666667 8.66666667 12 10.6666667 12 8 14.6666667 5.33333333 12 7.33333333 12 7.33333333 8.66666667 4 8.66666667 4 10.6666667 1.33333333 8 4 5.33333333 4 7.33333333 7.33333333 7.33333333 7.33333333 4 5.33333333 4 8 1.33333333 10.6666667 4 8.66666667 4 8.66666667 7.33333333"></polygon>
+    </g>
+</svg>

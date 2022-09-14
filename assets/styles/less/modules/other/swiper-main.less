@@ -1,0 +1,71 @@
+.swiper-main {
+	position: relative;
+	margin: 0 -@page_spacer_mobile;
+
+	@media @bp_480 {
+		margin: 0 -@page_spacer_mobile_landscape;
+	}
+	
+	@media @bp_768 {
+		margin: 0 -@page_spacer_tablet;
+	}
+
+	@media @bp_1024 {
+		margin: 0;
+		//margin: 0 -@page_spacer_tablet_landscape;
+	}
+
+	@media @bp_1200 {
+		//margin: 0 -@page_spacer_desktop;
+	}
+
+	&.mobile-only {
+
+		@media @bp_768 {
+			display: none;
+		}
+	}
+
+	.swiper-container {
+		padding: 0 @page_spacer_mobile;
+
+		@media @bp_480 {
+			padding: 0 @page_spacer_mobile_landscape;
+		}
+
+		@media @bp_768 {
+			padding: 0 @page_spacer_tablet 60px @page_spacer_tablet;
+		}
+
+		@media @bp_1024 {
+			padding: 0 0 80px 0;
+			//padding: 0 @page_spacer_tablet_landscape;
+		}
+
+		@media @bp_1200 {
+			//padding: 0 @page_spacer_desktop;
+		}
+	}
+
+	.swiper-button-prev {
+
+		@media @bp_768 {
+			right: @page_spacer_tablet + 60px;
+		}
+
+		@media @bp_1024 {
+			right: 75px;
+		}
+	}
+
+	.swiper-button-next {
+
+		@media @bp_768 {
+			right: @page_spacer_tablet;
+		}
+
+		@media @bp_1024 {
+			right: 0;
+		}
+	}
+}

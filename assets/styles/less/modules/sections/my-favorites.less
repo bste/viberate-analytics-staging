@@ -1,0 +1,177 @@
+.section-my-favorites {
+
+	h1 {
+
+		@media @bp_768 {
+			padding-bottom: 90px;
+		}
+	}
+
+	footer {
+		text-align: right;
+		padding-top: 20px;
+	}
+
+	.col-1 {
+
+		@media @bp_1024 {
+			.box-sizing;
+			width: 30%;
+			float: left;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+
+		@media @bp_1440 {
+			width: 22%;
+		}
+	}
+
+	.col-2 {
+
+		@media @bp_1024 {
+			width: 70%;
+			float: right;
+		}
+
+		@media @bp_1440 {
+			width: 78%;
+		}
+	}
+
+	.section-main {
+
+		@media @bp_1024 {
+			.clearfix;
+			margin: 0;
+			display: flex;
+			flex-direction: row;
+			flex: 1;
+			width: 100%;
+		}
+	}
+
+	.side-filter {
+		.clearfix;
+		padding-bottom: 30px;
+		text-align: left;
+
+		@media @bp_1024 {
+			//padding: 0 45px 0 0;
+		}
+
+		@media @bp_1200 {
+			//padding-right: 75px;
+		}
+
+		.btn {
+			text-align: left;
+		}
+	}
+
+	.btn-side-filter {
+		margin-right: 35px;
+		text-transform: none;
+		
+		@media @bp_1024 {
+			margin-right: 0;
+			float: left;
+			clear: both;
+			margin-top: 10px;
+		}
+
+		@media @bp_1440 {
+			margin-top: 25px;
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.entity-group {
+		.clearfix;
+		padding-bottom: 60px;
+		clear: both;
+
+		> h3 {
+			.font-size(12);
+			line-height: 16px;
+			font-weight: 500;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			padding-bottom: 15px;
+			color: #989898;
+		}
+	}
+
+	.card-entity.horizontal {
+		
+		@media @bp_768 {
+			width: 100%;
+		}
+	}
+
+	.grid {
+		margin: -15px;
+
+		.grid-item {
+			.box-sizing();
+			padding: 15px;
+			float: left;
+			max-width: 320px;
+
+			@media @bp_768 {
+				width: 50%;		
+			}
+
+			@media @bp_1440 {
+				width: 33.33%;
+			}
+
+			&:nth-child(2n+1) {
+
+				@media @bp_768 {
+					clear: both;
+				}
+
+				@media @bp_1440 {
+					clear: none;
+				}
+			}
+
+			&:nth-child(3n+1) {
+
+				@media @bp_1440 {
+					clear: both;
+				}
+			}
+		}
+	}
+
+	.results-description {
+		.font-size(24);
+		position: relative;
+		line-height: 30px;
+		font-weight: 500;
+		color: @black;
+		max-width: 290px;
+		display: flex;
+		flex-direction: row;
+
+		span {
+			.font-size(52);
+			font-weight: normal;
+			letter-spacing: -1px;
+			line-height: 1;
+			font-family: @suiss-int-mono;
+			padding-right: 10px;
+		}
+	}
+}

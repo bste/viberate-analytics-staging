@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/other/help/tooltip</title>
+    <g id="icon/other/help/tooltip" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Bounds" points="0 0 16 0 16 16 0 16"></polygon>
+        <path d="M8,0 C3.584,0 0,3.584 0,8 C0,12.416 3.584,16 8,16 C12.416,16 16,12.416 16,8 C16,3.584 12.416,0 8,0 L8,0 Z" id="Path-Copy" fill="#4E63CE"></path>
+        <path d="M8.8,12.2 L7.2,12.2 L7.2,7.4 L8.8,7.4 L8.8,12.2 L8.8,12.2 Z M8.8,5.4 L7.2,5.4 L7.2,3.8 L8.8,3.8 L8.8,5.4 L8.8,5.4 Z" id="Combined-Shape" fill="#FFFFFF"></path>
+    </g>
+</svg>

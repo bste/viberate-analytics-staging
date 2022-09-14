@@ -1,0 +1,361 @@
+.custom-select {
+	.box-sizing();
+	.font-size(14);
+	line-height: 18px;
+	letter-spacing: 0.5px;
+	width: 100%;
+	position: relative;
+	color: @black-1;
+	z-index: 2;
+
+	&.multiselect {
+
+		.results {
+			padding-bottom: 10px;
+
+			li {
+				padding: 0;
+				position: relative;
+
+				> ul {
+					display: none;
+
+					> li {
+
+						.btn {
+							padding-left: 48px;
+
+							&:before {
+								left: 30px;
+							}
+						}
+					}
+				}
+			}
+
+			.btn-expand-toggle.active + ul {
+				display: block;
+			}
+		}
+	}
+
+	&.with-search {
+
+		input[type="text"] {
+			.font-size(14);
+			font-family: @suiss-int;
+			background-color: @white;
+			border: 10px solid @white-1;
+			padding: 0 10px;
+			height: 48px;
+			line-height: 1;
+		}
+
+		&.open {
+
+			.results {
+				top: 98px;
+				padding-top: 0;
+			}
+		}
+	}
+
+	&.charts {
+		.user-select(none);
+		background-color: @white;
+
+		.selected-wrapper {
+			border-color: @white;
+			height: 34px;
+
+			&:after {
+				top: 0;
+				right: 12px;
+				height: 34px;
+			}
+
+			span {
+				padding-left: 40px;
+			}
+		}
+
+		.selected-option {
+			height: 34px;
+			line-height: 34px;
+			padding: 0;
+			text-transform: none;
+
+			span {
+				padding-right: 30px;
+				display: block;
+				font-weight: 500;
+				padding-left: 43px;
+				background-size: 16px;
+			}
+		}
+
+		.results {
+			top: 37px;
+			text-transform: none;
+			max-height: none;
+
+			li {
+				padding-left: 40px;
+			}
+		}
+	}
+
+	&.optional {
+
+		.selected-wrapper {
+			font-style: italic;
+		}
+	}
+
+	&.open {
+
+		.blocker {
+			display: block;
+		}
+
+		.selected-wrapper {
+
+			&:after {
+				background-image: url('../images/svg/chevron-up.svg');
+			}
+		}
+
+		.results {
+			display: block;
+		}
+	}
+
+	.blocker {
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 0;
+		display: none;
+	}
+
+	.selected-wrapper {
+		border-bottom: 2px solid @black;
+		padding-right: 20px;
+		height: 48px;
+
+		&:after {
+			content: "";
+			position: absolute;
+			width: 20px;
+			height: 48px;
+			right: 0;
+			top: 5px;
+			background-image: url('../images/svg/chevron-down.svg');
+			background-position: right center;
+			background-size: 12px;
+			background-repeat: no-repeat;
+			cursor: pointer;
+		}
+
+		> label {
+			.font-size(10);
+			letter-spacing: 0.5px;
+			text-transform: none;
+		}
+	}
+
+	.selected-option {
+		.box-sizing();
+		.text-overflow;
+		position: absolute;
+		top: 0;
+		right: 20px;
+		left: 0;
+		height: 48px;
+		line-height: 48px;
+		color: @black;
+		padding-top: 5px;
+		cursor: pointer;
+		outline: 0;
+		text-align: left;
+		background-position: left center;
+		background-repeat: no-repeat;
+
+		&.placeholder {
+			color: @black-1;
+			font-weight: 500;
+
+			& + label {
+				display: none;
+			}
+		}
+
+		span {
+			text-align: left;
+			background-position: left 12px center;
+			background-repeat: no-repeat;
+		}
+	}
+
+	.results {
+		.box-sizing();
+		padding-top: 10px;
+		color: @grey-1;
+		display: none;
+		background-color: @white-1;
+		position: absolute;
+		overflow: hidden;
+		overflow-y: auto;
+		max-height: 205px;
+		top: 50px;
+		left: 0;
+		right: 0;
+		z-index: 1;
+		scroll-behavior: smooth;
+		scrollbar-width: thin;
+
+		&.has-border {
+			border: 2px solid @black;
+			top: 48px;
+		}
+
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+
+		&::-webkit-scrollbar-button {
+			//background: #000;
+		}
+
+		&::-webkit-scrollbar-track-piece {
+			background: #ddd;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: #4b4b4b;
+		}
+
+		.item {
+			position: relative;
+			padding-left: 0;
+			padding-right: 0;
+			padding-top: 8px;
+			padding-bottom: 8px;
+
+			&.divider {
+				padding-top: 0;
+				padding-bottom: 0;
+				height: 2px;
+				background: @black;
+				margin: 0 8px;
+			}
+		}
+	}
+
+	.disclaimer {
+		.font-size(9);
+		.prevent-click;
+		line-height: 10px;
+		font-style: italic;
+		position: absolute;
+		left: 0;
+		top: 100%;
+		padding-top: 3px;
+		display: block;
+		z-index: 0;
+
+		@media @bp_768 {
+			padding-top: 6px;
+			white-space: nowrap;
+		}
+	}
+
+	li {
+		padding: 10px 15px;
+		background-position: left 8px center;
+		background-repeat: no-repeat;
+		background-size: 16px;
+
+		&:hover,
+		&.active {
+			color: black;
+			cursor: pointer;
+		}
+	}
+
+	.reset-field {
+		.font-size(0);
+		background-image: url('../images/svg/close.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 12px;
+		display: inline-block;
+		width: 32px;
+		height: 20px;
+		vertical-align: middle;
+		margin-left: 5px;
+		border-left: 2px solid @black;
+	}
+
+	.btn-expand-toggle {
+		.font-size(0);
+		.transition(transform, 150ms, ease-in-out);
+		width: 24px;
+		height: 24px;
+		background-image: url('../images/svg/chevron-down.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 12px;
+		position: absolute;
+		right: 4px;
+		top: 0;
+		z-index: 1;
+
+		&.active {
+			.rotate(180deg);
+		}
+	}
+
+	.viberate {
+		background-image: url('../images/svg/viberate-color.svg');
+	}
+
+	.instagram {
+		background-image: url('../images/svg/instagram-color.svg');
+	}
+
+	.twitter {
+		background-image: url('../images/svg/twitter-color.svg');
+	}
+
+	.youtube {
+		background-image: url('../images/svg/youtube-color.svg');
+	}
+
+	.shazam {
+		background-image: url('../images/svg/shazam-color.svg');
+	}
+
+	.soundcloud {
+		background-image: url('../images/svg/soundcloud-color.svg');
+	}
+
+	.spotify {
+		background-image: url('../images/svg/spotify-color.svg');
+	}
+
+	.deezer {
+		background-image: url('../images/svg/deezer-color.svg');
+	}
+
+	.facebook {
+		background-image: url('../images/svg/facebook-color.svg');
+		background-size: 8px;
+	}
+}
+
+.custom-select + .custom-select {
+	z-index: 1;
+}

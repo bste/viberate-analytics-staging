@@ -1,0 +1,27 @@
+textarea {
+	.box-sizing();
+	.font-size(14);
+	line-height: 22px;
+	padding: 30px 20px;
+	background-color: @white;
+	width: 100%;
+	border: 0;
+	color: @black;
+	height: 150px;
+	resize: none;
+	outline: 0;
+	vertical-align: top;
+	-webkit-user-select: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+
+	&.error {
+		
+		&::placeholder {
+			color: @red;
+		}
+	}
+}

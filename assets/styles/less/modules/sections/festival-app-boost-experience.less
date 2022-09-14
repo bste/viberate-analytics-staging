@@ -1,0 +1,108 @@
+.section-festival-app-boost-experience {
+	text-align: center;
+
+	@media @bp_768 {
+		padding-bottom: 0;
+	}
+
+	.article {
+		margin: 0 auto;
+		max-width: 400px;
+
+		@media @bp_768 {
+			max-width: none;
+		}
+	}
+
+	.threesome {
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			margin: 0 -12px;
+			padding-top: 30px;
+		}
+
+		.item {
+			.box-sizing;
+
+			@media @bp_768 {
+				width: 33.33%;
+				padding: 0 12px;
+				display: flex;
+			}
+
+			& + .item {
+				padding-top: 30px;
+
+				@media @bp_768 {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+
+	h2 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 500;
+		padding-bottom: 40px;
+
+		@media @bp_768 {
+			.font-size(42);
+			line-height: 49px;
+			padding-bottom: 60px;
+		}
+	}
+
+	.card-primary-feature {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1;
+		max-width: 400px;
+
+		@media @bp_1024 {
+			max-width: none;
+		}
+
+		figure {
+			display: block;
+			margin: 0 auto;
+			background-color: #F7F7F7;
+			padding: 0;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		article {
+			.font-size(14);
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 0 10px;
+
+			@media @bp_768 {
+				padding-bottom: 30px;
+			}
+
+			h3 {
+				.font-size(20);
+				line-height: 26px;
+				font-weight: 500;
+				padding: 0 0 10px 0;
+			}
+
+			p {
+
+				@media @bp_1024 {
+					padding-left: 10%;
+					padding-right: 10%;
+				}
+			}
+		}
+	}
+}

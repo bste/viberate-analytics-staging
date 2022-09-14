@@ -1,0 +1,48 @@
+.card-twitter {
+	background-color: transparent;
+	max-height: 614px;
+	overflow: hidden;
+	overflow-y: auto;
+	scrollbar-width: thin;
+
+	&::-webkit-scrollbar {
+	    width: 5px;
+	}
+
+	&::-webkit-scrollbar-button {
+	    //background: #000;
+	}
+
+	&::-webkit-scrollbar-track-piece {
+	    background: #eee;
+	}
+
+	&::-webkit-scrollbar-thumb {
+	    background: #ccc;
+	}
+}
+
+twitterwidget::shadow .SummaryCard-content * {
+	white-space:normal !important;
+}
+
+twitterwidget::shadow .resize-sensor{
+	display:none !important;
+	width:0px !important;
+	overflow:hidden !important;
+}
+
+#twitter-widget-0{
+	width: 100% !important;
+	border-radius: 0px !important;
+}
+
+blockquote.twitter-tweet {
+	.font-size(12) !important;
+	line-height: 16px !important;
+}
+
+blockquote.twitter-tweet p {
+	.font-size(12) !important;
+	line-height: 16px !important;
+}

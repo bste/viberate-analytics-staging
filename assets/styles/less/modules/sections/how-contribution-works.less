@@ -1,0 +1,97 @@
+.section-how-contribution-works {
+
+	@media @bp_768 {
+		padding-top: 60px;
+	}
+
+	.btn-go-back {
+		margin-bottom: 40px;
+	}
+
+	h1 {
+		.font-size(44);
+		line-height: 44px;
+		font-weight: 500;
+
+		@media @bp_1024 {
+			.font-size(60);
+			line-height: 66px;
+		}
+	}
+
+	.lead {
+		.font-size(18);
+		line-height: 24px;
+		font-weight: 500;
+
+		@media @bp_1024 {
+			.font-size(20);
+			line-height: 30px;
+			max-width: 55%;
+		}
+	}
+
+	h3 {
+		.font-size(22);
+		line-height: 26px;
+		font-weight: 500;
+		display: block;
+
+		@media @bp_1024 {
+			.font-size(32);
+			line-height: 36px;
+		}
+	}
+
+	.number {
+		.font-size(14);
+		font-weight: 500;
+		display: block;
+		padding-bottom: 8px;
+		margin-top: -10px;
+		letter-spacing: 1px;
+		color: @dashbord-table-font-color;
+	}
+
+	figure {
+
+		img {
+			max-width: 250px;
+		}
+	}
+
+
+	.grid {
+		.clearfix;
+		margin: -15px;
+		padding-top: 20px;
+
+		@media @bp_768 {
+			padding-top: 50px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.grid-item {
+			.box-sizing();
+			padding: 15px;
+			//width: 310px;
+			width: 100%;
+			text-align: center;
+
+			@media @bp_768 {
+				//width: 230px;
+				max-width: 320px;
+			}
+
+			@media @bp_1024 {
+				//width: 302px;
+			}
+
+			@media @bp_1100 {
+				//width: 322px;
+			}
+		}
+	}
+}

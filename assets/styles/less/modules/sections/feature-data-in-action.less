@@ -1,0 +1,452 @@
+.section-feature-data-in-action {
+	text-align: center;
+	padding: 30px 0;
+	overflow: hidden;
+
+	@media @bp_768 {
+		padding: 60px 0;
+		margin: 0 auto;
+		overflow: visible;
+	}
+
+	&.v2 {
+		background: linear-gradient(325.68deg, #82AFFF 0%, #F9B9C7 100%);
+		//background-image: url('../images/static/bg-data-in-action-2k.jpg');
+		//background-position: center;
+		//background-repeat: no-repeat;
+		//background-size: cover;
+
+		.section-main {
+			max-width: 1128px;
+
+			> article {
+				flex: 1;
+
+				@media @bp_1024 {
+					align-items: flex-end;
+				}
+
+				.col {
+					.box-sizing;
+
+					&:first-child {
+
+						@media @bp_1024 {
+							flex: 0 0 60%;
+							position: relative;
+						}
+					}
+
+					&:last-child {
+
+						@media @bp_1024 {
+							flex: 0 0 40%;
+							justify-content: flex-end;
+						}
+					}
+				}
+			}
+		}
+
+		.section-feature-title {
+			padding: 0;
+
+			@media @bp_1024 {
+				margin-bottom: 0;
+			}
+
+			br {
+				display: block;
+			}
+		}
+
+		.special-entity-card {
+			.box-shadow(0 0 15px 0 rgba(0,0,0,0.08));
+			max-width: 320px;
+			flex-direction: column;
+			max-height: none;
+
+			@media @bp_1024 {
+				flex-direction: row;
+				max-width: none;
+				margin: 0;
+				width: 100%;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+
+			&.beatport,
+			&.spotify,
+			&.genre,
+			&.airplay,
+			&.festival,
+			&.audience,
+			&.artist {
+
+				article {
+					text-align: center;
+
+					.special-entity-card-title,
+					.rank {
+						margin: 0 auto;
+						width: 100%;
+						max-width: 190px;
+						text-align: left;
+					}
+				}
+			}
+
+			&.spotify,
+			&.genre,
+			&.country,
+			&.airplay,
+			&.festival,
+			&.audience,
+			&.artist {
+
+				article {
+
+					.special-entity-card-title,
+					.rank {
+						max-width: 216px;
+					}
+				}
+			}
+
+			&.airplay,
+			&.festival,
+			&.audience,
+			&.artist {
+
+				article {
+					align-items: center;
+
+					.special-entity-card-title {
+						margin-bottom: 32px;
+					}
+				}
+			}
+
+			&.genre,
+			&.country {
+
+				article {
+					align-items: center;
+
+					.special-entity-card-title {
+						margin-bottom: 32px;
+					}
+
+					div {
+						min-width: 180px;
+					}
+				}
+			}
+
+			figure {
+				padding-top: 75%;
+				width: 100%;
+				height: auto;
+
+				@media @bp_768 {
+					width: 320px;
+				}
+
+				@media @bp_1024 {
+					height: 280px;
+					width: 280px;
+					max-width: 280px;
+					padding: 0;
+				}
+			}
+
+			article {
+				flex: 1;
+				flex-direction: column;
+				justify-content: flex-start;
+				text-align: left;
+				max-width: none;
+				padding: 24px;
+				width: 100%;
+
+				@media @bp_360 {
+					padding: 32px;
+				}
+
+				.icon {
+					width: 32px;
+					height: 32px;
+				}
+
+				span {
+					display: block;
+					line-height: 1;
+
+					&.number {
+						.font-size(24);
+						font-weight: 500;
+						margin-top: 0;
+						position: relative;
+					}
+
+					&.genre {
+						.font-size(15);
+						color: @grey-1;
+					}
+
+					sup {
+						.font-size(10);
+						top: 0;
+						vertical-align: 15px;
+					}
+				}
+
+				.row {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding-top: 24px;
+
+					& + .row {
+						border-top: 2px solid #D5DDE0;
+						margin-top: 22px;
+					}
+				}
+			}
+
+			h3 {
+				.font-size(24);
+				line-height: 30px;
+			}
+
+			.country {
+				margin-top: 0;
+
+				.flag {
+					width: 21px;
+					margin-left: 14px;
+				}
+			}
+
+			.special-entity-card-title {
+				display: flex;
+				//justify-content: space-between;
+				align-items: center;
+			}
+		}
+
+		.mobile-only {
+			display: none;
+
+			@media @bp_768_max {
+				display: block;
+			}
+		}
+
+		.tablet-forward {
+			display: none;
+
+			@media @bp_768 {
+				display: block;
+			}
+		}
+	}
+
+	.page {
+		margin: 0 -@page_spacer_mobile;
+
+		@media @bp_768 {
+			margin: 0 auto;
+		}
+	}
+
+	.section-main {
+		margin: 0 auto;
+		max-width: 920px;
+
+		> article {
+
+			@media @bp_768 {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+			}
+
+			.col {
+				.box-sizing;
+
+				@media @bp_768 {
+					display: flex;
+					flex-direction: column;
+					flex: 0 0 50%;
+					align-items: flex-start;
+					text-align: left;
+				}
+
+				&:first-child {
+					padding: 0 16px;
+
+					@media @bp_768 {
+						padding: 0;
+					}
+				}
+
+				&:last-child {
+
+					@media @bp_768 {
+						padding-left: 30px;
+					}
+
+					@media @bp_1024 {
+						padding-left: 60px;
+					}
+				}
+			}
+		}
+	}
+
+	h2 {
+		.font-size(26);
+		line-height: 36px;
+		font-weight: 500;
+		padding: 20px 30px;
+		color: inherit;
+
+		@media @bp_768 {
+			.font-size(32);
+			line-height: 42px;
+			text-align: left;
+			padding: 0 0 20px 0;
+		}
+
+		br {
+			display: none;
+
+			@media @bp_1024 {
+				display: block;
+			}
+		}
+	}
+
+	.btn-solid {
+		.font-size(15);
+		min-width: 262px;
+		margin-top: 32px;
+
+		&.border {
+			border-width: 1px;
+			padding: 15px 24px;
+		}
+	}
+
+	.card-wrapper {
+		display: flex;
+		align-items: flex-start;
+	}
+
+	.special-entity-card {
+		display: flex;
+		flex-direction: row;
+		max-width: 460px;
+		max-height: 230px;
+		margin: 0 auto;
+
+		figure {
+			.box-sizing;
+			flex: 0 0 50%;
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			
+			@media @bp_768 {
+				width: 230px;
+				height: 230px;
+			}
+		}
+
+		article {
+			.box-sizing;
+			display: flex;
+			flex: 0 0 50%;
+			background-color: @white;
+			padding: 12px;
+			flex-direction: column;
+			justify-content: space-between;
+			text-align: left;
+			max-width: 50%;
+
+			@media @bp_768 {
+				width: 230px;
+				padding: 24px;
+			}
+
+			.rank {
+				padding-top: 10px;
+			}
+
+			.icon {
+				width: 18px;
+				height: 18px;
+
+				@media @bp_768 {
+					width: 24px;
+					height: 24px;
+				}
+			}
+
+			span {
+				display: block;
+				line-height: 1;
+
+				&.number {
+					.font-size(22);
+					font-weight: 400;
+					margin-top: 8px;
+				}
+
+				&.genre {
+					.text-overflow;
+					.font-size(12);
+					color: @grey-1;
+				}
+
+				sup {
+					top: 0;
+					vertical-align: 1em;
+				}
+			}
+		}
+
+		h3 {
+			.font-size(18);
+			line-height: 1;
+			text-align: left;
+			font-weight: 500;
+
+			@media @bp_768 {
+				.font-size(26);
+			}
+		}
+
+		.country {
+			.font-size(12);
+			margin-top: 6px;
+			text-transform: uppercase;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			line-height: 1;
+
+			.flag {
+				margin-right: 4px;
+				width: 15px;
+				height: auto;
+				margin-right: 2px;
+				vertical-align: middle;
+				line-height: 1;
+				border: 1px solid #E8ECED;
+			}
+		}
+	}
+}

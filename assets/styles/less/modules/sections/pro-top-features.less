@@ -1,0 +1,151 @@
+.section-pro-top-features {
+
+	.section-main {
+		text-align: center;
+	}
+
+	h2 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(32);
+			line-height: 46px;
+		}
+
+		& + p {
+			.font-size(20);
+			line-height: 28px;
+			max-width: 350px;
+			margin: 0 auto;
+			padding: 15px 0 40px 0;
+		}
+	}
+
+	.list-features {
+		margin: 0 auto;
+		max-width: 1000px;
+		padding-top: 30px;
+
+		@media @bp_768 {
+			padding-top: 60px;
+		}
+
+		.item {
+			padding: 10px 0;
+
+			&:nth-child(even) {
+
+				.feature {
+
+					figure {
+						text-align: right;
+
+						@media @bp_768 {
+							order: 2;
+						}
+					}
+
+					> article {
+
+						@media @bp_768 {
+							//padding-right: 50px;
+							//padding-left: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.feature {
+		background-color: @white;
+		padding: 10px 0 20px 0;
+		text-align: left;
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			background-color: transparent;
+			align-items: center;
+		}
+
+		figure {
+			.box-sizing;
+			position: relative;
+			padding: 10px;
+
+			@media @bp_768 {
+				width: 55%;
+				padding: 0;
+			}
+
+			img {
+				width: 100%;
+				max-width: 500px;
+			}
+		}
+
+		> article {
+			.box-sizing;
+			padding: 0 24px;
+
+			@media @bp_360 {
+				padding: 0 36px;
+			}
+
+			@media @bp_768 {
+				width: 45%;
+				max-width: 368px;
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+
+		}
+
+		h3 {
+			.font-size(20);
+			line-height: 26px;
+			font-weight: 500;
+			padding-bottom: 15px;
+			padding-top: 25px;
+
+			@media @bp_768 {
+				padding-top: 0;
+			}
+		}
+
+		ul {
+			.font-size(14);
+			line-height: 18px;
+			color: #595959;
+
+			@media @bp_768 {
+				line-height: 24px;
+			}
+
+			li {
+				margin-top: 15px;
+				background-position: left top 4px;
+				background-repeat: no-repeat;
+				background-size: 15px;
+				background-image: url('../images/svg/checkmark-blue.svg');
+				padding-left: 30px;
+
+				@media @bp_768 {
+					background-size: 16px;
+				}
+			}
+		}
+	}
+
+	.btn-solid {
+		display: none;
+
+		@media @bp_768 {
+			display: inline-block;
+			min-width: 260px;
+		}
+	}
+}

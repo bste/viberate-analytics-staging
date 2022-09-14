@@ -1,0 +1,190 @@
+.card-instagram {
+
+	> a {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 3;
+	}
+
+	header {
+		.box-sizing();
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		background-color: @white;
+		padding: 20px;
+		height: 90px;
+		width: 100%;
+		z-index: 2;
+	}
+
+	article {
+		.box-sizing();
+		position: relative;
+		padding: 20px;
+		height: 90px;
+		width: 100%;
+
+		h3 {
+			width: 60%;
+			float: left;
+		}
+
+		label {
+			.font-size(10);
+			line-height: 14px;
+			color: @black-1;
+			text-transform: uppercase;
+			font-weight: 500;
+			display: block;
+			letter-spacing: 2px;
+
+			@media @bp_768 {
+				.font-size(12);
+				line-height: 14px;
+			}
+		}
+
+		strong {
+			.font-size(24);
+			line-height: 30px;
+			font-family: @suiss-int-mono;
+			display: block;
+			font-weight: normal;
+			padding-top: 5px;
+		}
+
+		.stats {
+			.box-sizing();
+			float: right;
+			width: 40%;
+			text-align: right;
+
+			@media @bp_1200 {
+				width: 40%;
+			}
+		}
+	}
+
+	figure {
+		.prevent-click();
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		cursor: pointer;
+
+		position: absolute;
+		top: 90px;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		overflow: hidden;
+	}
+
+	figcaption {
+		.opacity(0);
+		.transition(opacity, 200ms, ease-out);
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		color: @white;
+		width: 100%;
+		display: table;
+		background-color: rgba(0,0,0,0.4);
+
+		> div {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+	}
+
+	.likes,
+	.comments {
+		background-repeat: no-repeat;
+		background-position: left center;
+		display: inline-block;
+		margin: 0 10px;
+		padding-left: 25px;
+		font-family: @suiss-int-mono;
+	}
+
+	.likes {
+		background-size: 18px;
+		background-image: url('../images/svg/heart-white.svg');
+	}
+
+	.comments {
+		padding-left: 30px;
+		background-size: 20px;
+		background-image: url('../images/svg/comment-white.svg');
+	}
+
+	.iframe-embed {
+		position: relative;
+		display: block;
+		background-color: @white;
+		color: @black;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	iframe {
+		margin-top: -54px !important;
+		min-width: 0px !important;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		padding: 20px 20px 10px 20px;
+		background-color: @white;
+		z-index: 2;
+		text-align: left;
+
+		&:before {
+			.prevent-click();
+			.vertical-flip(#ffffff, rgba(255,255,255,0));
+			content: "";
+			position: absolute;
+			bottom: 100%;
+			left: 0;
+			right: 0;
+			height: 60px;
+
+			@media @bp_768 {
+				height: 120px;
+			}
+		}
+
+		label {
+			.font-size(10);
+			line-height: 14px;
+			color: @black-1;
+			text-transform: uppercase;
+			font-weight: 500;
+			display: block;
+			letter-spacing: 2px;
+		}
+
+		strong {
+			.font-size(24);
+			line-height: 30px;
+			display: block;
+			font-weight: 500;
+			padding-top: 5px;
+			letter-spacing: 0.5px;
+		}
+	}
+}

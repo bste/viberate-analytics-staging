@@ -1,0 +1,66 @@
+.feed-list-item {
+	.box-sizing();
+	.animation(fade-in 1s linear .2s forwards);
+	.opacity(0);
+	color: @black;
+	position: relative;
+	background-color: @white;
+	padding: 20px 70px 20px 70px;
+
+	@media @bp_768 {
+		height: 62px;
+		padding: 20px 80px 20px 80px;
+	}
+
+	@media @bp_1024 {
+		padding-left: 110px;
+		padding-right: 110px;
+	}
+
+	.entity-type {
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		font-weight: 500;
+		text-transform: uppercase;
+		white-space: nowrap;
+
+		a {
+			.text-decoration-ink;
+			font-weight: 500;
+			color: @black;
+		}
+	}
+
+	p {
+		padding: 0;
+		margin: 0;
+		line-height: 18px;
+
+		@media @bp_768 {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+
+		strong {
+			font-weight: 500;
+		}
+
+		a {
+			.text-decoration-ink;
+			font-weight: 500;
+			color: @black;
+		}
+	}
+
+	time {
+		.font-size(12);
+		color: @grey-1;
+		white-space: nowrap;
+		text-align: right;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+}

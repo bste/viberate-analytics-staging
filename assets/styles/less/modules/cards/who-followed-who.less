@@ -1,0 +1,139 @@
+.card-who-followed-who {
+	.box-sizing();
+	background-color: @white;
+	padding: 20px 25px 10px 25px;
+	max-width: 290px;
+
+	header {
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		padding-bottom: 15px;
+
+		a {
+			color: @black;
+			font-weight: 500;
+		}
+	}
+
+	.entities {
+		.clearfix;
+	}
+
+	.btn-save {
+		width: 30px;
+		height: 30px;
+		background-size: 14px;
+
+		&:hover {
+			background-size: 16px;
+		}
+	}
+
+	.card {
+		width: 108px;
+		height: 108px;
+		float: left;
+
+		figure {
+			width: 108px;
+			height: 108px;
+		}
+	}
+
+	.card + .card {
+		float: right;
+	}
+
+	footer {
+		text-align: center;
+
+		.social-icon {
+			height: 15px;
+		}
+
+		.facebook {
+			background-size: 6px;
+		}
+
+		.instagram {
+			background-size: 12px;
+		}
+
+		.twitter {
+			background-size: 12px;
+		}
+
+		.soundcloud {
+			background-size: 18px;
+		}
+
+		.youtube {
+			background-size: 13px;
+		}
+	}
+
+	.arrows {
+		text-align: center;
+		margin: 0 auto;
+		width: 55%;
+		position: relative;
+
+		&.arrows-1 {
+			
+			&:before {
+				content: none;
+			}
+		}
+
+		&.arrows-2 {
+			
+			&:after {
+				content: none;
+			}
+		}
+
+		&:before,
+		&:after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			width: 20px;
+			height: 20px;
+			background-image: url('../images/svg/arrow-up-grey.svg');
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		&:before {
+			left: -10px;
+		}
+
+		&:after {
+			right: -9px;
+		}
+		
+		span {
+			border-bottom: 2px solid #e5e5e5;
+			position: relative;
+			display: block;
+			padding-top: 26px;
+
+			&:before,
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 2px;
+				height: 8px;
+				background-color: #e5e5e5;
+			}
+
+			&:after {
+				left: auto;
+				right: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,193 @@
+.media-player-toolbar {
+	.transition(transform, 300ms, ease-out);
+	.translate(0, 60px);
+	.font-size(11);
+	font-weight: 600;
+	line-height: 14px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #1F1F1F;
+	color: @white;
+	height: 50px;
+
+	.progress-bar {
+		position: absolute;
+		left: 0;
+		top: -4px;
+		right: 0;
+		height: 4px;
+		cursor: pointer;
+		z-index: 2;
+		background-color: #494C52;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: -2px;
+			right: 0;
+			bottom: -2px;
+			left: 0;
+		}
+	}
+
+	.progress-bar-current {
+		background-color: @red;
+		height: 4px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+	}
+
+	.artist-photo {
+		position: absolute;
+		left: 0;
+		width: 50px;
+		height: 50px;
+		top: 0;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 1;
+	}
+
+	.media-info {
+		height: 50px;
+		position: absolute;
+		left: 50px;
+		top: 0;
+		line-height: 50px;
+		right: 125px;
+		display: flex;
+		flex-direction: row;
+		padding-left: 12px;
+
+		@media @bp_768 {
+			right: 180px;
+			left: 60px;
+			padding-left: 60px;
+			padding-right: 20px;
+		}
+
+		@media @bp_1200 {
+			right: calc(~'50% + 50px');
+			padding-left: 90px;
+		}
+
+		time {
+			height: 50px;
+			display: inline-block;
+			width: 40px;
+			font-family: @suiss-int-mono;
+		}
+
+		h4 {
+			height: 50px;
+			display: inline-block;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			padding-left: 20px;
+
+			span {
+				color: @grey-1;
+			}
+
+			a {
+				color: @white;
+			}
+		}
+	}
+
+	.media-type {
+		.opacity(0.65);
+		.font-size(0);
+		display: none;
+		background-position: center;
+		background-repeat: no-repeat;
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		left: 0px;
+		top: 0;
+
+		@media @bp_768 {
+			display: block;
+		}
+
+		@media @bp_1200 {
+			left: 30px;
+			display: block;
+		}
+
+
+		&.youtube {
+			background-size: 24px;
+			background-image: url('../images/svg/youtube-white.svg');
+		}
+
+		&.spotify {
+			background-size: 20px;
+			background-image: url('../images/svg/spotify-white.svg');
+		}
+
+		&.deezer {
+			background-size: 24px;
+			background-image: url('../images/svg/deezer-white.svg');
+		}
+
+		&.beatport {
+			background-size: 24px;
+			background-image: url('../images/svg/beatport-white.svg');
+		}
+
+		&:hover {
+			.opacity(1);
+		}
+	}
+
+	.basic-controls {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		right: 25px;
+		margin-top: -10px;
+		width: 100px;
+		margin-left: -45px;
+
+		@media @bp_768 {
+			right: 90px;
+		}
+
+		@media @bp_1200 {
+			left: 50%;
+			right: auto;
+		}
+
+		.btn-player-controls {
+			margin: 0 5px;
+		}
+	}
+
+	.extra-controls {
+		display: none;
+		position: absolute;
+		right: 35px;
+		top: 50%;
+		margin-top: -10px;
+
+		@media @bp_768 {
+			display: block;
+		}
+	}
+
+	.btn-media-player-close {
+		.opacity(.5);
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		margin-top: -10px;
+	}
+}

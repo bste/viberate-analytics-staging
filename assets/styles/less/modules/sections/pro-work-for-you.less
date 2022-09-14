@@ -1,0 +1,193 @@
+.section-pro-work-for-you {
+	text-align: center;
+
+	@media @bp_768_max {
+		padding-bottom: 0;
+	}
+
+	.article {
+		padding: 10px 0 0 0;
+		margin: 0 -@page_spacer_mobile;
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			max-width: 1000px;
+			margin: 0 auto;
+			padding-top: 60px;
+		}
+	}
+
+	.col {
+		.box-sizing;
+		background-repeat: no-repeat;
+		background-position: right top;
+		background-size: cover;
+		padding: 40px 24px 24px 24px;
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: column;
+			padding: 125px 28px 40px 28px;
+			position: relative;
+			width: 50%;
+		}
+
+		@media @bp_1024 {
+			text-align: center;
+			padding-bottom: 50px;
+		}
+
+		@media @bp_1200 {
+			text-align: center;
+			padding-bottom: 60px;
+		}
+
+		&.col-1 {
+			background-image: url('../images/static/analyitics-landing-benefit-artists.jpg');
+			//background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/analyitics-landing-benefit-artists.jpg');
+			background-position: center top;
+
+			@media @bp_768 {
+				margin-right: 12px;
+			}
+		}
+
+		&.col-2 {
+			margin-top: 15px;
+			background-image: url('../images/static/analyitics-landing-benefit-labels.jpg');
+			//background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/analyitics-landing-benefit-labels.jpg');
+
+			@media @bp_768 {
+				margin-top: 0;
+				margin-left: 12px;
+			}
+
+			li {
+
+				&:before {
+					color: #FA815E;
+				}
+			}
+		}
+
+		.item {
+			.box-sizing;
+			text-align: center;
+			flex-direction: column;
+			background-color: @white;
+			padding: 40px;
+			max-width: 290px;
+			margin: 0 auto;
+
+			@media @bp_768 {
+				display: flex;
+				flex: 1;
+				height: 290px;
+			}
+
+			@media @bp_1024 {
+			}
+		}
+
+		article {
+
+			> a {
+				.font-size(12);
+				.text-decoration-ink;
+				text-transform: uppercase;
+				font-weight: 500;
+				color: inherit;
+			}
+		}
+
+		h3 {
+			.font-size(24);
+			line-height: 31px;
+			font-weight: 600;
+			padding-bottom: 40px;
+			color: @white;
+
+			@media @bp_768 {
+				.font-size(28);
+				position: absolute;
+				top: 30px;
+				left: 28px;
+				right: 28px;
+				padding-bottom: 0;
+			}
+		}
+
+		ol {
+			list-style: none;
+			counter-reset: section-counter;
+			margin: 0;
+			padding: 0;
+		}
+
+		li {
+			.font-size(14);
+			display: block;
+			margin-top: 25px;
+			padding: 0 0 0 50px;
+			position: relative;
+			text-align: left;
+			counter-increment: section-counter;
+
+			@media @bp_768 {
+				min-height: 63px;
+			}
+
+			@media @bp_1024 {
+				min-height: 46px;
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:before {
+				.font-size(24);
+				line-height: 1;
+				font-weight: 500;
+				content: "0" counter(section-counter);
+				position: absolute;
+				left: 0;
+				top: 0;
+				color: #82d6fa;
+			}
+		}
+	}
+
+	h2 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 500;
+		padding-bottom: 40px;
+
+		@media @bp_768 {
+			.font-size(36);
+			line-height: 46px;
+		}
+
+		& + p {
+			.font-size(20);
+			line-height: 28px;
+		}
+	}
+
+	.start {
+		clear: both;
+		display: none;
+
+		@media @bp_768 {
+			display: block;
+			padding-top: 50px;
+		}
+
+		.btn-solid {
+			min-width: 260px;
+		}
+	}
+}

@@ -1,0 +1,59 @@
+.section-top-events-festivals-around-you {
+
+	.genres {
+		padding-bottom: 60px;
+
+		label {
+			padding-bottom: 10px;
+		}
+	}
+
+	.list-genres {
+
+		.btn-filter-lineup {
+			white-space: nowrap;
+			margin: 8px 30px 8px 0;
+		}
+	}
+
+	label {
+		.font-size(12);
+		line-height: 16px;
+		text-transform: uppercase;
+		color: @black-1;
+		letter-spacing: 2px;
+		font-weight: 500;
+		display: block;
+	}
+
+	.swiper-container {
+		margin: 0 -@page_spacer_mobile;
+		padding: 0 @page_spacer_mobile;
+
+		@media @bp_480 {
+			margin: 0 -@page_spacer_mobile_landscape;
+			padding: 0 @page_spacer_mobile_landscape;
+		}
+
+		@media @bp_768 {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.swiper-main {
+		margin-top: 30px;
+	}
+
+	.swiper-slide {
+		width: 185px;
+
+		@media @bp_768 {
+			width: 30%;
+		}
+
+		@media @bp_1024 {
+			width: auto;
+		}
+	}
+}

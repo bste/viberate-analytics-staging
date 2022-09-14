@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/video track/32</title>
+    <g id="beatport-view_FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Beatport-View_1920_v4" transform="translate(-1092.000000, -2699.000000)">
+            <g id="Beatport-Performance" transform="translate(552.000000, 2079.000000)">
+                <g id="cards-slider" transform="translate(24.000000, 480.000000)">
+                    <g id="card-copy-10" transform="translate(440.000000, 0.000000)">
+                        <g id="icon/video-help" transform="translate(76.000000, 140.000000)">
+                            <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+                            <circle id="Oval" stroke="#4E63CE" fill="#FFFFFF" cx="16" cy="16" r="15.5"></circle>
+                            <polygon id="Path" fill="#4E63CE" points="12 20.8976418 12 11.12 22.6666667 16.0002654 12 20.8976418"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

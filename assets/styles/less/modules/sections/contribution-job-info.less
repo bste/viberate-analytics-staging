@@ -1,0 +1,73 @@
+.section-contribution-job-info {
+	text-align: center;
+
+	.section-main {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+	article {
+		text-align: left;
+	}
+
+	h2 {
+		.font-size(18);
+		line-height: 24px;
+		font-weight: 500;
+
+		@media @bp_1024 {
+			.font-size(22);
+			line-height: 33px;
+		}
+	}
+
+	p {
+		.font-size(14);
+		line-height: 20px;
+		font-weight: 400;
+		text-align: center;
+		padding: 0;
+
+		@media @bp_768 {
+			.font-size(18);
+			line-height: 28px;
+		}
+
+		@media @bp_1024 {
+			text-align: left;
+		}
+
+		strong {
+			font-weight: 500;
+		}
+	}
+
+	ul {
+		.font-size(14);
+		font-weight: 300;
+		line-height: 24px;
+		padding: 20px 0 0 0;
+
+		@media @bp_768 {
+			.font-size(18);
+			line-height: 42px;
+		}
+
+		& + h2 {
+			padding-top: 40px;
+		}
+
+		li {
+			position: relative;
+			padding-left: 28px;
+
+			&:before {
+				.font-size(16);
+				content: "\2022";
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+}

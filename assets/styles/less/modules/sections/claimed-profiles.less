@@ -1,0 +1,53 @@
+.section-claimed-profiles {
+	padding-top: 60px;
+	padding-bottom: 90px;
+
+	.section-main {
+		max-width: 100%;
+	}
+
+	h1 {
+		.font-size(42);
+		line-height: 49px;
+		padding-bottom: 40px;
+	}
+
+	.claimed-profiles-list {
+
+		.item {
+			padding: 10px 0;
+
+			&:first-child {
+
+				.claimed-profile-item-v2 {
+					display: none;
+
+					@media @bp_768 {
+						display: block;
+					}
+
+					.main-card {
+						background-color: transparent;
+						padding-top: 0;
+						padding-bottom: 0;
+
+						.col {
+							align-self: flex-end;
+
+							div {
+								line-height: 1;
+							}
+						}
+
+						.col-1 {
+
+							label {
+								margin-left: -13px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

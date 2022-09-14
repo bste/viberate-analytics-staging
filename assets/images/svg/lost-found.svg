@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>lost-found</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Festival-ikone" transform="translate(-257.000000, -492.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="lost-found" transform="translate(257.000000, 492.000000)">
+                <path d="M15.8813333,13.92 L11.646,9.684 C12.266,8.70733333 12.624,7.55066667 12.624,6.31133333 C12.6246667,2.832 9.79266667,-1.77635684e-15 6.312,-1.77635684e-15 C2.83133333,-1.77635684e-15 0,2.832 0,6.312 C0,9.79266667 2.83133333,12.6246667 6.312,12.6246667 C7.49066667,12.6246667 8.59266667,12.3 9.538,11.736 L13.802,16 L15.8813333,13.92 Z M2.352,6.312 C2.352,4.13 4.12866667,2.35333333 6.31133333,2.35333333 C8.49466667,2.35333333 10.2713333,4.12933333 10.2713333,6.312 C10.2713333,8.49533333 8.49466667,10.2713333 6.31133333,10.2713333 C4.12866667,10.2713333 2.352,8.49533333 2.352,6.312 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

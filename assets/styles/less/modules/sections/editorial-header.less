@@ -1,0 +1,59 @@
+.section-editorial-header {
+	color: @white;
+	padding: 50px 0;
+	text-align: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/editorial-hero-mobile.jpg');
+	//background-image: url('../images/static/editorial-hero-mobile.jpg');
+
+	@media @bp_768 {
+		padding: 75px 0;
+		background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/editorial-hero-tablet.jpg');
+		//background-image: url('../images/static/editorial-hero-tablet.jpg');
+	}
+
+	@media @bp_1024 {
+		background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/editorial-hero-desktop.jpg');
+		//background-image: url('../images/static/editorial-hero-desktop.jpg');
+	}
+
+	&.learn {
+		background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/learn-hero-mobile.jpg');
+		//background-image: url('../images/static/learn-hero-mobile.jpg');
+		background-position: left -100px top;
+		background-size: initial;
+
+		@media @bp_600 {
+			padding: 75px 0;
+			background-size: cover;
+			background-position: left top;
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/learn-hero-tablet.jpg');
+			//background-image: url('../images/static/learn-hero-tablet.jpg');
+		}
+
+		@media @bp_1024 {
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/learn-hero-desktop.jpg');
+			//background-image: url('../images/static/learn-hero-desktop.jpg');
+		}
+	}
+	
+	h1 {
+		.font-size(32);
+		line-height: 36px;
+		font-weight: 500;
+		padding-bottom: 20px;
+
+		@media @bp_768 {
+			.font-size(42);
+			line-height: 46px;
+		}
+	}
+
+	h2 {
+		.font-size(20);
+		line-height: 28px;
+		font-weight: 500;
+	}
+}

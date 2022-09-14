@@ -1,0 +1,120 @@
+/*************** 1. Footer [.footer] ***************/
+
+.footer {
+	background-color: @black;
+	color: @white;
+	padding: 50px 0;
+	text-align: left;
+	position: relative;
+	//z-index: 0;
+
+	@media @bp_768 {
+		padding: 75px 0;
+	}
+
+	@media @bp_1024 {
+		padding: 100px 0;
+	}
+
+	h4 {
+		.font-size(14);
+		font-weight: 500;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		padding: 10px 30px 10px 0;
+		position: relative;
+
+		@media @bp_1024 {
+			padding: 0 0 15px 0;
+			padding-right: 0;
+		}
+	}
+
+	a {
+		color: @white;
+
+		&:hover,
+		&:active {
+			color: @white;
+		}
+	}
+
+	.footer-menu {
+		.transition(height, 300ms, ease-out);
+		.font-size(14);
+		font-weight: 500;
+		color: @grey-1;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		display: none;
+
+		&.hide {
+			height: 1px;
+		}
+
+		@media @bp_1024 {
+			display: block;
+		}
+
+		li {
+			padding: 3px 0;
+		}
+
+		a {
+			color: @grey-1;
+
+			&:hover,
+			&:active {
+				color: @white;
+			}
+		}
+	}
+
+	.btn-footer-menu-toggle {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		text-align: right;
+		width: 100%;
+		background-image: url('../images/svg/arrow-down-white.svg');
+		background-size: 12px;
+		background-position: right center;
+		background-repeat: no-repeat;
+
+		&:before {
+			.font-size(0);
+			content: none;
+		}
+
+		@media @bp_1024 {
+			display: none;
+		}
+	}
+
+	.footnote {
+		.font-size(10);
+		color: @grey-1;
+		padding: 30px 0 0 0;
+		margin: 0;
+
+		a {
+			color: @grey-1;
+			.text-decoration-ink;
+		}
+	}
+
+	.grid {
+
+		@media @bp_1024 {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	.grid-item {
+		position: relative;
+	}
+}

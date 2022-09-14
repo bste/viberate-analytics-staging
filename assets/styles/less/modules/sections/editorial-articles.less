@@ -1,0 +1,95 @@
+.section-editorial-articles {
+	padding-top: 12px;
+	text-align: center;
+
+	.section-main {
+
+		@media @bp_1200 {
+			padding: 0 12.5%;
+		}
+	}
+
+	h2 {
+		.font-size(20);
+		line-height: 28px;
+		font-weight: 500;
+		text-align: left;
+		padding-bottom: 10px;
+	}
+
+	.loading {
+		height: 83px;
+		position: relative;
+	}
+
+	.articles-list {
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			margin: 0 -12px;
+			flex-wrap: wrap;
+		}
+
+		.item {
+			.box-sizing;
+			padding: 12px 0;
+
+			@media @bp_768 {
+				padding: 12px;
+			}
+
+			&.full-width,
+			&.featured {
+				width: 100%;
+
+				.card-article {
+
+					@media @bp_768 {
+						display: flex;
+						flex-direction: row;
+
+						figure {
+							width: 66.66%;
+							//height: 346px;
+						}
+
+						article {
+							.font-size(14);
+							line-height: 18px;
+							width: 33.33%;
+							padding-left: 24px;
+							padding-top: 0;
+						}
+					}
+				}
+			}
+
+			&.featured {
+				
+				.card-article {
+					background-color: @black;
+					color: @white;
+					padding: 24px;
+
+					@media @bp_768 {
+						padding: 5%;
+					}
+				}
+			}
+
+			@media @bp_768 {
+				width: 33.33%;
+				display: flex;
+			}
+		}
+	}
+
+	.more {
+		padding-top: 30px;
+
+		.btn {
+			width: 260px;
+		}
+	}
+}

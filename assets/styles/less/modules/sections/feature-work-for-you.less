@@ -1,0 +1,117 @@
+.section-feature-work-for-you {
+	text-align: center;
+
+	.article {
+		display: flex;
+		justify-content: center;
+	}
+
+	.list-what-can-you-do {
+		padding-top: 62px;
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			max-width: 1000px;
+			padding-top: 50px;
+			margin: 0 -12px;
+		}
+
+		.item {
+			.box-sizing;
+			text-align: center;
+			flex-direction: column;
+			max-width: 304px;
+			margin: 32px auto 0 auto;
+
+			@media @bp_768 {
+				display: flex;
+				flex: 1;
+				margin-top: 0;
+				margin: 0 12px;
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:nth-child(2) {
+
+				h3 {
+					background: linear-gradient(135deg, #D5CAF7 0%, #BFD5FF 100%);
+				}
+			}
+
+			&:nth-child(3) {
+
+				h3 {
+					background: linear-gradient(135deg, #BFD5FF 0%, #BFEDFF 100%);
+				}
+			}
+		}
+	}
+
+	.what-can-you-do {
+
+		@media @bp_768 {
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+		}
+
+		h3 {
+			.rounded-corners(4px);
+			.font-size(22);
+			line-height: 30px;
+			font-weight: 500;
+			text-align: center;
+			height: 78px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: linear-gradient(135deg, #FFC8E6 0%, #D5CAF7 100%);
+		}
+
+		article {
+			.rounded-corners(4px);
+			.box-shadow(0 0 15px 0 rgba(0,0,0,0.08));
+			margin-top: 4px;
+			background-color: @white;
+			padding: 32px;
+			display: flex;
+			flex: 1;
+		}
+	}
+
+	.bullets {
+		.font-size(15);
+
+		li {
+			padding-left: 40px;
+			position: relative;
+			margin: 0 0 32px 0;
+			text-align: left;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:before {
+				content: "";
+				background-position: center;
+				background-repeat: no-repeat;
+				background-image: url('../images/svg/icon-checkmark-green.svg');
+				width: 16px;
+				height: 16px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		}
+	}
+
+	.start {
+		clear: both;
+		padding-top: 36px;
+	}
+}

@@ -1,0 +1,86 @@
+.card-country {
+	height: 260px;
+	color: @white;
+	background-repeat: repeat;
+	background-size: 400px;
+	background-position: center center;
+	background-image: url(../images/gif/noise-animated-dark.gif);
+
+	@media @bp_768 {
+		height: 320px;
+	}
+
+	@media @bp_1440 {
+		height: 400px;
+	}
+
+	&.horizontal {
+		height: 150px;
+
+		figure {
+			background-position: center;
+		}
+
+		figcaption {
+			.font-size(24px);
+			line-height: 29px;
+			bottom: 18px;
+		}
+	}
+
+	figure {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		color: @white;
+	}
+
+	h3 {
+		.font-size(14);
+		line-height: 30px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(24);
+		}
+	}
+
+	a {
+		color: @white;
+	}
+
+	figcaption {
+		.font-size(26);
+		line-height: 30px;
+		font-weight: 500;
+		position: absolute;
+		left: 20px;
+		bottom: 30px;
+		right: 20px;
+
+		@media @bp_768 {
+			.font-size(32);
+			line-height: 32px;
+		}
+
+		@media @bp_1024 {
+			.font-size(42);
+			line-height: 42px;
+		}
+
+		@media @bp_1200 {
+			.font-size(32);
+			line-height: 32px;
+		}
+
+		@media @bp_1440 {
+			.font-size(42);
+			line-height: 42px;
+		}
+	}
+}

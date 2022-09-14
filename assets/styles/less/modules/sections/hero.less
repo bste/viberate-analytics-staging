@@ -1,0 +1,322 @@
+.section-hero {
+	padding: 0;
+	height: 100vh;
+
+	&.fullscreen {
+		padding: 0;
+	}
+
+	.section-main {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		height: 100%;
+
+		@media @bp_iphonex {
+			height:calc(~'100% - 34px');
+		}
+	}
+
+	.swiper-main,
+	.swiper-wrapper,
+	.swiper-container {
+		flex: 1;
+		display: flex;
+	}
+
+	.swiper-main {
+		overflow: hidden;
+		margin: 0;
+
+		.swiper-container {
+			padding: 0;
+		}
+	}
+
+	.swiper-slide {
+		.box-sizing();
+		height: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+
+		&.swiper-slide-active {
+
+			h2 {
+
+				@media @bp_768 {
+					.animation(fade-in 1s linear 0s forwards);
+				}
+			}
+
+			p {
+
+				@media @bp_768 {
+					.animation(fade-in 1s linear .3s forwards);
+				}
+			}
+
+			.btn {
+
+				@media @bp_768 {
+					.animation(fade-in 1s linear .6s forwards);
+				}
+			}
+		}
+
+		&.slide-1 {
+			//background-image: url('../images/static/hero-home-artist-new-mobile.jpg');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-artist-new-mobile.jpg');
+
+			@media @bp_768 {
+				//background-image: url('../images/static/hero-home-artist-new-tablet.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-artist-new-tablet.jpg');
+			}
+
+			@media @bp_1024 {
+				//background-image: url('../images/static/hero-home-artist-new-desktop-1440.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-artist-new-desktop-1440.jpg');
+			}
+
+			@media @bp_1440 {
+				//background-image: url('../images/static/hero-home-artist-new-desktop-1920.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-artist-new-desktop-1920.jpg');
+			}
+
+			@media @bp_1920 {
+				//background-image: url('../images/static/hero-home-artist-new-4k.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-artist-new-4k.jpg');
+			}
+		}
+
+		&.slide-2 {
+			//background-image: url('../images/static/hero-home-venue-new-mobile.jpg');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-venue-new-mobile.jpg');
+
+			@media @bp_768 {
+				//background-image: url('../images/static/hero-home-venue-new-tablet.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-venue-new-tablet.jpg');
+			}
+
+			@media @bp_1024 {
+				//background-image: url('../images/static/hero-home-venue-new-desktop-1440.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-venue-new-desktop-1440.jpg');
+			}
+
+			@media @bp_1440 {
+				//background-image: url('../images/static/hero-home-venue-new-desktop-1920.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-venue-new-desktop-1920.jpg');
+			}
+
+			@media @bp_1920 {
+				//background-image: url('../images/static/hero-home-venue-new-4k.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-venue-new-4k.jpg');
+			}
+		}
+
+		&.slide-3 {
+			//background-image: url('../images/static/hero-home-event-new-mobile.jpg');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-event-new-mobile.jpg');
+
+			@media @bp_768 {
+				//background-image: url('../images/static/hero-home-event-new-tablet.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-event-new-tablet.jpg');
+			}
+
+			@media @bp_1024 {
+				//background-image: url('../images/static/hero-home-event-new-desktop-1440.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-event-new-desktop-1440.jpg');
+			}
+
+			@media @bp_1440 {
+				//background-image: url('../images/static/hero-home-event-new-desktop-1920.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-event-new-desktop-1920.jpg');
+			}
+
+			@media @bp_1920 {
+				//background-image: url('../images/static/hero-home-event-new-4k.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-event-new-4k.jpg');
+			}
+		}
+
+		&.slide-4 {
+			//background-image: url('../images/static/hero-home-festival-new-mobile.jpg');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-festival-new-mobile.jpg');
+
+			@media @bp_768 {
+				//background-image: url('../images/static/hero-home-festival-new-tablet.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-festival-new-tablet.jpg');
+			}
+
+			@media @bp_1024 {
+				//background-image: url('../images/static/hero-home-festival-new-desktop-1440.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-festival-new-desktop-1440.jpg');
+			}
+
+			@media @bp_1440 {
+				//background-image: url('../images/static/hero-home-festival-new-desktop-1920.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-festival-new-desktop-1920.jpg');
+			}
+
+			@media @bp_1920 {
+				//background-image: url('../images/static/hero-home-festival-new-4k.jpg');
+				background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/hero-home-festival-new-4k.jpg');
+			}
+		}
+	}
+
+	.swiper-container-horizontal {
+
+		> .swiper-pagination {
+			bottom: 30px;
+			right: 30px;
+			left: auto;
+			width: auto;
+		}
+	}
+
+	.search-cta {
+		background-color: black;
+		color: @white;
+		height: 140px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		cursor: pointer;
+
+		@media @bp_768 {
+			height: 200px;
+		}
+
+		.page {
+			width: 100%;
+		}
+
+		label {
+			.font-size(10);
+			line-height: 16px;
+			letter-spacing: 2px;
+			font-weight: 500;
+			text-transform: uppercase;
+
+			@media @bp_768 {
+				.font-size(12);
+			}
+
+			&:before {
+				display: block;
+				content: "We have over 1 million different iDs";
+				color: @white;
+				.animation(cta-search-label-animation 28s linear 0s infinite);
+			}
+
+			span {
+				display: none;
+			}
+		}
+
+		.typewriter-text {
+			.font-size(30);
+			line-height: 36px;
+			font-weight: 500;
+			color: #666;
+			white-space: nowrap;
+			overflow: hidden;
+
+			span {
+				display: none;
+			}
+
+			strong {
+				font-weight: 500;
+				float: left;
+
+				&:before {
+					content: "Search Artists, Places, Events or Festivals";
+					width: 100%;
+					display: block;
+					white-space: nowrap;
+					overflow: hidden;
+					animation:  cta-search-animation 28000ms steps(13) infinite normal,
+								blink-text-cursor 500ms infinite normal;
+				}
+			}
+
+			@media @bp_768 {
+				.font-size(60);
+				line-height: 66px;
+			}
+		}
+	}
+
+	.hero-slide {
+		padding-top: 180px;
+		width: 100%;
+
+		@media @bp_768 {
+			padding-top: 0;
+		}
+
+		.page {
+
+			@media @bp_768 {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+				justify-content: center;
+				align-items: flex-start;
+			}
+		}
+
+		h2 {
+			.font-size(28);
+			line-height: 30px;
+			font-weight: 500;
+
+			@media @bp_768 {
+				.opacity(0);
+				.font-size(60);
+				line-height: 66px;
+				max-width: 70%;
+			}
+
+			@media @bp_1024 {
+				.font-size(70);
+				line-height: 70px;
+			}
+
+			@media @bp_1440 {
+				max-width: 50%;
+			}
+		}
+
+		p {
+			.font-size(18);
+			line-height: 24px;
+			font-weight: 500;
+
+			@media @bp_768 {
+				.opacity(0);
+				.font-size(24);
+				line-height: 30px;
+				max-width: 50%;
+			}
+		}
+
+		.btn {
+
+			@media @bp_768 {
+				.opacity(0);
+			}
+		}
+
+		h2 + .btn {
+			margin-top: 20px;
+
+			@media @bp_768 {
+				margin-top: 40px,
+			}
+		}
+	}
+}

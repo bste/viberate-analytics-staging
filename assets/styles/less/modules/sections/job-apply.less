@@ -1,0 +1,102 @@
+.section-job-apply {
+	text-align: center;
+	z-index: 1;
+
+	&.white {
+
+		.loading {
+			position: relative;
+
+			&:before {
+				background-color: @white;
+			}
+		}
+	}
+
+	&.center {
+		text-align: center;
+
+		article {
+			margin: 0 auto;
+			max-width: 600px;
+		}
+	}
+
+	article {
+		position: relative;
+		z-index: 1;
+		text-align: left;
+
+		@media @bp_600 {
+			text-align: center;
+		}
+	}
+
+	h2 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 500;
+		padding-bottom: 20px;
+
+		@media @bp_768 {
+			.font-size(32);
+			line-height: 44px;
+			padding-bottom: 30px;
+		}
+
+		br {
+			display: none;
+
+			@media @bp_768 {
+				display: block;
+			}
+		}
+	}
+
+	p {
+		.font-size(14);
+		line-height: 24px;
+		font-weight: 300;
+
+		@media @bp_768 {
+			.font-size(18);
+			line-height: 30px;
+		}
+
+		strong {
+			font-weight: 500;
+		}
+	}
+
+	fieldset {
+		margin: 0 auto;
+		text-align: left;
+		padding-top: 20px;
+
+		@media @bp_600 {
+			max-width: 510px;
+			padding-top: 30px;
+		}
+	}
+
+	.form-row {
+		position: relative;
+
+		textarea {
+			.font-size(12);
+			border: 2px solid @black;
+			padding: 20px;
+			margin: 25px 0;
+
+			&::placeholder {
+				color: @grey-1;
+			}
+		}
+
+		input[type="submit"] {
+			display: inline-block;
+			width: 100%;
+			padding: 16px 44px;
+		}
+	}
+}

@@ -1,0 +1,89 @@
+.card-city {
+	height: 260px;
+	color: @white;
+
+	@media @bp_768 {
+		height: 320px;
+	}
+
+	@media @bp_1440 {
+		height: 400px;
+	}
+
+	&.horizontal {
+		height: 150px;
+		color: @white;
+		background-repeat: repeat;
+		background-size: 400px;
+		background-position: center center;
+		background-image: url(../images/gif/noise-animated-dark.gif);
+
+		figure {
+			background-position: center top;
+		}
+
+		figcaption {
+			.font-size(24px);
+			line-height: 29px;
+			bottom: 18px;
+			background: transparent;
+			padding: 0 20px;
+		}
+	}
+
+	figure {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center top;
+	}
+
+	article {
+		.font-size(14);
+		line-height: 18px;
+		color: @black;
+		background-color: @white;
+		padding: 24px;
+		display: none;
+	}
+
+	a {
+		color: @white;
+	}
+
+	figcaption {
+		.vertical-flip(rgba(0,0,0,0.5), rgba(0,0,0,0));
+		.font-size(26);
+		line-height: 30px;
+		font-weight: 500;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 30px 20px;
+
+		@media @bp_768 {
+			.font-size(32);
+			line-height: 32px;
+		}
+
+		@media @bp_1024 {
+			.font-size(42);
+			line-height: 42px;
+		}
+
+		@media @bp_1200 {
+			.font-size(32);
+			line-height: 32px;
+		}
+
+		@media @bp_1440 {
+			.font-size(42);
+			line-height: 42px;
+		}
+	}
+}

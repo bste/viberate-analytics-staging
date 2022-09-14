@@ -1,0 +1,165 @@
+.cookies-consent-v2 {
+	.prevent-click;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+
+	@media @bp_768 {
+		bottom: 88px;
+	}
+
+	@media @bp_1024 {
+		bottom: 64px;
+	}
+
+	@media @bp_1200 {
+		bottom: 32px;
+	}
+
+	.row {
+		.box-sizing;
+		.box-shadow(0 0 15px 0 rgba(0,0,0,0.08));
+		.font-size(12);
+		pointer-events: auto;
+		line-height: 16px;
+		max-width: 896px;
+		background-color: #EEF0FB;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 8px 24px;
+		line-height: 1;
+		margin: 0 auto;
+
+		p {
+			padding: 0 24px 0 0;
+			margin: 0;
+		}
+
+		.button {
+			white-space: nowrap;
+		}
+
+		.btn-solid {
+			.font-size(10);
+			height: 40px;
+			padding: 0;
+			width: 92px;
+			min-width: 92px;
+			letter-spacing: 2px;
+
+			@media @bp_768 {
+				.font-size(12);
+				width: 110px;
+				min-width: 110px;
+			}
+		}
+	}
+
+	a {
+		.text-decoration-ink;
+		color: @blue;
+
+		&:hover {
+			color: @blue-roll;
+		}
+	}
+}
+/*
+.cookies-consent {
+	vertical-align: middle;
+	position: fixed;
+	top: 7px;
+	bottom: 7px;
+	left: 7px;
+	max-width: 306px;
+	box-sizing: border-box;
+	background: @white;
+	text-align: left;
+
+	&:before {
+		content: "";
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		background-color: rgba(0,0,0,0.75);
+	}
+
+	article {
+		.font-size(10);
+		line-height: 14px;
+		font-family: @base-font;
+		font-weight: 400;
+		color: @black;
+		padding: 20px 0;
+		overflow-y: auto;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 306px;
+		background-color: @white;
+		z-index: 1;
+	}
+
+	.content {
+		.clearfix();
+		padding: 20px 20px 0 20px;
+
+		@media @bp_768 {
+			padding: 20px 30px;
+		}
+	}
+
+	h2 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 600;
+		padding: 0 0 20px 0;
+		margin: 0;
+	}
+
+	.btn-shadow {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	.buttons {
+		padding: 15px 0;
+	}
+
+	a {
+		color: @black;
+		font-weight: bold;
+
+		&:hover {
+			.text-decoration-ink;
+		}
+	}
+
+	.cookies-form {
+		padding-bottom: 0;
+	}
+
+	.form-row {
+		border-top: 2px solid @black;
+		border-bottom: 2px solid @black;
+		padding: 10px 40px 10px 0;
+	}
+
+	input[type="checkbox"].custom-checkbox + label {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -12px;
+		padding-left: 24px;
+	}
+}
+*/

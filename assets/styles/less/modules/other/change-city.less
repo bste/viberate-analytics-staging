@@ -1,0 +1,172 @@
+.change-city {
+
+	form {
+		position: relative;
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+	}
+
+	.modal-content {
+		max-width: 1024px;
+		max-height: 740px;
+		overflow-y: auto;
+	}
+
+	.modal-header {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		z-index: 2;
+		padding: 40px 0 0 50%;
+	}
+
+	.modal-scroller {
+		position: absolute;
+		display: flex;
+		overflow-y: auto;
+	}
+
+	.modal-main {
+		position: relative;
+		
+		@media @bp_768 {
+			display: flex;
+			flex: 1;
+		}
+
+		@media @bp_1024 {
+			margin-top: 0;
+		}
+	}
+
+	.flex {
+
+		@media @bp_768 {
+			display: flex;
+			flex: 1;
+			height: 100%;
+		}
+	}
+
+	.page {
+
+		@media @bp_768 {
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			//justify-content: space-between;
+			padding-bottom: 40px;
+		}
+	}
+
+	.form-article {
+		padding-top: 30px;
+		padding-bottom: 40px;
+
+		@media @bp_768 {
+			padding-top: 90px;
+		}
+
+		@media @bp_1200 {
+			padding-top: 120px;
+		}
+
+		> label {
+			padding-bottom: 0;
+		}
+	}
+
+	.input-search-cities {
+		.font-size(22);
+		font-weight: 500;
+		height: 48px;
+		padding-top: 0;
+		line-height: 48px;
+		
+		@media @bp_768 {
+			.font-size(42);
+			font-weight: 500;
+			height: 70px;
+			line-height: 70px;
+		}
+	}
+
+	.search-results {
+		max-height: 220px;
+		min-height: 40px;
+		overflow: hidden;
+		overflow-y: auto;
+
+		@media @bp_768 {
+			//height: 220px;
+		}
+
+		.item {
+			.font-size(14);
+			padding: 3px 0;
+			color: @grey-1;
+			font-weight: 500;
+
+			span {
+				cursor: pointer;
+				display: inline-block;
+				text-align: left;
+
+				&:hover {
+					color: @black;
+				}
+			}
+		}
+
+		em {
+			.font-size(10);
+			display: block;
+			font-style: normal;
+			padding: 0;
+			margin: 0;
+			line-height: 10px;
+		}
+	}
+
+	label {
+		.font-size(12);
+		line-height: 16px;
+		text-transform: uppercase;
+		color: @black-1;
+		letter-spacing: 2px;
+		font-weight: 500;
+		display: block;
+		padding-bottom: 10px;
+	}
+
+	.grid {
+		margin: -8px;
+
+		.grid-item {
+			.box-sizing();
+			width: 148px;
+			height: 148px;
+			float: left;
+			padding: 8px;
+		}
+	}
+
+	em {
+		.font-size(10);
+		display: block;
+		font-style: normal;
+	}
+
+	.card-city {
+		width: 132px;
+		height: 132px;
+
+		figcaption {
+			.font-size(14);
+			line-height: 16px;
+			padding: 12px;
+		}
+	}
+}

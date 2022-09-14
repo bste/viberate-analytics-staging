@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>add-badge</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artist-ikone" transform="translate(-872.000000, -492.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="add-badge" transform="translate(872.000000, 492.000000)">
+                <path d="M0,0 L16,0 L16,16 L0,16 L0,0 Z M11.7333333,7.68888889 L8.84444444,7.68888889 L8.84444444,4.8 L7.68888889,4.8 L7.68888889,7.68888889 L4.8,7.68888889 L4.8,8.84444444 L7.68888889,8.84444444 L7.68888889,11.7333333 L8.84444444,11.7333333 L8.84444444,8.84444444 L11.7333333,8.84444444 L11.7333333,7.68888889 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

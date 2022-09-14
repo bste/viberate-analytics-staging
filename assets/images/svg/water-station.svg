@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="16px" viewBox="0 0 11 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>water-station</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Festival-ikone" transform="translate(-384.000000, -427.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="water-station" transform="translate(384.000000, 427.000000)">
+                <path d="M5.5,2.38066667 C8.014875,6.00533333 9.625,8.52933333 9.625,10.716 C9.625,12.8946667 7.7749375,14.6666667 5.5,14.6666667 C3.2250625,14.6666667 1.375,12.8946667 1.375,10.7166667 C1.375,8.52933333 2.985125,6.00533333 5.5,2.38066667 Z M5.5,0 C2.151875,4.798 0,7.79933333 0,10.7166667 C0,13.6353333 2.4605625,16 5.5,16 C8.5394375,16 11,13.6353333 11,10.7166667 C11,7.79933333 8.848125,4.798 5.5,0 Z M7.326,8 C7.9921875,10.3226667 7.046875,12.5726667 5.5,13.1873333 C7.781125,13.504 9.620875,10.8766667 7.326,8 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

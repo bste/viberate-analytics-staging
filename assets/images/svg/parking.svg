@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="16px" viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>parking</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Festival-ikone" transform="translate(-257.000000, -232.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M263.461538,232 L257,232 L257,248 L260.692308,248 L260.692308,242.666667 L263.461538,242.666667 C266.516923,242.666667 269,240.275556 269,237.333333 C269,234.391111 266.516923,232 263.461538,232 Z M263.646154,239.111111 L260.692308,239.111111 L260.692308,235.555556 L263.646154,235.555556 C264.661538,235.555556 265.492308,236.355556 265.492308,237.333333 C265.492308,238.311111 264.661538,239.111111 263.646154,239.111111 Z" id="parking"></path>
+        </g>
+    </g>
+</svg>

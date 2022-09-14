@@ -1,0 +1,68 @@
+.charts {
+
+	.section-entity-view-heading {
+
+		.section-main {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+
+			h1 {
+				
+				@media @bp_768 {
+					padding-right: 150px;
+				}
+			}
+		}
+	}
+
+	.btn-play-tutorial {
+		margin-bottom: 20px;
+
+		@media @bp_768 {
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+
+	.section-entity-view {
+
+		&.loading {
+
+			&:before {
+
+				@media @bp_768 {
+					left: 25%;
+				}
+
+				@media @bp_1024 {
+					left: 18.18%;
+				}
+			}
+
+			&:after {
+				position: fixed;
+				top: 50%;
+				left: 20px;
+				right: 20px;
+				text-align: center;
+				padding-top: 30px;
+				content: "Loading charts...";
+
+				@media @bp_768 {
+					left: 25%;
+					right: 0;
+				}
+
+				@media @bp_1024 {
+					left: 18.18%;
+				}
+			}
+
+		}
+	}
+}

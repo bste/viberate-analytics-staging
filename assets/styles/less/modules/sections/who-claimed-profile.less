@@ -1,0 +1,132 @@
+.section-who-claimed-profile {
+	padding-bottom: 20px;
+
+	@media @bp_768 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	&.fullscreen {
+		//padding-top: 0;
+
+		@media @bp_768 {
+			padding-top: @section_spacer_fullscreen_tablet;
+			height: auto;
+		}
+
+		@media @bp_1024 {
+			padding-top: @section_spacer_fullscreen_tablet_landscape;
+		}
+	}
+
+	.page {
+		width: 100%;
+	}
+
+	h2 {
+		.font-size(28);
+		line-height: 30px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(80);
+			line-height: 80px;
+		}
+
+		&:after {
+			content: "";
+			width: 30px;
+			height: 35px;
+			display: inline-block;
+			margin-left: 10px;
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-size: 30px;
+			background-image: url('../images/svg/checkbox-claim.svg');
+			vertical-align: middle;
+
+			@media @bp_768 {
+				background-size: 80px;
+				width: 80px;
+				height: 95px;
+				margin-left: 20px;
+			}
+		}
+	}
+
+	p {
+		.font-size(18);
+		line-height: 24px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(24);
+			line-height: 30px;
+		}
+	}
+
+	.swiper-container {
+		padding-top: 70px;
+		width: 100%;
+	}
+
+	.swiper-slide {
+		.box-sizing();
+		width: 250px;
+
+		@media @bp_480 {
+			width: 300px;
+		}
+	}
+
+	.card-entity {
+
+		&.huge {
+
+			.ambassador,
+			.tag {
+				position: absolute;
+				z-index: 3;
+				top: 0;
+				right: 0;
+				color: @white;
+				background-color: @red;
+				padding: 12px 24px;
+			}
+		}
+	}
+
+	.card {
+		background-color: transparent;
+
+		.ambassador,
+		.tag {
+			position: absolute;
+			z-index: 3;
+			top: 0;
+			right: 0;
+			color: @white;
+			background-color: @red;
+			padding: 12px 24px;
+		}
+		
+		.btn-save,
+		.entity-badge {
+			display: none;
+		}
+
+		figure {
+			height: 250px;
+
+			@media @bp_480 {
+				height: 300px;
+			}
+		}
+
+		article {
+			padding-left: 0;
+			height: 120px;
+		}
+	}
+}

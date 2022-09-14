@@ -1,0 +1,38 @@
+.rc-slider {
+
+	&.rc-slider-disabled {
+		background-color: transparent;
+
+		.rc-slider-handle {
+			border: 0;
+			background-color: #a7b1e7;
+			border-color: #a7b1e7;
+		}
+	}
+
+	.rc-slider-handle {
+		background-color: @blue;
+		border-color: @blue;
+
+		&-dragging,
+		&-click-focused:focus,
+		&:hover,
+		&:active,
+		&:focus {
+			box-shadow: unset;
+			background-color: @blue;
+			border-color: @blue;
+		}
+	}
+
+	.rc-slider-rail {
+		height: 2px;
+		margin-top: 1px;
+	}
+
+	.rc-slider-track {
+		background-color: #CAE1FF;
+		height: 2px;
+		margin-top: 1px;
+	}
+}

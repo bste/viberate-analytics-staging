@@ -1,0 +1,214 @@
+.section-festival-app-features {
+	text-align: center;
+	color: @white;
+
+	.section-main {
+
+		@media @bp_768 {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+	}
+
+	.col {
+		.box-sizing;
+
+		@media @bp_768 {
+			flex-direction: column;
+			align-items: center;
+			position: relative;
+		}
+	}
+
+	.col-1 {
+		display: none;
+
+		@media @bp_1024 {
+			display: flex;
+			width: 33.33%;
+		}
+	}
+
+	.col-2 {
+		overflow: hidden;
+
+		@media @bp_1024 {
+			width: 66.66%;
+		}
+	}
+
+	.feature-titles {
+		text-align: right;
+
+		.titles {
+
+			h3 {
+				.opacity(0.3);
+				.transition(opacity, 300ms, linear);
+				.font-size(20);
+				line-height: 28px;
+				font-weight: normal;
+				padding: 10px 0;
+				cursor: pointer;
+
+				&.active {
+					.opacity(1);
+				}
+
+				&:first-child {
+					padding-top: 20px;
+				}
+
+				&:last-child {
+					padding-bottom: 20px;
+				}
+			}
+		}
+
+		.btn-nav-feature {
+			.font-size(0);
+			width: 30px;
+			height: 20px;
+			background-repeat: no-repeat;
+			background-position: right center;
+			background-size: 20px;
+
+			&.prev {
+				background-image: url('../images/svg/chevron-up-white.svg');
+			}
+
+			&.next {
+				background-image: url('../images/svg/chevron-down-white.svg');
+			}
+		}
+	}
+
+	.swiper-main {
+		display: block;
+		margin: 0;
+
+		.swiper-container {
+			padding: 0;
+
+			@media @bp_768 {
+				padding-bottom: 60px;
+			}
+
+			@media @bp_1024 {
+				padding-bottom: 0;
+			}
+		}
+
+		.swiper-pagination {
+
+			@media @bp_768 {
+				bottom: 0;
+			}
+
+			@media @bp_1024 {
+				display: none;
+			}
+		}
+
+		.swiper-slide {
+			text-align: center;
+			padding-bottom: 50px;
+
+			@media @bp_768 {
+				padding-bottom: 0;
+				text-align: left;
+			}
+
+		}
+	}
+
+	.feature-card {
+
+		@media @bp_768 {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		article {
+			.box-sizing;
+			padding-top: 30px;
+
+			@media @bp_768 {
+				width: 50%;
+				padding-top: 0;
+				padding-left: 5%;
+			}
+
+			p {
+
+				&:last-child {
+					display: none;
+
+					@media @bp_768 {
+						display: block;
+					}
+				}
+			}
+		}
+
+		figure {
+			.box-sizing;
+			text-align: center;
+
+			@media @bp_768 {
+				width: 50%;
+				padding-right: 5%;
+			}
+			
+			img {
+				max-width: 375px;
+				width: 100%;
+
+				@media @bp_1024 {
+					max-width: none;
+				}
+			}
+		}
+
+		h3 {
+			.font-size(24);
+			line-height: 28px;
+			font-weight: 500;
+			padding: 0;
+
+			@media @bp_768 {
+				.font-size(42);
+				line-height: 49px;
+				padding-bottom: 10px;
+			}
+		}
+
+		.btn-solid {
+			width: 100%;
+			max-width: 260px;
+
+			@media @bp_768 {
+				margin-top: 15px;
+			}
+		}
+	}
+
+	.mobile-only {
+		padding-top: 10px;
+
+		@media  @bp_768 {
+			display: none;
+		}
+
+		.btn-solid {
+			width: 100%;
+			max-width: 230px;
+		}
+	}
+}

@@ -1,0 +1,319 @@
+.section-signup-login {
+	.box-sizing;
+	padding: 30px 0 0 0;
+	background-color: @white;
+	min-height: calc(~'100vh - 50px');
+	//min-height: -webkit-fill-available; //experimental
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/bg-register-login-mobile.jpg');
+	background-repeat: no-repeat; //repeat
+	background-position: top;
+	background-size: cover; //20%;
+	position: relative;
+	z-index: 1;
+
+	@media @bp_768 {
+		background-position: center;
+		background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/bg-register-login-tablet.jpg');
+	}
+
+	@media @bp_1024 {
+		padding: 60px 0;
+		min-height: calc(~'100vh - 74px');
+		background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/bg-register-login-desktop.jpg');
+	}
+
+	@media @bp_4k {
+		padding: 60px 0;
+		min-height: calc(~'100vh - 74px');
+		background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/bg-register-login-desktop-4k.jpg');
+	}
+
+	.page {
+		width: 100%;
+		display: flex;
+		flex: 1;
+		padding-bottom: env(safe-area-inset-bottom);
+
+		@media @bp_iphonex {
+			padding-bottom: 54px;
+		}
+
+		@media @bp_iphonexsmax {
+			padding-bottom: 54px;
+		}
+
+		@media @bp_iphone11 {
+			padding-bottom: 54px;
+		}
+
+		@media @bp_huaweip20pro {
+			padding-bottom: 54px;
+		}
+
+		@media @bp_oneplus7 {
+			padding-bottom: 54px;
+		}
+
+		@media @bp_iphone12pro {
+			padding-bottom: 54px;
+		}
+
+		@media @bp_iphone12promax {
+			padding-bottom: 54px;
+		}
+	}
+
+	.section-main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+
+		@media @bp_768 {
+			justify-content: center;
+		}
+	}
+
+	.floater {
+		.box-sizing;
+		background-color: @white;
+		width: 100%;
+		max-width: 450px;
+		padding: 32px;
+
+		@media @bp_768 {
+			padding: 44px;
+		}
+
+		&.loading {
+			position: relative;
+
+			&:before {
+				z-index: 10;
+			}
+
+			&:after {
+				z-index: 9;
+			}
+
+		}
+
+		&.forgot-password {
+
+			@media @bp_768 {
+				min-height: 370px;
+			}
+		}
+
+		&.log-in {
+
+			.divider {
+				margin-top: 6px;
+			}
+		}
+
+		h2 {
+			.font-size(20);
+			font-weight: 600;
+			padding-bottom: 12px;
+			letter-spacing: 0.4px;
+
+			@media @bp_768 {
+				.font-size(28);
+				padding-bottom: 26px;
+			}
+
+			& + p {
+				padding-top: 0;
+				margin-top: 0;
+			}
+		}
+	}
+
+	.top-benefits {
+		.font-size(12);
+		line-height: 18px;
+		padding-bottom: 16px;
+
+		@media @bp_768 {
+			.font-size(14);
+			line-height: 24px;
+			padding-bottom: 26px;
+		}
+
+		li {
+			margin-top: 4px;
+			background-position: left top 4px;
+			background-repeat: no-repeat;
+			background-size: 12px;
+			background-image: url('../images/svg/checkmark-red.svg');
+			padding-left: 22px;
+
+			@media @bp_768 {
+				padding-left: 30px;
+				background-size: 15px;
+				margin-top: 6px;
+				background-position: left top 6px;
+			}
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+
+	.actions {
+		overflow: hidden;
+
+		.item {
+			.font-size(0);
+			padding: 6px 0;
+			line-height: 1;
+		}
+
+		.divider {
+			.font-size(10);
+			display: inline-block;
+			position: relative;
+			padding: 0 16px;
+			text-transform: uppercase;
+			color: #929699;
+			line-height: 1;
+
+			@media @bp_768 {
+				.font-size(12);
+				height: 14px;
+			}
+
+			&:before,
+			&:after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				margin-top: -1px;
+				height: 1px;
+				background-color: #E7E7E7;
+			}
+
+			&:before {
+				right: 100%;
+				left: -300px;
+			}
+
+			&:after {
+				left: 100%;
+				right: -300px;
+			}
+		}
+	}
+
+	.switcher {
+		.font-size(11);
+		display: block;
+		font-weight: 400;
+		color: #808080;
+		padding-top: 8px;
+
+		@media @bp_768 {
+			.font-size(12);
+		}
+
+		a {
+			.text-decoration-ink;
+			color: #808080;
+
+			&.blue {
+				text-decoration: none;
+				color: @blue;
+
+				&:hover,
+				&:active {
+					color: @blue-roll;
+				}
+			}
+		}
+	}
+
+	.btn-back {
+		.font-size(0);
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 12px;
+		background-image: url('../images/svg/arrow-back-red.svg');
+		width: 22px;
+		height: 16px;
+		margin-right: 6px;
+		vertical-align: middle;
+		margin-top: -2px;
+
+		@media @bp_768 {
+			background-size: 16px;
+		}
+	}
+
+	.form-row {
+		padding: 11px 0;
+
+		&.has-error {
+
+			input[type="text"],
+			input[type="email"],
+			input[type="password"] {
+				border-color: @red;
+			}
+
+			.error-msg {
+				display: block;
+			}
+		}
+	}
+
+	.error-msg {
+		padding-top: 13px;
+		line-height: 1;
+		margin-bottom: -8px;
+
+		&.general {
+			text-align: center;
+			padding: 6px 0;
+		}
+	}
+
+	.password-wrapper {
+		position: relative;
+
+		.btn-password-toggle {
+			position: absolute;
+			top: 0;
+			right: 0;
+			z-index: 1;
+		}
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"] {
+		.box-sizing;
+		.font-size(12);
+		border: 1px solid #E0E3E5;
+		width: 100%;
+		height: 40px;
+		color: @black;
+		line-height: 1;
+		padding: 0 24px;
+		background-color: @white;
+		color: @black;
+
+		@media @bp_768 {
+			.font-size(14);
+			height: 50px;
+			background-size: 25px;
+		}
+	}
+}

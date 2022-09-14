@@ -1,0 +1,230 @@
+.card-genre {
+	//height: 260px;
+	.transition(color, 200ms, linear);
+	color: @white;
+	background-color: @black;
+	width: auto;
+	position: relative;
+
+	@media @bp_768 {
+		//height: 320px;
+	}
+
+	@media @bp_1440 {
+		//height: 400px;
+	}
+
+	&.horizontal {
+		height: 150px;
+
+		figcaption {
+			.font-size(24px);
+			line-height: 29px;
+			bottom: 18px;
+			background: transparent;
+			padding: 0 20px;
+		}
+	}
+
+	&.rock {
+
+		&:before {
+			background-color: @rock;
+		}
+	}
+
+	&.country {
+
+		&:before {
+			background-color: @country;
+		}
+	}
+
+	&.pop {
+
+		&:before {
+			background-color: @pop;
+		}
+	}
+
+	&.hip-hop {
+
+		&:before {
+			background-color: @hip-hop;
+		}
+	}
+
+	&.rnb {
+
+		&:before {
+			background-color: @rnb;
+		}
+	}
+
+	&.latin {
+
+		&:before {
+			background-color: @latin;
+		}
+	}
+
+	&.electronic {
+
+		&:before {
+			background-color: @electronic;
+		}
+	}
+
+	&.rock {
+
+		&:before {
+			background-color: @rock;
+		}
+	}
+
+	&.metal {
+		&:before {
+			background-color: @metal;
+		}
+	}
+
+	&.punk {
+
+		&:before {
+			background-color: @punk;
+		}
+	}
+
+	&.jazz {
+
+		&:before {
+			background-color: @jazz;
+		}
+	}
+
+	&.reggae {
+
+		&:before {
+			background-color: @reggae;
+		}
+	}
+
+	&.blues {
+
+		&:before {
+			background-color: @blues;
+		}
+	}
+
+	&.classical {
+
+		&:before {
+			background-color: @classical;
+		}
+	}
+
+	&.religious {
+
+		&:before {
+			background-color: @religious;
+		}
+	}
+
+	&.european {
+
+		&:before {
+			background-color: @european;
+		}
+	}
+
+	&.asian {
+
+		&:before {
+			background-color: @asian;
+		}
+	}
+
+	&.middle-eastern {
+
+		&:before {
+			background-color: @middle-eastern;
+		}
+	}
+
+	&.african {
+
+		&:before {
+			background-color: @african;
+		}
+	}
+
+	&:hover,
+	&.active {
+		color: @black;
+
+		&:before {
+			right: 0;
+		}
+
+		.counter {
+			color: @black;
+		}
+	}
+
+	&:before {
+		.transition(right, 250ms, ease-out);
+		content: "";
+		position: absolute;
+		right: 100%;
+		top: 0;
+		bottom: 0;
+		z-index: 0;
+		left: 0;
+	}
+
+	figure {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center top;
+	}
+
+	a {
+		color: inherit;
+	}
+
+	.counter {
+		.transition(color, 200ms, linear);
+		.font-size(26);
+		color: @white;
+		line-height: 30px;
+		position: absolute;
+		padding: 30px 0 0 20px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(32);
+			line-height: 32px;
+		}
+
+		@media @bp_1024 {
+			.font-size(42);
+			line-height: 42px;
+		}
+	}
+
+	figcaption {
+		.font-size(24);
+		line-height: 29px;
+		font-weight: 500;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		padding: 20px;
+	}
+}

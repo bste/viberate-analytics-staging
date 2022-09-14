@@ -1,0 +1,38 @@
+.section-contributors-chart {
+
+	.reset-timer {
+		display: inline-block;
+		
+		@media @bp_768 {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+
+	.populated {
+		.font-size(18);
+		line-height: 24px;
+		font-weight: 500;
+		padding-top: 40px;
+		text-align: center;
+
+		@media @bp_768 {
+			.font-size(24);
+		line-height: 31px;
+			padding-top: 80px
+		}
+
+		@media @bp_1024 {
+			padding-top: 100px
+		}
+	}
+
+	.explore-charts {
+		padding-top: 20px;
+
+		@media @bp_768 {
+			padding-top: 40px;
+		}
+	}
+}

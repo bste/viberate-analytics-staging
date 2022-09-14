@@ -1,0 +1,43 @@
+.section-pro-pricing-plan-v2 {
+
+	.section-main {
+		text-align: center;
+		max-width: 1220px;
+		margin: 0 auto;
+	}
+
+	.background-wrapper {
+		position: relative;
+
+		.compare-plan-table,
+		.pricing-banner {
+			position: relative;
+			z-index: 1;
+		}
+
+		&:before,
+		&:after {
+			.prevent-click;
+			z-index: 0;
+			content: "";
+			position: absolute;
+			top: 104px;
+			bottom: -40px;
+			width: 50vw;
+			background-color: @white-1;
+
+			@media @bp_768 {
+				top: 60px;
+				bottom: -120px;
+			}
+		}
+
+		&:before {
+			right: 50%;
+		}
+
+		&:after {
+			left: 50%;
+		}
+	}
+}

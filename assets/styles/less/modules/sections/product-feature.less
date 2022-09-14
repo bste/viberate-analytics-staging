@@ -1,0 +1,162 @@
+.section-product-feature {
+	.box-sizing();
+	
+	@media @bp_768 {
+		display: flex;
+	}
+
+	&.fullscreen {
+
+		@media @bp_768 {
+			height: auto;
+			padding-bottom: 0;
+		}
+	}
+
+	h2 {
+		.font-size(28);
+		line-height: 30px;
+		font-weight: 500;
+		padding-bottom: 50px;
+
+		@media @bp_768 {
+			.box-sizing();
+			.font-size(60);
+			line-height: 66px;
+			padding-bottom: 80px;
+			float: left;
+			width: 60%;
+			padding-right: 50px;
+		}
+
+		@media @bp_1024 {
+			.box-sizing();
+			.font-size(80);
+			line-height: 80px;
+		}
+	}
+
+	h3 {
+		.font-size(20);
+		line-height: 26px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			display: inline-block;
+			.font-size(32);
+			line-height: 40px;
+		}
+
+		@media @bp_1024 {
+			display: inline-block;
+			.font-size(42);
+			line-height: 50px;
+		}
+	}
+
+	h3 + h3 {
+		padding-top: 20px;
+	}
+
+	.page {
+
+		@media @bp_768 {
+			.clearfix;
+			padding-top: 90px;
+		}
+
+		@media @bp_1024 {
+			.clearfix;
+			padding-top: 120px;
+		}
+	}
+
+
+	.product-feature-description {
+
+		@media @bp_768 {
+			display: inline-block;
+			.box-sizing();
+			float: right;
+			width: 40%;
+			padding-left: 15px;
+			clear: left;
+		}
+
+		article {
+			.box-sizing();
+			background-color: @black;
+			color: @white;
+			padding: 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+
+			@media @bp_768 {
+				padding: 50px;
+			}
+
+			@media @bp_1200 {
+				padding: 80px;
+			}
+
+			@media @bp_1400 {
+				min-height: 490px;
+			}
+		}
+
+		p {
+
+			&:last-child {
+				padding-bottom: 0;
+				margin-bottom: 0;
+			}
+		}
+
+		a {
+			color: @white;
+			text-decoration: underline;
+		}
+	}
+
+	.product-feature-image {
+		padding-top: 30px;
+
+		@media @bp_768 {
+			.box-sizing();
+			float: left;
+			width: 60%;
+			padding-right: 15px;
+			padding-top: 0;
+			max-width: 550px;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.counter {
+		display: none;
+
+		@media @bp_768 {
+			.font-size(60);
+			line-height: 60px;
+			font-family: @suiss-int-mono;
+			position: absolute;
+			bottom: 20px;
+			right: @page_spacer_tablet;
+		}
+
+		@media @bp_1024 {
+			.font-size(80);
+			line-height: 80px;
+			bottom: 50px;
+			right: @page_spacer_tablet_landscape;
+		}
+
+		@media @bp_1200 {
+			right: @page_spacer_desktop;
+		}
+	}
+}

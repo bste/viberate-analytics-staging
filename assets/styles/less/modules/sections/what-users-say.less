@@ -1,0 +1,43 @@
+.section-what-users-say {
+
+	.section-main {
+		text-align: center;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	h2 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(32);
+			line-height: 46px;
+		}
+	}
+
+	.user-opinions {
+		padding-top: 30px;
+
+		@media @bp_768 {
+			.box-sizing;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin: 0 -20px;
+			justify-content: space-between;
+			padding-top: 50px;
+		}
+	}
+
+	.opinion {
+		.box-sizing;
+		padding: 15px 0;
+
+		@media @bp_768 {
+			width: 50%;
+			padding: 20px;
+		}
+	}
+}

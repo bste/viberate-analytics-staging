@@ -1,0 +1,183 @@
+.hamburger {
+	.transition(all, 500ms, cubic-bezier(1.000, 0.010, 0.565, 0.940));
+	.translate(100%, 0px);
+	.box-sizing();
+	overflow: hidden;
+	overflow-y: auto;
+	height: 100vh;
+	color: @white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: left;
+	z-index: 2;
+
+	&:before {
+		.opacity(0);
+		content: "";
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 100%;
+		background-color: rgba(0,0,0,.5);
+		z-index: -1;
+		display: none;
+	}
+
+	article {
+		display: flex;
+		flex: 1;
+		background-color: @red;
+		padding: 100px 20px 40px 40px;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@media @bp_768 {
+			padding: 90px 0 90px 90px;
+			margin-left: 30%;
+		}
+
+		@media @bp_1024 {
+			padding: 140px 0 70px 140px;
+		}
+	}
+
+	&.initial {
+		.translate(100%, 0px);
+		z-index: -1;
+
+		&.open {
+			.translate(0%, 0px);
+			display: flex;
+			z-index: 2;
+			left: 0;
+
+			&:before {
+				display: block;
+				left: -400px;
+			}
+		}
+	}
+
+	&.open {
+		.translate(0%, 0px);
+		z-index: 2;
+		left: 0;
+
+		&:before {
+			.animation(fade-in 0.5s linear 0.5s forwards);
+			left: -400px;
+			display: block;
+		}
+	}
+
+	a {
+		color: @white;
+	}
+
+	.btn-close {
+		.font-size(0);
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		z-index: 1;
+
+		@media @bp_768 {
+			width: 40px;
+			height: 40px;
+			background-size: 40px;
+			right: 40px;
+			top: 40px;
+		}
+	}
+
+	.hamburger-menu-primary {
+		.font-size(32);
+		line-height: 38px;
+		font-weight: 500;
+		padding-bottom: 40px;
+
+		@media @bp_768 {
+			.font-size(60);
+			line-height: 66px;
+			padding-bottom: 60px;
+		}
+
+		@media @bp_1200 {
+			.font-size(80);
+			line-height: 86px;
+		}
+
+		li {
+			padding: 5px 0;
+
+			@media @bp_768 {
+				padding: 10px 0;
+			}
+		}
+	}
+
+	.hamburger-menu-secondary {
+		.font-size(18);
+		line-height: 24px;
+		font-weight: 500;
+		padding-bottom: 30px;
+
+		@media @bp_768 {
+			padding-bottom: 0;
+			.font-size(24);
+			line-height: 32px;
+		}
+
+		li {
+			padding: 2px 0;
+		}
+	}
+
+	.footnote {
+		.font-size(12);
+		padding: 0;
+		margin: 0;
+
+		@media @bp_iphonex {
+			padding-bottom: 34px;
+		}
+
+		@media @bp_iphonexsmax {
+			padding-bottom: 34px;
+		}
+
+		span {
+			display: none;
+
+			@media @bp_480 {
+				display: inline-block;
+			}
+		}
+
+		a {
+			display: block;
+			float: left;
+			clear: both;
+
+			@media @bp_480 {
+				clear: none;
+				float: none;
+				display: inline-block;
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/connect/mutual follow</title>
+    <g id="icon/connect/mutual-follow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <polygon id="Bounds" points="0 0 24 0 24 24 0 24"></polygon>
+        <path d="M9.49283711,11.6788761 L10.4827866,12.6688256 L7.97636345,15.1757895 L18.7463905,15.1750702 L18.7463905,16.5750702 L7.88443957,16.5758609 L10.4825902,19.1740115 L9.49264069,20.163961 L5.25,15.9213203 L9.49283711,11.6788761 Z M14.5037498,3.83 L18.7463905,8.07264069 L14.5035534,12.315085 L13.5136039,11.3251355 L16.020027,8.81817153 L5.25,8.81889087 L5.25,7.41889087 L16.1119509,7.4181001 L13.5138003,4.81994949 L14.5037498,3.83 Z" id="Combined-Shape" fill="#707580"></path>
+    </g>
+</svg>

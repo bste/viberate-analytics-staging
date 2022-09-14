@@ -1,0 +1,30 @@
+.section-product-text {
+	.box-sizing();
+	
+	@media @bp_768 {
+		height: 100vh;
+	}
+	
+	.page {
+		.font-size(24);
+		line-height: 30px;
+		font-weight: 500;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+
+		@media @bp_768 {
+			.font-size(42);
+			line-height: 50px;
+		}
+	}
+
+	.section-main {
+
+		@media @bp_768 {
+			width: 80%;
+		}
+	}
+}

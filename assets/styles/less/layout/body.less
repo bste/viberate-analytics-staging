@@ -1,5 +1,4 @@
 body {
-	.transition(background-color, 500ms, linear);
 	.font-size(@base-font-size);
 	height: 100%;
 	margin: 0;
@@ -9,69 +8,349 @@ body {
 	line-height: @base-line-height;
 	color: @text-color;
 	letter-spacing: @base-letter-spacing;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow-x: hidden;
-	background-color: @white;
-	overscroll-behavior: contain;
-	overscroll-behavior-y: none;
-	min-height: -webkit-fill-available;
-	-webkit-overflow-scrolling: touch;
+	background-color: @white-1; //#f3f5f6;
 
-	&.bg-dark {
+	/*&.tour {
 
-		.section-payment-landing,
-		.section-get-important-data,
-		.section-landing-features {
-			background-color: #202427;
-		}
+		&.tour-content {
 
-		.section-demo-video {
-			background-color: #202427;
+			.layout-grid-sidebar {
 
-			.landing-section-subtitle {
-				color: @white;
-			}
-		}
-	}
-
-	&.grid-bg {
-		position: relative;
-		background-color: @black;
-
-		&.footer-visible {
-
-			&:before {
-
-				@media @bp_768_max {
+				&:before {
+					.opacity(0.2);
+					content: "";
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
 					background: @black;
+					z-index: 1;
 				}
 			}
 		}
 
 		&:before {
-			.prevent-click;
+			.opacity(0.2);
 			content: "";
 			position: fixed;
 			top: 0;
 			right: 0;
 			bottom: 0;
 			left: 0;
-			z-index: -1;
-			background-position: center top;
-			background-image: url('../images/svg/grid-mobile.svg');
-			background-repeat: repeat;
-			background-attachment: scroll;
+			background: @black;
+			z-index: 3;
+		}
 
-			@media @bp_768 {
-				background-image: url('../images/svg/grid-1440.svg');
-				background-attachment: fixed;
-			}
+		.header-new-v2 {
+			z-index: 2;
+		}
 
-			@media @bp_2560 {
-				background-image: url('../images/svg/grid-2560.svg');
+		.btn-scroll-to-top {
+			z-index: 1;
+		}
+	}*/
+
+	&.mbsc-fr-lock {
+
+		.pro-custom-input.icon-calendar {
+			
+			.mbsc-comp {
+				border-color: @blue;
 			}
 		}
+	}
+
+	&.no-scroll {
+		overflow-y: hidden;
+	}
+
+	&.pdf {
+		background-color: @white;
+		width: 1162px;
+	}
+
+	&.menu-is-open {
+
+		@media @bp_1024_max {
+			overflow-y: hidden;
+		}
+	}
+
+	&.hide-chat {
+
+		#launcher {
+			display: none !important;
+		}
+	}
+
+	&.show-scroll-to-top {
+
+		.btn-scroll-to-top {
+			.enable-click(pointer);
+			.opacity(1);
+			.translate(0,0);
+		}
+	}
+
+	&.has-mobile-filters {
+
+		.main {
+			z-index: 5;
+
+			@media @bp_768 {
+				z-index: unset;
+			}
+		}
+
+		#launcher {
+			z-index: 3;
+		}
+	}
+
+	&.media-player-toolbar-open {
+		
+		.container {
+			padding-bottom: 50px;
+		}
+
+		.media-player-toolbar {
+			.translate(0, 0);
+		}
+
+		.video-player {
+
+			&.fixed {
+				bottom: 54px;
+			}
+		}
+
+		.toolbar-filter-search {
+
+			@media @bp_768 {
+				bottom: 54px;
+			}
+		}
+
+		.editor-system-bar {
+
+			&.show {
+				bottom: 80px;
+			}
+		}
+
+		.layout-grid.charts-v2 {
+
+			.layout-grid-sidebar {
+
+				.mobile-filters-scroll-wrapper {
+
+					@media @bp_768 {
+						padding-bottom: 55px;
+					}
+				}
+			}
+		}
+	}
+
+	&.entity-detail-fixed {
+
+		.section-entity-detail-minimized {
+			.translate(0, 0);
+
+			&.artist,
+			&.country,
+			&.genre {
+				.translate(0, 50px);
+			
+				@media @bp_768 {
+					.translate(0, 60px);
+				}
+			}
+		}
+
+		.pro-section-entity-detail-minimized {
+			.translate(0, 0);
+		}
+	}
+
+	&.on-scroll-fixed-btn {
+
+		.btn-blue-floater-cta {
+			.translate(0,0);
+		}
+
+		.footer-new {
+			
+			@media @bp_768_max {
+				padding-bottom: 52px;
+			}
+		}
+	}
+
+	&.header-is-sticky {
+		
+		.header,
+		.header-new,
+		.header-new-v2 {
+			.box-shadow(0 0 15px 0 rgba(0,0,0,0.08));
+		}
+
+		.pro-content-navigation {
+			top: @header-mobile-height;
+
+			@media @bp_768 {
+				top: 0;
+			}
+		}
+
+		.pro-v2 .sticky-wrapper.v2 {
+
+			@media @bp_768 {
+				.box-shadow(0 0 15px 0 rgba(0,0,0,0.15));
+				top: @header-tablet-height;
+			}
+
+			@media @bp_1024 {
+				top: @header-desktop-height;
+			}
+		}
+
+		.charts-v2 {
+
+			.sidebar-chart-show-only {
+
+				&.sticky {
+
+					@media @bp_768 {
+						top: 161px + @header-tablet-height;
+					}
+
+					@media @bp_1024 {
+						top: 161px + @header-desktop-height;
+					}
+				}
+			}
+		}
+	}
+
+	&.header-fixed {
+
+		&.header-fixed-listing {
+
+			&.header-is-sticky {
+
+				.notification-wrapper {
+					
+					@media @bp_768 {
+						top: 0;
+					}
+				}
+			}
+
+			.layout-grid {
+
+				&.charts-v2 {
+
+					&.charts-v2-new {
+
+						.section-entity-view {
+
+							@media @bp_768 {
+								padding-bottom: 0;
+							}
+						}
+
+						.layout-grid-sidebar {
+
+							.mobile-filters-scroll-wrapper {
+
+								@media @bp_768 {
+									padding-top: @header-tablet-height;
+								}
+
+								@media @bp_1024 {
+									padding-top: @header-desktop-height;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.header,
+		.header-new,
+		.header-new-v2 {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+		}
+
+		.section-search-results {
+			padding-top: 30px + @header-mobile-height;
+
+			@media @bp_1024 {
+				padding-top: 60px + @header-desktop-height;
+			}
+		}
+
+		.toolbar {
+			top: @header-mobile-height + 10px;
+
+			@media @bp_768 {
+				top: @header-tablet-height + 10px;
+			}
+
+			@media @bp_1200 {
+				top: @header-desktop-height + 10px;
+			}
+			
+			.section-entity-view-heading {
+				padding-top: 40 + @header-mobile-height + 10px;
+
+				@media @bp_768 {
+					padding-top: 60px + @header-tablet-height + 10px;
+				}
+
+				@media @bp_1200 {
+					padding-top: 60px + @header-desktop-height + 10px;
+				}
+			}
+		}
+
+		.notifications-wrapper {
+			position: relative;
+			top: @header-mobile-height;
+
+			@media @bp_768 {
+				position: fixed;
+				left: 0;
+				right: 0;
+				top: @header-tablet-height;
+				z-index: 4;
+			}
+
+			@media @bp_1200 {
+				top: @header-desktop-height;
+			}
+		}
+	}
+
+	&.noise {
+		background-color: @black;
+		background-image: url(../images/gif/noise-animated-dark.gif);
+		background-repeat: repeat;
+		background-size: 400px;
+		background-position: center center;
 	}
 }

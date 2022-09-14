@@ -1,0 +1,154 @@
+.section-help-center-search {
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	background-color: #adcbff;
+
+	@media @bp_1024 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.section-main {
+		margin: 0 auto;
+		max-width: 1100px;
+	}
+
+	h1 {
+		.font-size(32);
+		line-height: 36px;
+		font-weight: 500;
+		color: inherit;
+
+		@media @bp_768 {
+			.font-size(42);
+		}
+	}
+
+	.search-wrapper {
+		max-width: 500px;
+		margin: 3px auto 0 auto;
+		position: relative;
+
+		@media @bp_768 {
+			margin-top: 46px;
+		}
+	}
+
+	.search-input {
+		.font-size(14);
+		height: 50px;
+		border: 0;
+		padding: 12px 12px 12px 45px;
+		background-repeat: no-repeat;
+		background-position: left 15px center;
+		background-image: url('../images/svg/search.svg');
+		background-color: @white;
+		background-size: 20px;
+		border: 1px solid @black;
+
+		@media @bp_768 {
+			.font-size(18);
+			padding: 12px 12px 12px 55px;
+			background-position: left 25px center;
+		}
+	}
+
+	.search-results {
+		background-color: @white;
+		text-align: left;
+		position: absolute;
+		top: 50px;
+		left: 0;
+		right: 0;
+		max-height: 200px;
+		overflow: hidden;
+		overflow-y: auto;
+		border: 1px solid @black;
+		border-top: 0;
+		scrollbar-width: thin;
+		display: none;
+
+		&.show {
+			display: block;
+		}
+
+		&::-webkit-scrollbar {
+			width: 5px;
+		}
+
+		&::-webkit-scrollbar-button {
+			//background: @grey;
+		}
+
+		&::-webkit-scrollbar-track-piece {
+			background: @white-2;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: @grey;
+		}
+
+		&.loading {
+			z-index: 0;
+			height: 60px;
+
+			* {
+				display: none;
+			}
+
+			&:before {
+				display: block;
+				background-color: @white;
+			}
+		}
+
+		.item {
+
+			.result-page {
+				display: flex;
+				flex: 0 1 auto;
+			}
+
+			.result-role {
+				.font-size(10);
+				line-height: 18px;
+				display: flex;
+				flex: 0 1 auto;
+				white-space: nowrap;
+				color: #8B8B8B;
+				padding-left: 10px;
+			}
+
+			span {
+				.font-size(10);
+				line-height: 18px;
+				white-space: nowrap;
+				color: #8B8B8B;
+			}
+		}
+
+		.zero-state {
+			margin: 0;
+			padding: 20px 0;
+			color: @grey;
+			text-align: left;
+		}
+	}
+
+	.search-result-link {
+		.font-size(14);
+		line-height: 18px;
+		padding: 12px;
+		display: flex;
+		flex-direction: row;
+		flex: 1;
+		justify-content: flex-start;
+		display: flex;
+		color: @black;
+
+		@media @bp_768 {
+			padding: 12px 24px;
+		}
+	}
+}

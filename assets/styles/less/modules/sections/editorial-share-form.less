@@ -1,0 +1,66 @@
+.section-editorial-share-form {
+	text-align: center;
+	z-index: 1;
+	padding: 40px 0;
+
+	&.center {
+		text-align: center;
+
+		.article {
+			margin: 0 auto;
+			max-width: 500px;
+		}
+	}
+
+	fieldset {
+		z-index: 1;
+		margin: 0 auto;
+		text-align: left;
+		max-width: 230px;
+		position: relative;
+
+		@media @bp_600 {
+			max-width: 316px;
+		}
+	}
+
+	.loading {
+
+		&:before {
+			background-color: @white;
+		}
+	}
+
+	.form-row {
+		position: relative;
+
+		.custom-input {
+			margin: 0 auto;
+			text-align: left;
+			width: 100%;
+		}
+
+		textarea {
+			.font-size(12);
+			border: 2px solid @black;
+			padding: 20px;
+			margin: 25px 0 0 0;
+
+			&::placeholder {
+				color: @grey-1;
+			}
+		}
+
+		input[type="submit"] {
+			margin-top: 25px;
+			display: inline-block;
+			width: 100%;
+			padding: 16px 44px;
+
+			&:hover {
+				background-color: #1a1a1a;
+				color: @white;
+			}
+		}
+	}
+}

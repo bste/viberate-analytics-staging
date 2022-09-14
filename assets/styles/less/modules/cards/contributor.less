@@ -1,0 +1,87 @@
+.card-contributor {
+	.box-sizing();
+	padding: 20px 28px 28px 28px;
+
+	header {
+		position: relative;
+		padding-left: 50px;
+		padding-bottom: 20px;
+	}
+
+	footer {
+		text-align: left;
+		padding: 50px 0 0 0;
+	}
+
+	figure {
+		position: relative;
+		padding-top: 100%;
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	h3 {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	h4 {
+		.font-size(24);
+		line-height: 30px;
+		display: block;
+		font-weight: 500;
+		padding-top: 5px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		margin: 0;
+		padding: 0;
+	}
+
+	.btn-save {
+		left: auto;
+		right: 0;
+		bottom: auto;
+		top: 0;
+		position: absolute;
+	}
+
+	.avatar {
+		.rounded-corners(50%);
+		.prevent-click();
+		width: 36px;
+		height: 36px;
+		background-color: @black;
+		color: @white;
+		border: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	
+	.origin {
+		.font-size(12);
+		color: grey;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		display: block;
+	}
+
+	label {
+		.font-size(10);
+		line-height: 14px;
+		color: @black-1;
+		text-transform: uppercase;
+		font-weight: 500;
+		display: block;
+		letter-spacing: 2px;
+		padding-bottom: 8px;
+	}
+
+	a {
+		color: @black;
+	}
+}

@@ -1,0 +1,41 @@
+.section-pro-pricing-plan {
+
+	.section-main {
+		text-align: center;
+		max-width: 1220px;
+		margin: 0 auto;
+	}
+
+	h1,
+	h2 {
+		.font-size(24);
+		line-height: 28px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(32);
+			line-height: 46px;
+		}
+
+		& + p {
+			margin-left: auto;
+			margin-right: auto;
+
+			@media @bp_768 {
+				.font-size(20);
+				line-height: 28px;
+			}
+		}
+	}
+
+	.payment-plan-package {
+		background-color: @white;
+
+		.plan-tag {
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+}

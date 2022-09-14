@@ -1,0 +1,244 @@
+.social-share-card {
+	width: 1200px;
+	height: 630px;
+	color: @white;
+	position: relative;
+
+	&.text {
+		
+		article {
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			text-align: left;
+			padding: 0 120px;
+
+			h1 {
+				.font-size(100);
+				.clamp-lines(3);
+				line-height: 100px;
+				margin: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	&.claimed {
+
+		figure {
+			margin: 0;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: auto;
+			height: auto;
+		}
+	}
+
+	&.genre {
+
+		h1,
+		h2 {
+			color: @black;
+		}
+	}
+
+	&.plain {
+		background: #efefef;
+
+		h1,
+		h2 {
+			color: @black;
+		}
+	}
+
+	&.rock {
+		background: @rock;
+	}
+
+	&.country {
+		background: @country;
+	}
+
+	&.pop {
+		background: @pop;
+	}
+
+	&.hip-hop {
+		background: @hip-hop;
+	}
+
+	&.rnb {
+		background: @rnb;
+	}
+
+	&.latin {
+		background: @latin;
+	}
+
+	&.electronic {
+		background: @electronic;
+	}
+
+	&.rock {
+		background: @rock;
+	}
+
+	&.metal {
+		background: @metal;
+	}
+
+	&.punk {
+		background: @punk;
+	}
+
+	&.jazz {
+		background: @jazz;
+	}
+
+	&.reggae {
+		background: @reggae;
+	}
+
+	&.blues {
+		background: @blues;
+	}
+
+	&.classical {
+		background: @classical;
+	}
+
+	&.religious {
+		background: @religious;
+	}
+
+	&.european {
+		background: @european;
+	}
+
+	&.asian {
+		background: @asian;
+	}
+
+	&.middle-eastern {
+		background: @middle-eastern;
+	}
+
+	&.african {
+		background: @african;
+	}
+
+	.logo {
+		width: 113px;
+		height: 113px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 2;
+	}
+
+	.image {
+		width: 800px;
+		height: 630px;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: #E1E1E1;
+	}
+
+	figure {
+		width: 300px;
+		height: 300px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -150px 0 0 -150px;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	article {
+		.box-sizing();
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 800px;
+		bottom: 0;
+		padding: 105px 42px;
+		text-align: center;
+	}
+
+	h1 {
+		.font-size(42px);
+		.clamp-lines(4);
+		line-height: 50px;
+		letter-spacing: 0.5px;
+		font-weight: 500;
+		margin-bottom: 40px;
+		overflow: hidden;
+		text-align: left;
+	}
+
+	h2 {
+		.font-size(24px);
+		line-height: 36px;
+		font-weight: 500;
+		color: #989898;
+		text-transform: uppercase;
+		text-align: left;
+	}
+
+	.btn-filter-tag {
+		.font-size(15);
+		.prevent-click();
+		color: #efefef;
+		border-color: #efefef;
+		height: 38px;
+		padding: 0 20px;
+		line-height: 1;
+	}
+
+	.tags-list {
+
+		.item {
+			padding-top: 16px;
+			text-align: left;
+
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+	}
+
+	.event-date {
+		text-transform: uppercase;
+		font-weight: 500;
+		padding-bottom: 120px;
+		display: block;
+
+		.day {
+			.font-size(120);
+			line-height: 120px;
+			letter-spacing: -1.5px;
+			display: block;
+		}
+
+		.month {
+			.font-size(52);
+			line-height: 52px;
+			letter-spacing: 0.5px;
+			display: block;
+			padding: 5px 0 35px 0;
+		}
+
+		.time {
+			.font-size(32);
+			line-height: 32px;
+			display: block;
+			letter-spacing: 0.5px;
+		}
+	}
+}

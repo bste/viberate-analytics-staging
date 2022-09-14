@@ -1,0 +1,80 @@
+.section-learn-courses {
+	position: relative;
+	z-index: 1;
+
+	@media @bp_768 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	& + .section-learn-banner {
+		padding-bottom: 0;
+
+		@media @bp_768 {
+			padding-bottom: 80px;
+		}
+	}
+
+	.section-main {
+		margin: 0 auto;
+		max-width: 1100px;
+	}
+
+	.threesome {
+		max-width: 400px;
+		margin: 0 auto;
+
+		@media @bp_768 {
+			max-width: none;
+			display: flex;
+			flex-direction: row;
+			margin: 0 -12px;
+		}
+
+		.item {
+			.box-sizing;
+			position: relative;
+
+			@media @bp_768 {
+				width: 33.33%;
+				padding: 0 12px;
+				display: flex;
+			}
+
+			& + .item {
+				padding-top: 16px;
+
+				@media @bp_768 {
+					padding-top: 0;
+				}
+			}
+		}
+	}
+
+	h2 {
+		.font-size(26);
+		line-height: 46px;
+		font-weight: 500;
+		padding-bottom: 30px;
+		color: inherit;
+
+		@media @bp_768 {
+			.font-size(32);
+			padding-bottom: 60px;
+		}
+	}
+
+	.see-all {
+		padding-top: 30px;
+
+		@media @bp_768 {
+			padding-top: 30px;
+		}
+
+		.btn.btn-txt {
+			.font-size(12);
+			color: @blue;
+			font-weight: 500;
+		}
+	}
+}

@@ -1,0 +1,297 @@
+.cbadge {
+	.font-size(18px);
+	font-weight: 700;
+	position: relative;
+	display: flex;
+	flex: 0 1 auto;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	font-family: @roboto-condensed;
+
+	&.disabled {
+
+		.badge-img,
+		.progress {
+			.opacity(0.5);
+			.grayscale;
+		}
+	}
+
+	&.small {
+
+		.ribbon {
+			.font-size(10);
+			right: calc(~'50% - 13px');
+			top: 36px;
+			width: 10px;
+		}
+	}
+
+	&.accuracy {
+		letter-spacing: -1px;
+
+		&.small {
+
+			.value {
+				top: 20px;
+			}
+		}
+
+		.value {
+			position: absolute;
+			top: 25px;
+			z-index: 1;
+		}
+	}
+
+	&.fan {
+		.font-size(16);
+		letter-spacing: -1px;
+
+		&.small {
+
+			.progress {
+				width: 42px;
+				height: 42px;
+				top: 5px;
+				background-size: 42px;
+			}
+
+			.value {
+				top: 19px;
+				margin-left: 1px;
+			}
+		}
+		
+		.progress {
+			.rounded-corners(50%);
+			width: 50px;
+			height: 50px;
+			top: 6px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 50px;
+
+			&.stage-1 {
+				background-image: url('../images/svg/cbadge-fan-stage-1.svg');
+			}
+
+			&.stage-2 {
+				background-image: url('../images/svg/cbadge-fan-stage-2.svg');
+			}
+
+			&.stage-3 {
+				background-image: url('../images/svg/cbadge-fan-stage-3.svg');
+			}
+
+			&.stage-4 {
+				background-image: url('../images/svg/cbadge-fan-stage-4.svg');
+			}
+
+			&.stage-5 {
+				background-image: url('../images/svg/cbadge-fan-stage-5.svg');
+			}
+
+			&.stage-6 {
+				background-image: url('../images/svg/cbadge-fan-stage-6.svg');
+			}
+
+			&.stage-7 {
+				background-image: url('../images/svg/cbadge-fan-stage-7.svg');
+			}
+
+			&.stage-8 {
+				background-image: url('../images/svg/cbadge-fan-stage-8.svg');
+			}
+
+			&.stage-9 {
+				background-image: url('../images/svg/cbadge-fan-stage-9.svg');
+			}
+
+			&.stage-10 {
+				background-image: url('../images/svg/cbadge-fan-stage-10.svg');
+			}
+
+			&.stage-11 {
+				background-image: url('../images/svg/cbadge-fan-stage-11.svg');
+			}
+
+			&.stage-12 {
+				background-image: url('../images/svg/cbadge-fan-stage-12.svg');
+			}
+
+			&.stage-13 {
+				background-image: url('../images/svg/cbadge-fan-stage-13.svg');
+			}
+
+			&.stage-14 {
+				background-image: url('../images/svg/cbadge-fan-stage-14.svg');
+			}
+
+			&.stage-15 {
+				background-image: url('../images/svg/cbadge-fan-stage-15.svg');
+			}
+		}
+
+		.value {
+			position: absolute;
+			top: 24px;
+			z-index: 1;
+			line-height: 1;
+		}
+	}
+
+	&.entity {
+
+		&.small {
+
+			.progress {
+				width: 42px;
+				height: 42px;
+				margin-right: 2px;
+				background-size: 42px;
+				top: 5px;
+			}
+		}
+		
+		.progress {
+			.rounded-corners(50%);
+			width: 51px;
+			height: 51px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 51px;
+			margin-right: 4px;
+			top: 6px;
+
+			&.stage-1 {
+				background-image: url('../images/svg/cbadge-entity-stage-1.svg');
+			}
+
+			&.stage-2 {
+				background-image: url('../images/svg/cbadge-entity-stage-2.svg');
+			}
+
+			&.stage-3 {
+				background-image: url('../images/svg/cbadge-entity-stage-3.svg');
+			}
+
+			&.stage-4 {
+				background-image: url('../images/svg/cbadge-entity-stage-4.svg');
+			}
+
+			&.stage-5 {
+				background-image: url('../images/svg/cbadge-entity-stage-5.svg');
+			}
+
+			&.stage-6 {
+				background-image: url('../images/svg/cbadge-entity-stage-6.svg');
+			}
+
+			&.stage-7 {
+				background-image: url('../images/svg/cbadge-entity-stage-7.svg');
+			}
+
+			&.stage-8 {
+				background-image: url('../images/svg/cbadge-entity-stage-8.svg');
+			}
+		}
+	}
+
+	&.hexagon {
+		.font-size(15);
+		letter-spacing: -0.5px;
+
+		&.small {
+			.font-size(13);
+
+			.value {
+				top: 24px;
+			}
+
+			.progress {
+				width: 52px;
+				height: 49px;
+				top: 3px;
+				background-size: 48px;
+			}
+		}
+		
+		.value {
+			text-transform: uppercase;
+			color: @white;
+			position: absolute;
+			top: 32px;
+			z-index: 1;
+		}
+
+		.progress {
+			width: 62px;
+			height: 59px;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 56px;
+			top: 3px;
+
+			&.stage-1 {
+				background-image: url('../images/svg/cbadge-hexagon-stage-1.svg');
+			}
+
+			&.stage-2 {
+				background-image: url('../images/svg/cbadge-hexagon-stage-2.svg');
+			}
+
+			&.stage-3 {
+				background-image: url('../images/svg/cbadge-hexagon-stage-3.svg');
+			}
+
+			&.stage-4 {
+				background-image: url('../images/svg/cbadge-hexagon-stage-4.svg');
+			}
+
+			&.stage-5 {
+				background-image: url('../images/svg/cbadge-hexagon-stage-5.svg');
+			}
+
+			&.stage-6 {
+				background-image: url('../images/svg/cbadge-hexagon-stage-6.svg');
+			}
+
+			&.stage-7 {
+				background-image: url('../images/svg/cbadge-hexagon-stage-7.svg');
+			}
+
+			&.stage-8 {
+				background-image: url('../images/svg/cbadge-hexagon-stage-8.svg');
+			}
+		}
+	}
+
+	.badge-img {
+		position: relative;
+		z-index: 1;
+	}
+
+	.progress {
+		display: block;
+		position: relative;
+		z-index: 0;
+		position: absolute;
+	}
+
+	.ribbon {
+		.font-size(11);
+		color: @white;
+		position: absolute;
+		z-index: 1;
+		right: calc(~'50% - 17px');
+		text-align: center;
+		top: 47px;
+		width: 12px;
+	}
+
+	.value {
+		color: @black;
+	}
+}

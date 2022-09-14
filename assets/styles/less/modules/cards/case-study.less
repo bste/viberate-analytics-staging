@@ -1,0 +1,51 @@
+.card-case-study {
+	max-width: 290px;
+
+	&:hover {
+
+		figure {
+			
+			img {
+				-webkit-filter: none;
+				filter: none;
+			}
+		}
+
+	}
+
+	figure {
+		.box-sizing();
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		background-color: @white;
+		padding: 50px;
+		max-height: 290px;
+
+		img {
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+	}
+
+	article {
+		display: none;
+		color: @black;
+		padding: 20px 0;
+		text-align: left;
+	}
+
+	h3 {
+		font-weight: 500;
+		letter-spacing: 0px;
+	}
+
+	span {
+		.font-size(12);
+		line-height: 16px;
+		letter-spacing: 0.5px;
+		color: @grey-1;
+		display: block;
+		padding-top: 10px;
+	}
+}

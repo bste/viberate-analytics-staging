@@ -1,0 +1,93 @@
+.section-upcoming-festivals-around-you {
+
+	@media @bp_768 {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	h2 {
+		.font-size(28);
+		line-height: 30px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(80);
+			line-height: 80px;
+		}
+
+		@media @bp_1024 {
+			.font-size(50);
+			line-height: 50px;
+		}
+
+		@media @bp_1280 {
+			.font-size(80);
+			line-height: 80px;
+		}
+	}
+
+	p {
+		.font-size(18);
+		line-height: 24px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(24);
+			line-height: 30px;
+		}
+	}
+
+	header {
+		.box-sizing();
+
+		@media @bp_1024 {
+			width: 33.33%;
+			padding-right: 90px;
+			float: left;
+		}
+
+		@media @bp_1280 {
+			width: 40%;
+		}
+
+		@media @bp_1400 {
+			width: 50%;
+		}
+	}
+
+	.section-main {
+		.box-sizing();
+		padding-top: 40px;
+
+		@media @bp_1024 {
+			padding-top: 0;
+			width: 66.66%;
+			float: right;
+		}
+
+		@media @bp_1280 {
+			width: 60%;
+		}
+
+		@media @bp_1400 {
+			width: 50%;
+		}
+	}
+
+	.grid {
+		.clearfix;
+		margin: -15px;
+
+		.item {
+			.box-sizing();
+			padding: 15px;
+			max-width: 320px;
+
+			@media @bp_768 {
+				width: 50%;
+				float: left;
+			}
+		}
+	}
+}

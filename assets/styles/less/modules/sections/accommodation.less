@@ -1,0 +1,29 @@
+.section-accommodation {
+	overflow: hidden;
+
+	h1 {
+		padding-bottom: 40px;
+
+		@media @bp_1024 {
+			.box-sizing();
+			float: left;
+			width: 33.33%;
+			padding-bottom: 0;
+			padding-right: 15px;
+		}
+
+		@media @bp_1200 {
+			padding-right: 60px;
+		}
+	}
+
+	h1 + .accommodation-embed {
+
+		@media @bp_1024 {
+			.box-sizing();
+			float: right;
+			width: 66.66%;
+			padding-left: 15px;
+		}
+	}
+}

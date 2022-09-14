@@ -1,0 +1,131 @@
+.section-city-landing {
+	padding: 0;
+
+	&.berlin {
+
+		> .page {
+			//background-image: url('../images/static/city-header-berlin.png');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/city-header-berlin.png');
+			background-size: contain;
+		}
+	}
+
+	&.ljubljana {
+
+		> .page {
+			//background-image: url('../images/static/city-header-ljubljana.png');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/city-header-ljubljana.png');
+			background-size: contain;
+		}
+	}
+
+	&.barcelona {
+
+		> .page {
+			//background-image: url('../images/static/city-header-barcelona.png');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/city-header-barcelona.png');
+			background-size: contain;
+		}
+	}
+
+	&.amsterdam {
+
+		> .page {
+			//background-image: url('../images/static/city-header-amsterdam.png');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/city-header-amsterdam.png');
+			background-size: contain;
+		}
+	}
+
+	&.london {
+
+		> .page {
+			//background-image: url('../images/static/city-header-london.png');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/city-header-london.png');
+			background-size: contain;
+		}
+	}
+
+	&.san-francisco {
+
+		> .page {
+			//background-image: url('../images/static/city-header-san-francisco.png');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/city-header-san-francisco.png');
+			background-size: contain;
+		}
+	}
+
+	&.los-angeles {
+
+		> .page {
+			//background-image: url('../images/static/city-header-los-angeles.png');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/city-header-los-angeles.png');
+			background-size: contain;
+		}
+	}
+
+	&.seattle {
+
+		> .page {
+			//background-image: url('../images/static/city-header-seattle.png');
+			background-image: url('https://viberatecdn.blob.core.windows.net/com/landing/city-header-seattle.png');
+			background-size: contain;
+		}
+	}
+
+	> .page {
+		.clearfix;
+		background-repeat: no-repeat;
+		background-position: right bottom;
+	}
+
+	h1 {
+		.font-size(28);
+		line-height: 30px;
+		font-weight: 500;
+
+		@media @bp_768 {
+			.font-size(44);
+			line-height: 44px;
+		}
+
+		@media @bp_1024 {
+			.font-size(120);
+			line-height: 155px;
+		}
+	}
+
+	.col-wrapper {
+		display: flex;
+		flex-direction: row;
+		padding: 60px 0;
+
+		@media @bp_768 {
+			padding: 90px 0;
+		}
+
+		@media @bp_1024 {
+			padding: 120px 0;
+		}
+	}
+
+	.col-1 {
+		.box-sizing();
+		
+
+		@media @bp_768 {
+			flex: 6;
+			padding-right: 30px;
+			max-width: 70%;
+		}
+
+		p {
+			font-weight: 500;
+		}
+	}
+
+	.col-2 {
+		.box-sizing();
+		flex: 5;
+	}
+}

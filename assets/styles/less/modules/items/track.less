@@ -1,0 +1,193 @@
+.tracks-list-item {
+	.transition(opacity, 100ms, linear);
+	.box-sizing();
+	.clearfix;
+	width: 100%;
+	display: table;
+	padding: 15px 0;
+	color: @black;
+	position: relative;
+	border-bottom: 2px solid #ededed;
+	height: 68px;
+
+	&.trending {
+
+		h3 {
+
+			&:before {
+				content: "";
+				display: inline-block;
+				height: 16px;
+				width: 8px;
+				background-image: url('../images/svg/hot.svg');
+				background-position: left bottom;
+				background-size: 12px;
+				background-repeat: no-repeat;
+				padding-right: 10px;
+				margin-left: -19px;
+			}
+		}
+	}
+
+	&.active {
+		background-color: @black;
+		color: @white;
+
+		.btn-play {
+			background-image: url('../images/svg/play-white.svg');
+
+			&.active {
+				background-image: url('../images/svg/pause-white.svg');
+			}
+		}
+
+		.btn-source {
+
+			&.spotify {
+				background-image: url('../images/svg/spotify-white.svg');
+			}
+
+			&.deezer {
+				background-image: url('../images/svg/deezer-white.svg');
+			}
+
+			&.youtube {
+				color: @white;
+				background-image: url('../images/svg/youtube-white.svg');
+
+				span {
+					display: none;
+				}
+			}
+		}
+
+		label {
+			line-height: 1;
+
+			@media @bp_480 {
+				display: block;
+				text-align: right;
+			}
+
+			@media @bp_1024 {
+				display: inline-block;
+			}
+		}
+	}
+
+	.col {
+		.box-sizing();
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.col-1 {
+		width: 30px;
+		padding: 0 5px;
+		text-align: right;
+
+		@media @bp_480 {
+			width: 50px;
+			padding: 0;
+		}
+	}
+
+	.col-2 {
+		width: 30px;
+		text-align: center;
+
+		@media @bp_480 {
+			width: 60px;
+		}
+	}
+
+	.col-3 {
+		padding: 0 5px;
+		max-width: 120px;
+	}
+
+	.col-4 {
+		padding: 0 5px;
+		text-align: right;
+		min-width: 92px;
+
+		@media @bp_480 {
+			padding: 0 15px;
+		}
+
+		* {
+			vertical-align: middle;
+		}
+
+		@media @bp_1024 {
+			white-space: nowrap;
+		}
+	}
+
+	.number {
+		.font-size(18);
+		line-height: 26px;
+		font-family: @suiss-int-mono;
+		color: @grey-1;
+		letter-spacing: -1px;
+
+		@media @bp_480 {
+			.font-size(24);
+			line-height: 31px;
+		}
+	}
+
+	.btn-play {
+		vertical-align: middle;
+		background-size: 12px;
+	}
+
+	.btn-source {
+
+		.views {
+			display: none;
+
+			@media @bp_480 {
+				display: inline-block;
+			}
+		}
+	}
+
+	.btn-source.spotify,
+	.btn-source.deezer {
+		margin-left: 5px;
+
+		@media @bp_480 {
+			margin-left: 10px;
+		}
+	}
+
+	h3 {
+		.font-size(14);
+		line-height: 18px;
+		font-weight: 500;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	h4 {
+		.font-size(12);
+		line-height: 18px;
+		letter-spacing: 2px;
+		color: @grey-1;
+		font-weight: 500;
+		text-transform: uppercase;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	label {
+		.font-size(12);
+		display: none;
+		color: #AAAAAA;
+		font-family: @suiss-int-mono;
+		text-align: center;
+	}
+}

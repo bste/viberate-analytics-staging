@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>analytics-and-charts-icon</title>
+    <g id="Resources---FINAL" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="analytics-and-charts-icon">
+            <rect id="Rectangle-Copy-4" fill-opacity="0" fill="#FFFFFF" x="0" y="0" width="64" height="64"></rect>
+            <polygon id="Path" fill="#B2CAFA" fill-rule="nonzero" points="60 3 14.3534839 51.2596109 60 51.2596109"></polygon>
+            <polyline id="Path" stroke="#221F20" stroke-width="2.67738863" points="14.2398788 41.8339056 26.350179 29.7313001 36.3322776 38.938329 53.5888874 20.0303642"></polyline>
+            <line x1="50.7146792" y1="57.5748334" x2="5" y2="57.5748334" id="Path" stroke="#221F20" stroke-width="2.67738863"></line>
+            <polyline id="Path" stroke="#221F20" stroke-width="2.67738863" points="45.1934729 20.735407 53.5851005 20.0303642 53.6835582 28.4192419"></polyline>
+            <line x1="6.43142385" y1="13.7905474" x2="6.43142385" y2="59" id="Path" stroke="#221F20" stroke-width="2.67738863"></line>
+        </g>
+    </g>
+</svg>

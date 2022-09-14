@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>info-desk</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Festival-ikone" transform="translate(-384.000000, -492.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="info-desk" transform="translate(384.000000, 492.000000)">
+                <path d="M8,1.33333333 C11.676,1.33333333 14.6666667,4.324 14.6666667,8 C14.6666667,11.676 11.676,14.6666667 8,14.6666667 C4.324,14.6666667 1.33333333,11.676 1.33333333,8 C1.33333333,4.324 4.324,1.33333333 8,1.33333333 Z M8,0 C3.582,0 0,3.582 0,8 C0,12.418 3.582,16 8,16 C12.418,16 16,12.418 16,8 C16,3.582 12.418,0 8,0 Z M8.66666667,12 L7.33333333,12 L7.33333333,6.66666667 L8.66666667,6.66666667 L8.66666667,12 Z M8,3.83333333 C8.46,3.83333333 8.83333333,4.20666667 8.83333333,4.66666667 C8.83333333,5.12666667 8.46,5.5 8,5.5 C7.54,5.5 7.16666667,5.12666667 7.16666667,4.66666667 C7.16666667,4.20666667 7.54,3.83333333 8,3.83333333 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

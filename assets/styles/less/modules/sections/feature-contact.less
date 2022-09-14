@@ -1,0 +1,71 @@
+.section-feature-contact {
+	text-align: center;
+	z-index: 1;
+
+	@media @bp_768 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	@media @bp_1024 {
+		text-align: left;
+	}
+
+	.section-main {
+		margin: 0 auto;
+		max-width: 1128px;
+
+		@media @bp_1024 {
+			display: flex;
+		}
+
+		article {
+			text-align: left;
+			padding-top: 30px;
+
+			@media @bp_1024 {
+				.box-sizing;
+				display: flex;
+				flex: 1;
+				padding-top: 0;
+				padding-left: 24px;
+				padding-right: 8.33%;
+			}
+		}
+	}
+
+	.section-feature-title {
+		
+		@media @bp_1024 {
+			display: inline-flex;
+			width: 41.66%;
+			align-self: flex-start;
+		}
+		
+		&:after {
+
+			@media @bp_1024 {
+				left: 0;
+				margin-left: 0;
+			}
+		}
+	}
+
+	.pro-form {
+		.box-shadow(0 0 15px 0 rgba(0,0,0,0.08));
+		background-color: @white;
+		padding: 24px;
+
+		@media @bp_768 {
+			padding: 32px;
+		}
+	}
+
+	.btn-pro-submit {
+		margin-top: 24px;
+	}
+
+	fieldset {
+		width: 100%;
+	}
+}

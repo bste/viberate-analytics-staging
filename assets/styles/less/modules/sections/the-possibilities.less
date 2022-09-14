@@ -1,0 +1,163 @@
+.section-the-possibilities {
+	padding: 0;
+
+	@media @bp_768 {
+		display: flex;
+	}
+
+	&.fullscreen {
+
+		@media @bp_768 {
+			padding: 0;
+		}
+	}
+
+	.section-main {
+
+		@media @bp_768 {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+		}
+	}
+
+	.col {
+		padding: 100px @page_spacer_mobile;
+
+		@media @bp_768 {
+			padding: 0;
+			display: flex;
+			width: 50%;
+			align-items: center;
+			position: relative;
+		}
+
+		article {
+			
+			@media @bp_768 {
+				.box-sizing();
+				max-width: 720px;
+				padding: 0 40px;
+			}
+
+			@media @bp_1024 {
+				padding: 0 90px;
+			}
+		}
+	}
+
+	.col-1 {
+		background-image: url(../images/gif/noise-animated-bright.gif);
+		background-repeat: repeat;
+		background-size: 400px;
+		background-position: center center;
+
+		@media @bp_768 {
+			justify-content: flex-end;
+		}
+	}
+
+	.col-2 {
+		
+		@media @bp_768 {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+		}
+
+		article {
+			width: 100%;
+			text-align: center;
+
+			@media @bp_768 {
+				padding-bottom: 0px;
+			}
+		}
+	}
+
+	h2 {
+		.font-size(28);
+		line-height: 30px;
+		font-weight: 500;
+		padding-bottom: 20px;
+
+		@media @bp_768 {
+			.font-size(50);
+			line-height: 56px;
+			padding-bottom: 30px;
+		}
+
+		@media @bp_1024 {
+			.font-size(60);
+			line-height: 66px;
+			padding-bottom: 30px;
+		}
+
+		@media @bp_1200 {
+			.font-size(80);
+			line-height: 86px;
+		}
+	}
+
+	.swiper-main,
+	.swiper-wrapper,
+	.swiper-container {
+
+		@media @bp_768 {
+			width: 250px;
+		}
+
+		@media @bp_1024 {
+			width: 300px;
+		}
+
+		@media @bp_1200 {
+			width: 400px;
+		}
+	}
+
+	.swiper-main {
+		position: relative;
+		margin: 0 auto;
+
+		.swiper-container {
+			padding: 0;
+		}
+	}
+
+	.swiper-slide {
+		.box-sizing();
+		text-align: left;
+		padding-bottom: 40px;
+
+		h3 {
+			.font-size(20);
+			line-height: 26px;
+			font-weight: 500;
+
+			@media @bp_768 {
+				.font-size(24);
+				line-height: 30px;
+			}
+
+			@media @bp_1024 {
+
+			}
+		}
+	}
+
+	.swiper-container-horizontal {
+
+		> .swiper-pagination-bullets {
+			bottom: 0;
+		}
+	}
+
+	.swiper-pagination-bullet {
+		border-color: @black;
+	}
+
+	.swiper-pagination-bullet-active {
+		background-color: @black;
+	}
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape</title>
+    <g id="User-Profile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="User-Profile---edit" transform="translate(-915.000000, -280.000000)" fill="#667DD5" fill-rule="nonzero">
+            <g id="create-24px-copy-5" transform="translate(913.000000, 280.000000)">
+                <path d="M2.5,12.375 L2.5,15.5 L5.625,15.5 L14.8416667,6.28333333 L11.7166667,3.15833333 L2.5,12.375 Z M17.2583333,3.86666667 C17.5833333,3.54166667 17.5833333,3.01666667 17.2583333,2.69166667 L15.3083333,0.741666667 C14.9833333,0.416666667 14.4583333,0.416666667 14.1333333,0.741666667 L12.6083333,2.26666667 L15.7333333,5.39166667 L17.2583333,3.86666667 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

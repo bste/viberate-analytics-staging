@@ -1,0 +1,297 @@
+.section-billing-settings {
+
+	.loading {
+		padding-bottom: 5px;
+
+		&:before {
+			overflow: hidden;
+			z-index: 10;
+		}
+	}
+
+	.section-main {
+		max-width: 1060px;
+	}
+
+	footer {
+		text-align: right;
+		padding-top: 20px;
+	}
+
+	h1 {
+
+		@media @bp_768 {
+			.font-size(46);
+			line-height: 1;
+			padding-bottom: 60px;
+		}
+	}
+
+	h2 {
+
+		@media @bp_768 {
+			.font-size(24);
+			line-height: 30px;
+			padding-bottom: 30px;
+		}
+	}
+
+	.no-current-subscription {
+		padding-bottom: 50px;
+
+		@media @bp_768 {
+			padding-bottom: 70px;
+		}
+
+		p {
+			.font-size(16);
+
+			@media @bp_768 {
+				.font-size(22);
+				line-height: 30px;
+				font-weight: 500;
+			}
+		}
+
+		.actions {
+
+		}
+	}
+
+	.form-row {
+		clear: both;
+		padding-top: 12px;
+
+		&.active {
+
+			.custom-input,
+			.custom-select {
+				width: 100%;
+			}
+		}
+
+		&.actions {
+			padding-top: 15px;
+			text-align: right;
+		}
+
+		.value {
+			border-bottom: 2px solid @black;
+			padding-bottom: 6px;
+			color: #989898;
+
+			span {
+				display: block;
+
+				@media @bp_768 {
+					display: inline-block;
+					float: right;
+				}
+			}
+		}
+
+		h3 {
+			.font-size(16);
+			font-weight: 500;
+			line-height: 26px;
+			padding-bottom: 20px;
+
+			@media @bp_768 {
+				.font-size(18);
+				line-height: 28px;
+			}
+		}
+	}
+
+	.btn-upgrade {
+		.font-size(12);
+		letter-spacing: 1px;
+		line-height: 1;
+		padding: 12px 30px;
+		position: absolute;
+		right: 0;
+		bottom: 24px;
+	}
+
+	.btn-update-card {
+		.font-size(12);
+		font-weight: 500;
+		text-transform: uppercase;
+		color: @blue;
+		margin-right: 14px;
+		letter-spacing: 1px;
+		line-height: 1;
+		position: absolute;
+		right: 0;
+		bottom: 24px;
+
+		&:hover {
+			color: @blue-roll;
+		}
+	}
+
+	.btn-cancel-subscription {
+		.font-size(12);
+		font-weight: 500;
+		text-transform: uppercase;
+		color: @blue;
+		letter-spacing: 1px;
+		line-height: 1;
+		margin-top: 14px;
+
+		&:hover {
+			color: @blue-roll;
+		}
+	}
+
+	.btn-upgrade-subscription {
+		.font-size(12);
+		font-weight: 500;
+		text-transform: uppercase;
+		color: @white;
+		background-color: @blue;
+		letter-spacing: 1px;
+		line-height: 1;
+		padding: 12px 24px;
+		margin-top: 14px;
+		margin-left: 14px;
+
+		&:hover {
+			background-color: @blue-roll;
+		}
+	}
+
+	.custom-input,
+	.custom-select {
+
+		@media @bp_768 {
+			.box-sizing;
+		}
+
+		input {
+
+			&:read-only {
+				border-color: @black !important;
+			}
+		}
+	}
+
+	a {
+		font-weight: 500;
+		color: inherit;
+	}
+
+	.btn-edit {
+		background-color: @white;
+		border: 2px solid @black;
+		padding: 6px 24px;
+		line-height: 1;
+		text-transform: uppercase;
+		position: absolute;
+		right: 0;
+		top: 12px;
+
+		&:hover {
+			background-color: @black;
+			color: @white;
+		}
+	}
+
+	.row {
+		.clearfix;
+		position: relative;
+		z-index: 1;
+
+		&:first-child {
+			//max-width: 610px;
+
+			@media @bp_1024 {
+				//max-width: none;
+			}
+		}
+	}
+
+	.row + .row {
+		padding-top: 60px;
+	}
+
+	.col + .col {
+		padding-top: 50px;
+
+		@media @bp_1024 {
+			padding-top: 0;
+		}
+	}
+
+	.col-wrapper {
+
+		@media @bp_1024 {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+
+	.col {
+
+		@media @bp_1024 {
+			width: 45%;
+		}
+	}
+
+	.btn-download {
+		.font-size(0);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 16px;
+		width: 20px;
+		height: 20px;
+		background-image: url('../images/svg/icon-download.svg');
+		display: block;
+	}
+
+	.table-wrapper {
+		overflow-x: auto;
+	}
+
+	.billing-table {
+		.box-sizing;
+		.font-size(12);
+		color: @black;
+		width: 100%;
+		background-color: @white;
+
+		th,
+		td {
+			text-align: left;
+			padding: 10px;
+			border-bottom: 1px solid @white-1;
+			vertical-align: middle;
+			line-height: 1;
+
+			@media @bp_768 {
+				padding: 18px;
+			}
+		}
+
+		th {
+			border-bottom: 2px solid @white-1;
+			font-weight: 500;
+			vertical-align: top;
+			text-transform: uppercase;
+		}
+
+		.zero-state {
+
+			td {
+				.prevent-click;
+				font-weight: 500;
+				text-align: center;
+				color: @black;
+				padding-top: 60px;
+				padding-bottom: 60px;
+				border-bottom: 0;
+			}
+		}
+	}
+}

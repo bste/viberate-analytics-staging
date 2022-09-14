@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>thumbs-up</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Festival-ikone" transform="translate(-979.000000, -297.000000)" fill="#000000" fill-rule="nonzero">
+            <path d="M979,313 L982.090909,313 L982.090909,303.4 L979,303.4 L979,313 Z M996,304.2 C996,303.32 995.304545,302.6 994.454545,302.6 L989.578636,302.6 L990.312727,298.944 L990.335909,298.688 C990.335909,298.36 990.204545,298.056 989.995909,297.84 L989.176818,297 L984.092273,302.272 C983.806364,302.56 983.636364,302.96 983.636364,303.4 L983.636364,311.4 C983.636364,312.28 984.331818,313 985.181818,313 L992.136364,313 C992.777727,313 993.326364,312.6 993.558182,312.024 L995.891818,306.384 C995.961364,306.2 996,306.008 996,305.8 L996,304.2 Z" id="thumbs-up"></path>
+        </g>
+    </g>
+</svg>

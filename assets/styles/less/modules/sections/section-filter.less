@@ -1,0 +1,31 @@
+.section-filter {
+	.font-size(14);
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-bottom: 5px;
+
+	@media @bp_768 {
+		position: absolute;
+		right: 0;
+		bottom: 15px;
+		z-index: 1;
+		padding-bottom: 0;
+	}
+
+	.btn-section-filter {
+		.font-size(10);
+		margin: 3px 30px 3px 0;
+		letter-spacing: 2px;
+
+		@media @bp_768 {
+			.font-size(14);
+			letter-spacing: 3px;
+			margin: 0 40px 0 0;
+		}
+
+		&:last-child {
+			margin-right: 0
+		}
+	}
+}

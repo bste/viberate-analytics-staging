@@ -1,0 +1,2352 @@
+.section-genres-landing {
+	.box-sizing;
+	padding: 0;
+	//min-height: calc(~'100vh - 50px');
+	display: flex;
+
+	@media @bp_1024 {
+		//min-height: calc(~'100vh - 74px');
+	}
+
+	.page {
+		width: 100%;
+		padding: 0 12px;
+		max-width: @layout-grid-max-width;
+
+		@media @bp_1024 {
+			display: flex;
+			flex-direction: row;
+			flex: 1;
+		}
+
+		@media @bp_1200 {
+			padding: 0 16px;
+		}
+	}
+
+	.section-main {
+		width: 100%;
+
+		@media @bp_1024 {
+			display: flex;
+			flex: 1;
+		}
+	}
+
+	.genres-landing-sidebar {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+
+		@media @bp_1024 {
+			margin: 32px 0;
+			flex: 0 0 270px;
+			z-index: 1;
+		}
+	}
+
+	.genres-landing-content {
+		margin: 0 -12px;
+		padding: 24px 10px;
+
+		@media @bp_1024 {
+			.box-sizing;
+			background-color: @white;
+			margin: 32px 0 32px 32px;
+			display: flex;
+			flex: 1;
+			padding: 0;
+			max-width: 930px;
+		}
+	}
+
+	.genres-landing-header {
+		display: flex;
+		align-items: center;
+		padding: 2px 12px;
+		margin: 0 -12px -12px -12px;
+		background-color: @grey-1;
+
+		@media @bp_768 {
+			padding: 32px;
+		}
+
+		@media @bp_1024 {
+			margin: 0 0 15px 0;
+			background-color: @white;
+			padding: 16px 24px;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			align-items: flex-end;
+		}
+
+		h2 {
+			.font-size(18);
+			font-weight: 500;
+			text-align: center;
+			width: 100%;
+			padding: 18px 0;
+
+			@media @bp_768 {
+				.font-size(42);
+			}
+
+			@media @bp_1024 {
+				.font-size(24);
+				text-align: left;
+				width: auto;
+				padding: 0;
+			}
+		}
+	}
+
+	.genres-landing-genres-list {
+		background-color: @white;
+		position: relative;
+		display: none;
+
+		@media @bp_1024 {
+			display: flex;
+			flex-direction: column;
+			flex: 1;
+		}
+
+		.genres-list {
+			position: absolute;
+			top: 24px;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			overflow: hidden;
+			overflow-y: auto;
+			scrollbar-width: thin;
+
+			&::-webkit-scrollbar {
+				width: 5px;
+			}
+
+			&::-webkit-scrollbar-button {
+				//background: @grey;
+			}
+
+			&::-webkit-scrollbar-track-piece {
+				background: @white-2;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background: @grey;
+			}
+
+			@media @bp_1024 {
+				top: 68px;
+			}
+		}
+
+		.zero-state {
+			.font-size(12);
+			text-align: center;
+			line-height: 16px;
+			line-height: 16px;
+		}
+
+		.item {
+			padding: 0 24px;
+			cursor: pointer;
+
+			@media @bp_768 {
+				padding: 0;
+				margin: 0 8px;
+			}
+
+			&.selected {
+				.prevent-click;
+				overflow: hidden;
+
+				.counter {
+					position: relative;
+
+					span {
+						display: none;
+					}
+
+					div {
+						display: block;
+					}
+				}
+
+				.genre-info {
+					position: relative;
+
+					&:before {
+						content: "";
+						background-color: @indigo-2;
+						position: absolute;
+						left: -20px;
+						top: 0;
+						right: -200px;
+						bottom: 0;
+						z-index: 0;
+					}
+				}
+			}
+
+			&.active {
+
+				.row {
+					background-color: @indigo-2;
+				}
+
+				.counter {
+
+					span {
+						display: none;
+					}
+
+					a {
+						display: inline-block;
+					}
+				}
+			}
+
+			&:last-child {
+				
+				.row {
+					border-bottom: 0;
+				}
+			}
+		}
+
+		.row {
+			.box-sizing;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: center;
+			color: #808080;
+			border-bottom: 1px solid #ebebeb;
+			height: 40px;
+			padding: 0 24px 0 8px;
+			justify-content: space-between;
+
+			@media @bp_768 {
+				padding-right: 8px;
+			}
+		}
+
+		.genre-info {
+			display: flex;
+			flex: 1;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.genre-title {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			&.rock {
+			
+				&:after {
+					background-color: @rock;
+				}
+			}
+
+			&.country {
+				text-transform: none;
+				
+				&:after {
+					background-color: @country;
+				}
+			}
+
+			&.pop {
+				
+				&:after {
+					background-color: @pop;
+				}
+			}
+
+			&.hip-hop {
+				
+				&:after {
+					background-color: @hip-hop;
+				}
+			}
+
+			&.rnb {
+				
+				&:after {
+					background-color: @rnb;
+				}
+			}
+
+			&.latin {
+				
+				&:after {
+					background-color: @latin;
+				}
+			}
+
+			&.electronic {
+				
+				&:after {
+					background-color: @electronic;
+				}
+			}
+
+			&.rock {
+				
+				&:after {
+					background-color: @rock;
+				}
+			}
+
+			&.metal {
+				
+				&:after {
+					background-color: @metal;
+				}
+			}
+
+			&.punk {
+				
+				&:after {
+					background-color: @punk;
+				}
+			}
+
+			&.jazz {
+				
+				&:after {
+					background-color: @jazz;
+				}
+			}
+
+			&.reggae {
+				
+				&:after {
+					background-color: @reggae;
+				}
+			}
+
+			&.blues {
+				
+				&:after {
+					background-color: @blues;
+				}
+			}
+
+			&.classical {
+				
+				&:after {
+					background-color: @classical;
+				}
+			}
+
+			&.religious {
+				
+				&:after {
+					background-color: @religious;
+				}
+			}
+
+			&.european {
+				
+				&:after {
+					background-color: @european;
+				}
+			}
+
+			&.asian {
+				
+				&:after {
+					background-color: @asian;
+				}
+			}
+
+			&.middle-eastern {
+				
+				&:after {
+					background-color: @middle-eastern;
+				}
+			}
+
+			&.african {
+				
+				&:after {
+					background-color: @african;
+				}
+			}
+
+			&.other {
+				
+				&:after {
+					background-color: #ddd;
+				}
+			}
+
+			&.subgenre {
+
+				&:after {
+					content: none;
+				}
+			}
+
+			&:after {
+				content: "";
+				width: 10px;
+				height: 10px;
+				vertical-align: middle;
+				display: inline-block;
+				margin-left: 8px;
+				background-color: @grey-1;
+			}
+		}
+
+		.counter {
+			.font-size(10);
+			display: flex;
+			flex: 0 1 auto;
+			line-height: 1;
+			margin-left: 6px;
+			white-space: nowrap;
+			padding-left: 8px;
+
+			a {
+				display: none;
+				color: @blue;
+				text-transform: uppercase;
+
+				&:hover,
+				&:active {
+					color: @blue-roll;
+				}
+			}
+		}
+
+		h3 {
+			.font-size(12);
+			.clamp-lines(1);
+			color: @black;
+			font-weight: 500;
+			padding-left: 8px;
+		}
+	}
+
+	.pro-search {
+		display: none;
+
+		@media @bp_768 {
+			display: block;
+			padding: 20px 24px;
+		}
+
+		&.loading {
+
+			&:before,
+			&:after {
+				content: none;
+			}
+
+			.search-wrapper {
+
+				&:before {
+					.opacity(1);
+					top: 6px;
+					right: 32px;
+					background-image: url('../images/svg/loader-ani-black.svg');
+				}
+			}
+		}
+
+		.pro-search-input {
+			background-color: #f6f6f6;
+			border-color: #f6f6f6;
+			background-size: 15px;
+			background-position: right 12px center;
+			background-image: url('../images/svg/search.svg');
+			padding: 0 60px 0 20px;
+			height: 30px;
+		}
+
+		.results {
+			top: 31px;
+			background-color: #f6f6f6;
+
+			.result-item {
+				display: block;
+				white-space: normal;
+				padding: 8px 20px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+
+				.genre {
+					.text-overflow;
+				}
+
+				.info {
+					.font-size(8);
+					white-space: nowrap;
+					padding-left: 8px;
+				}
+			}
+		}
+	}
+
+	.genres-map-wrapper {
+		.transition(all, 200ms, ease-in-out);
+
+		@genre-map-item-height: 140px;
+		@genre-map-item-gap: 12px;
+		@genre-map-item-width: calc(~'((100% - (4 * @{genre-map-item-gap})) / 5)');
+
+		@media @bp_1024 {
+			padding: 22px;
+			width: 100%;
+		}
+
+		.gmi-pos(@index-row, @index-col, @row-items: 5, @col-items: 4) {
+			
+			@media @bp_1024 {
+				left: ~'calc((@{index-row} - 1) * @{genre-map-item-width} + (@{index-row} - 1) * @{genre-map-item-gap})';
+				top:  ~'calc((@{index-col} - 1) * @{genre-map-item-height} + (@{index-col} - 1) * @{genre-map-item-gap})';
+				height: @genre-map-item-height;
+			}
+		}
+
+		.gmi-open {
+			
+			@media @bp_1024 {
+				height: @genre-map-item-height *3 + 2 * @genre-map-item-gap;
+				z-index: 1;
+			}
+
+			.genres-map-square {
+				.box-shadow(0 0 15px 0 rgba(0,0,0,0.08));
+				cursor: default;
+				position: relative;
+
+				&.country {
+					white-space: normal;
+					text-transform: none;
+				}
+
+				&:before {
+					.box-shadow(0 0 15px 0 rgba(0,0,0,0.08));
+					.prevent-click;
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 0;
+					right: 0;
+					height: 68px;
+					z-index: 1;
+
+					@media @bp_1024 {
+						content: none;
+					}
+				}
+
+				@media @bp_1024 {
+					.box-shadow(none);
+				}
+
+				.title {
+
+					@media @bp_1024 {
+						.enable-click;
+					}
+
+					&:after {
+						background-image: url('../images/svg/minus-blue.svg');
+					}
+				}
+
+				.genres {
+					padding-top: 12px;
+
+					@media @bp_1024 {
+						padding-top: 6px;
+					}
+				}
+			}
+
+			.genres {
+				//display: block;
+				max-height: 1000px;
+
+				@media @bp_1024 {
+    				transition: max-height 1s ease-in-out;
+    			}
+			}
+		}
+
+		.genres-map-items-list {
+			position: relative;
+			width: 100%;
+
+			@media @bp_1024 {
+				height: @genre-map-item-height * 4 + 3 * @genre-map-item-gap;
+			}
+			
+			&.open-1 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+						.gmi-open;
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-2 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+						.gmi-open;
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-3 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+						.gmi-open;
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-4 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+						.gmi-open;
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-5 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+						.gmi-open;
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,4);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(4,4);
+					}
+				}
+			}
+
+			&.open-6 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+						.gmi-open;
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-7 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+						.gmi-open;
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-8 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+						.gmi-open;
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-9 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+						.gmi-open;
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-10 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+						.gmi-open;
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(4,4);
+					}
+				}
+			}
+
+			&.open-11 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,2);
+						.gmi-open;
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-12 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,2);
+						.gmi-open;
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-13 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(3,2);
+						.gmi-open;
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-14 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(4,2);
+						.gmi-open;
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-15 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,2);
+						.gmi-open;
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-16 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,2);
+						.gmi-open;
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-17 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(4,3);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(4,2);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(4,4);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(3,2);
+						.gmi-open;
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(5,4);
+					}
+				}
+			}
+
+			&.open-18 {
+
+				.genres-map-item {
+
+					&:nth-child(3) {	//1 Electronic
+						.gmi-pos(1,1);
+					}
+
+					&:nth-child(4) {	//2 Pop
+						.gmi-pos(2,1);
+					}
+
+					&:nth-child(6) {	//3 Metal
+						.gmi-pos(3,1);
+					}
+
+					&:nth-child(7) {	//4 Punk
+						.gmi-pos(4,1);
+					}
+
+					&:nth-child(9) {	//5 Latin
+						.gmi-pos(5,1);
+					}
+
+					&:nth-child(1) {	//6 R'n'B
+						.gmi-pos(1,2);
+					}
+
+					&:nth-child(2) {	//7 Hip Hop
+						.gmi-pos(2,2);
+					}
+
+					&:nth-child(5) {	//8 Rock
+						.gmi-pos(3,2);
+					}
+
+					&:nth-child(8) {	//9 Country
+						.gmi-pos(5,3);
+					}
+
+					&:nth-child(10) {	//10 European
+						.gmi-pos(5,2);
+					}
+
+					&:nth-child(18) {	//11 Blues
+						.gmi-pos(1,3);
+					}
+
+					&:nth-child(16) {	//12 Classical
+						.gmi-pos(2,3);
+					}
+
+					&:nth-child(14) {	//13 Middle Eastern
+						.gmi-pos(3,3);
+					}
+
+					&:nth-child(11) {	//14 Asian
+						.gmi-pos(5,4);
+					}
+
+					&:nth-child(17) {	//15 Jazz
+						.gmi-pos(1,4);
+					}
+
+					&:nth-child(15) {	//16 Religious
+						.gmi-pos(2,4);
+					}
+
+					&:nth-child(13) {	//17 African
+						.gmi-pos(3,4);
+					}
+
+					&:nth-child(12) {	//18 Reggae
+						.gmi-pos(4,2);
+						.gmi-open;
+					}
+				}
+			}
+		}
+
+		.genres-map-item {
+			.box-sizing;
+			.transition(all, 200ms, ease-in-out);
+			padding: 8px 0;
+
+			@media @bp_1024 {
+				padding: 0;
+				width: @genre-map-item-width;
+				height: 120px;
+				position: absolute;
+				display: flex;
+
+				&:nth-child(1) {
+					.gmi-pos(1,2,5);
+				}
+
+				&:nth-child(2) {
+					.gmi-pos(2,2);
+				}
+
+				&:nth-child(3) {
+					.gmi-pos(1,1);
+				}
+
+				&:nth-child(4) {
+					.gmi-pos(2,1);
+				}
+
+				&:nth-child(5) {
+					.gmi-pos(3,2);
+				}
+
+				&:nth-child(6) {
+					.gmi-pos(3,1);
+				}
+
+				&:nth-child(7) {
+					.gmi-pos(4,1);
+				}
+
+				&:nth-child(8) {
+					.gmi-pos(4,2);
+				}
+
+				&:nth-child(9) {
+					.gmi-pos(5,1);
+				}
+
+				&:nth-child(10) {
+					.gmi-pos(5,2);
+				}
+
+				&:nth-child(11) {
+					.gmi-pos(4,3);
+				}
+
+				&:nth-child(12) {
+					.gmi-pos(4,4);
+				}
+
+				&:nth-child(13) {
+					.gmi-pos(3,4);
+				}
+
+				&:nth-child(14) {
+					.gmi-pos(3,3);
+				}
+
+				&:nth-child(15) {
+					.gmi-pos(2,4);
+				}
+
+				&:nth-child(16) {
+					.gmi-pos(2,3);
+				}
+
+				&:nth-child(17) {
+					.gmi-pos(1,4);
+				}
+
+				&:nth-child(18) {
+					.gmi-pos(1,3);
+				}
+			}
+		}
+
+		.genres-map-square {
+
+			&.rock {
+				background-color: @rock;
+			}
+
+			&.country {
+				background-color: @country;
+				text-transform: none;
+			}
+
+			&.pop {
+				background-color: @pop;
+			}
+
+			&.hip-hop {
+				background-color: @hip-hop;
+			}
+
+			&.rnb {
+				background-color: @rnb;
+			}
+
+			&.latin {
+				background-color: @latin;
+			}
+
+			&.electronic {
+				background-color: @electronic;
+			}
+
+			&.rock {
+				background-color: @rock;
+			}
+
+			&.metal {
+				background-color: @metal;
+			}
+
+			&.punk {
+				background-color: @punk;
+			}
+
+			&.jazz {
+				background-color: @jazz;
+			}
+
+			&.reggae {
+				background-color: @reggae;
+			}
+
+			&.blues {
+				background-color: @blues;
+			}
+
+			&.classical {
+				background-color: @classical;
+			}
+
+			&.religious {
+				background-color: @religious;
+			}
+
+			&.european {
+				background-color: @european;
+			}
+
+			&.asian {
+				background-color: @asian;
+			}
+
+			&.middle-eastern {
+				background-color: @middle-eastern;
+			}
+
+			&.african {
+				background-color: @african;
+			}
+		}
+
+		.genres-map-square {
+			.transition(all, 200ms, ease-in-out);
+			display: flex;
+			flex: 1;
+			width: 100%;
+
+			@media @bp_1024 {
+				cursor: pointer;
+			}
+
+			article {
+				padding: 22px;
+				width: 100%;
+
+				@media @bp_1024 {
+					padding: 12px 2px 12px 12px;
+				}
+
+				@media @bp_1200 {
+					padding: 24px 5px 24px 24px;
+				}
+			}
+
+			.title {
+				.prevent-click;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				position: relative;
+
+				&:after {
+					.font-size(14);
+					font-weight: 500;
+					content: "";
+					background-image: url('../images/svg/plus-blue.svg');
+					background-size: 8px;
+					background-position: center;
+					background-repeat: no-repeat;
+					position: absolute;
+					top: 50%;
+					right: 0;
+					height: 16px;
+					margin-top: -8px;
+					width: 16px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					color: @blue;
+
+					@media @bp_1024 {
+						content: none;
+					}
+				}
+			}
+
+			.info {
+				.font-size(14);
+				text-align: right;
+				line-height: 1;
+				font-weight: 400;
+				padding-right: 32px;
+
+				@media @bp_1024 {
+					display: none;
+				}
+			}
+
+			h4 {
+				.font-size(14);
+				font-weight: 500;
+				line-height: 22px;
+
+				a {
+					color: @black;
+
+					&:hover {
+						.text-decoration-ink;
+					}
+				}
+			}
+
+			.genres {
+				.box-sizing;
+				.font-size(14);
+				line-height: 1;
+				margin: 24px -22px -24px -22px;
+				background-color: @white;
+				padding-top: 0;
+				overflow: hidden;
+				max-height: 0;
+				transition: max-height 0s cubic-bezier(0, 1, 0, 1);
+
+				@media @bp_1024 {
+					.font-size(11);
+					width: 100%;
+					line-height: 18px;
+					margin: 0;
+					height: auto;
+					padding-top: 6px;
+					background-color: transparent;
+					transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+				}
+
+				@media @bp_1200 {
+					//.font-size(12);
+				}
+
+				.item {				
+					border-bottom: 1px solid #e8e8e8;
+
+					&.active {
+
+						a,
+						span {
+							.prevent-click();
+							.text-decoration-ink;
+							color: @black;
+						}
+					}
+
+					@media @bp_1024 {
+						border: 0;
+						padding: 3px 0;
+					}
+
+					@media @bp_1200 {
+						padding: 5px 0;
+					}
+
+					&:first-child {
+
+						@media @bp_1024 {
+							display: none;
+						}
+					}
+				}
+
+				a,
+				span {
+					color: @blue;
+					padding: 17px 24px;
+					display: block;
+					overflow-wrap: break-word;
+					word-wrap: break-word;
+					word-break: break-word;
+					cursor: pointer;
+
+					@media @bp_1024 {
+						line-height: 1;
+						color: @black;
+						padding: 0;
+						display: block;
+					}
+
+					&:hover {
+						color: @blue-roll;
+
+						@media @bp_1024 {
+							.text-decoration-ink;
+							color: @black;
+						}
+					}
+				}
+			}
+		}
+	}
+}

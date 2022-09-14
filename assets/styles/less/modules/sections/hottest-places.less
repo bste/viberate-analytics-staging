@@ -1,0 +1,81 @@
+.section-hottest-places {
+
+	.swiper-container {
+
+		@media @bp_768 {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.card + .card {
+		margin-top: 30px;
+	}
+
+	.swiper-slide {
+		width: auto;
+	}
+
+	.grid {
+		.clearfix;
+		margin: -15px;
+		white-space: nowrap;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+
+		@media @bp_768 {
+			display: block;
+		}
+
+		.grid-item {
+			.box-sizing();
+			padding: 15px;
+			width: 290px;
+			float: left;
+
+			@media @bp_768 {
+				width: 50%;		
+			}
+
+			@media @bp_1024 {
+				width: 33.33%;
+			}
+
+			&:nth-child(2n+1) {
+
+				@media @bp_768 {
+					clear: both;
+				}
+
+				@media @bp_1024 {
+					clear: none;
+				}
+			}
+
+			&:nth-child(3n+1) {
+
+				@media @bp_1024 {
+					clear: both;
+				}
+			}
+		}
+	}
+
+	footer {
+		padding-top: 40px;
+
+		@media @bp_768 {
+			text-align: right;
+			position: absolute;
+			left: 40px;
+			bottom: 0;
+			display: block;
+			z-index: 1;
+		}
+
+		@media @bp_1200 {
+			left: 90px;
+		}
+	}
+}
